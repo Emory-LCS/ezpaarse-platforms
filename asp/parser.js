@@ -117,7 +117,7 @@ module.exports = new Parser(function analyseEC(parsedUrl, ec) {
   } else if (hostname === 'indr.alexanderstreet.com') {
     result.publication_title = 'North American Indian Drama';
   } else if (hostname === 'lit.alexanderstreet.com') {
-    result.publication_title = 'Alexander Street Literature';
+    result.publication_title = 'Latino Literature';
   } else if (hostname === 'lrho.alexanderstreet.com') {
     result.publication_title = 'Images of America';
   } else if (hostname === 'nadr.alexanderstreet.com') {
