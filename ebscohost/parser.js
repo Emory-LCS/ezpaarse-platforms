@@ -125,8 +125,8 @@ module.exports = new Parser(function analyseEC(parsedUrl, ec) {
     }
   } if (result.doi == null) {
     // http://search.ebscohost.com:80/login.aspx?authtype=ip,uid&profile=ehost&defaultdb=apn
-    result.rtype    = 'REF';
-    result.mime     = 'HTML';
+    // result.rtype    = 'TOC';
+    // result.mime     = 'MISC';
     if (param.defaultdb === 'apn') {
       result.publication_title = 'Alternative Press Index';
     } else if (param.defaultdb === 'a9h') {
@@ -185,6 +185,12 @@ module.exports = new Parser(function analyseEC(parsedUrl, ec) {
       result.publication_title = 'SocINDEX with Full Text';
     } else if (param.defaultdb === 'fyh') {
       result.publication_title = 'Women\'s Studies International';
+    } else if (param.defaultdb === 'lsdar') {
+      result.publication_title = 'ALTA+ Religion Database + Serial';
+    } else if (param.defaultdb === 'rvh') {
+      result.publication_title = 'New Testament Abstratcs';
+    } else if (param.defaultdb === 'oah') {
+      result.publication_title = 'Old Testament Abstracts';
     }
   }
 
