@@ -42,7 +42,7 @@ module.exports = new Parser(function analyseEC(parsedUrl, ec) {
     result.doi      = match[1];
     result.online_identifier = match[3];
     result.title_id = match[3];
-    result.unitid   = match[3] + match[4]
+    result.unitid   = match[3] + match[4];
   } else if ((match = /^\/pdf\/doi\/(([0-9.]+)\/([0-9]+))([a-z.0-9]+)\/([0-9]+)$/i.exec(path)) !== null) {
     // https://www.routledgehandbooks.com:443/pdf/doi/10.4324/9781315612959.ch2/1517860691622
     result.rtype    = 'BOOK_SECTION';
