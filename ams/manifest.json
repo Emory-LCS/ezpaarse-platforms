@@ -2,7 +2,10 @@
   "version": "2015-12-11",
   "status": "beta",
   "domains": [
-    "journals.ametsoc.org"
+    "journals.ametsoc.org",
+    "ametsoc.org",
+    "ams.org",
+    "mathscinet.ams.org"
   ],
   "recognize": {
     "rid": [
