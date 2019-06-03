@@ -18,19 +18,7 @@ module.exports = new Parser(function analyseEC(parsedUrl, ec) {
 
   let match;
 
-  if ((match = /^\/platform\/path\/to\/(document-([0-9]+)-test\.pdf)$/i.exec(path)) !== null) {
-    // http://parser.skeleton.js/platform/path/to/document-123456-test.pdf?sequence=1
-    result.rtype    = 'ARTICLE';
-    result.mime     = 'PDF';
-    result.title_id = match[1];
-  } else if ((match = /^\/platform\/path\/to\/(document-([0-9]+)-test\.html)$/i.exec(path)) !== null) {
-    // http://parser.skeleton.js/platform/path/to/document-123456-test.html?sequence=1
-    result.rtype    = 'ARTICLE';
-    result.mime     = 'HTML';
-    result.title_id = match[1];
-    result.unitid   = match[2];
-
-  } else if (/^\/browse$/i.test(path)) {
+  if (/^\/browse$/i.test(path)) {
     // https://www.elgaronline.com:443/browse?pageSize=10&level=parent&sort=datedescending&t0=Economics_Main_ID
     result.rtype    = 'SEARCH';
     result.mime     = 'HTML';
@@ -44,6 +32,8 @@ module.exports = new Parser(function analyseEC(parsedUrl, ec) {
     result.mime     = 'XML';
     result.title_id = match[1];
     result.unitid   = match[1];
+    result.print_identifier = match[1];
+    result.doi      = '10.4337/' + match[1];
   } else if ((match = /^\/abstract\/journals\/([a-zA-Z0-9_/-]+)\/([a-zA-Z0-9.-]+).xml$/i.exec(path)) !== null) {
     // https://www.elgaronline.com:443/abstract/journals/roke/5-4/roke.2017.04.01.xml
     result.rtype    = 'ABS';
@@ -56,6 +46,8 @@ module.exports = new Parser(function analyseEC(parsedUrl, ec) {
     result.mime     = 'XML';
     result.title_id = match[1];
     result.unitid   = match[2];
+    result.print_identifier = match[2];
+    result.doi      = '10.4337/' + match[2];
   } else if ((match = /^\/view\/journals\/([a-zA-Z0-9_/-]+)\/([a-zA-Z0-9.-]+).xml$/i.exec(path)) !== null) {
     // https://www.elgaronline.com:443/view/journals/roke/5-4/roke.2017.5.issue-4.xml
     result.rtype    = 'TOC';
@@ -68,35 +60,47 @@ module.exports = new Parser(function analyseEC(parsedUrl, ec) {
     result.mime     = 'XML';
     result.title_id = match[2];
     result.unitid   = match[2];
+    result.print_identifier = match[2];
+    result.doi      = '10.4337/' + match[2];
   } else if ((match = /^\/view\/nlm-book\/([0-9]+)\/([a-zA-Z0-9_-]+).xml$/i.exec(path)) !== null) {
     // https://www.elgaronline.com:443/view/nlm-book/9781849807777/c04_sec85.xml?rskey=qoQRWS&result=1
     result.rtype    = 'BOOK_SECTION';
     result.mime     = 'HTML';
     result.title_id = match[1];
     result.unitid   = match[2];
+    result.print_identifier = match[1];
+    result.doi      = '10.4337/' + match[1];
   } else if ((match = /^\/view\/([0-9]+).([0-9]+).xml$/i.exec(path)) !== null) {
     // https://www.elgaronline.com:443/view/9781784711450.00017.xml?rskey=Ye4whX&result=5
     result.rtype    = 'BOOK_SECTION';
     result.mime     = 'XML';
     result.title_id = match[1];
     result.unitid   = match[1].concat('.', match[2]);
+    result.print_identifier = match[1];
+    result.doi      = '10.4337/' + match[1];
   } else if ((match = /^\/view\/([a-zA-Z0-9_/-]+)\/([0-9]+).([0-9]+).xml$/i.exec(path)) !== null) {
     // https://www.elgaronline.com:443/view/edcoll/9781786439307/9781786439307.00019.xml?rskey=tBrprM&result=1
     result.rtype    = 'BOOK_SECTION';
     result.mime     = 'XML';
     result.title_id = match[2];
     result.unitid   = match[2].concat('.', match[3]);
+    result.print_identifier = match[2];
+    result.doi      = '10.4337/' + match[2];
   } else if ((match = /^\/downloadpdf\/([0-9]+).([0-9]+).pdf$/i.exec(path)) !== null) {
     // https://www.elgaronline.com:443/downloadpdf/9781784711450.00014.pdf
     result.rtype    = 'BOOK_SECTION';
     result.mime     = 'PDF';
     result.title_id = match[1];
     result.unitid   = match[1].concat('.', match[2]);
+    result.print_identifier = match[1];
+    result.doi      = '10.4337/' + match[1];
   } else if ((match = /^\/downloadpdf\/([a-zA-Z0-9_/-]+)\/([0-9]+).([0-9]+).pdf$/i.exec(path)) !== null) {
     // https://www.elgaronline.com:443/downloadpdf/edcoll/9781786439307/9781786439307.00019.pdf
     result.rtype    = 'BOOK_SECTION';
     result.mime     = 'PDF';
     result.title_id = match[2];
+    result.print_identifier = match[2];
+    result.doi      = '10.4337/' + match[2];
     result.unitid   = match[2].concat('.', match[3]);
   }
   return result;
