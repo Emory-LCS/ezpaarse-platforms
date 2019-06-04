@@ -43,7 +43,7 @@ module.exports = new Parser(function analyseEC(parsedUrl, ec) {
     result.unitid   = param.analysisId;
   } else if (/^\/portal\/statisticsevolution\/exporttoolsasync$/i.test(path)) {
     // http://www.portal.euromonitor.com:80/portal/statisticsevolution/exporttoolsasync?measureTypeId=119&_=1556039200418
-    result.rtype    = 'DATA';
+    result.rtype    = 'DATASET';
     result.mime     = 'HTML';
     result.unitid   = param._;
   }
