@@ -46,3 +46,7 @@ Theater									http://theater.dukejournals.org		theater.dukejournals.org				Duk
 Tikkun									http://tikkun.dukejournals.org		tikkun.dukejournals.org				Duke University Press	tikkun.dukejournals.org
 TSQ: Transgender Studies Quarterly									http://tsq.dukejournals.org		tsq.dukejournals.org				Duke University Press	tsq.dukejournals.org
 World Policy Journal									http://wpj.dukejournals.org		wpj.dukejournals.org				Duke University Press	wpj.dukejournals.org
+Duke University Press									http://www.dukeupress.edu		www.dukeupress.edu				Duke University Press	www.dukeupress.edu
+Duke University Press									http://read.dukeupress.edu		read.dukeupress.edu				Duke University Press	read.dukeupress.edu
+Duke University Press									http://reader.dukeupress.edu		reader.dukeupress.edu				Duke University Press	reader.dukeupress.edu
+
