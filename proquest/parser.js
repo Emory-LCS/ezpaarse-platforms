@@ -75,7 +75,7 @@ module.exports = new Parser(function analyseEC(parsedUrl, ec) {
     result.rtype    = 'ARTICLE';
     result.mime     = 'HTML';
     result.title_id = match[1];
-    result.unitid   = match[1].concat('/', (match[2].concat('/', match[3])))
+    result.unitid   = match[1].concat('/', (match[2].concat('/', match[3])));
 
   } else if ((match = /^\/([a-z]+)\/result\/pqpresultpage.gispdfhitspanel.pdflink\/([a-zA-Z0-9$_-]+).pdf/i.exec(path)) !== null) {
     // https://congressional.proquest.com:443/congressional/result/pqpresultpage.gispdfhitspanel.pdflink/$2fapp-bin$2fgis-congresearch$2f9$2fb$2f4$2f6$2fcmp-1925-sls-0002_from_1_to_6.pdf+/thomas+jefferson$40$2fapp-gis$2fcongresearch$2fcmp-1925-sls-0002$40Congressional+Research+Digital+Collection$40Committee+Prints$40January+01,+1925$40null?pgId=f4014d99-5acd-40c8-8f09-24debb8646b2&rsId=16AA84BADF6
