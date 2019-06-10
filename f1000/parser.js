@@ -34,25 +34,33 @@ module.exports = new Parser(function analyseEC(parsedUrl, ec) {
     result.rtype = 'SEARCH';
     result.mime  = 'HTML';
 
-  } else if (/^\/gateways|collections\/([A-z]+)$|collections\/([A-z]+)\?selectedDomain=([a-z]+)/i.test(path)) {
+  } else if ((match = /^\/(gateways|collections)\/([A-z]+)$/i.exec(path)) !== null) {
     // https://f1000research.com:443/gateways/disease_outbreaks
     // https://f1000research.com:443/gateways/disease_outbreaks?selectedDomain=documents
     // https://f1000research.com:443/collections/BOSC
     // https://f1000research.com:443/collections/BOSC?selectedDomain=slides
-    result.rtype = 'TOC';
-    result.mime  = 'HTML';
+    result.rtype  = 'TOC';
+    result.mime   = 'HTML';
+    if (param.selectedDomain) {
+      result.unitid = match[2] + '/' + param.selectedDomain;
+    } else {
+      result.unitid = match[2];
+    }
 
-  } else if (/^\/collections\/([A-z]+)\/about-this-collection|posters/i.test(path)) {
+  } else if ((match = /^\/(collections|posters)\/((([0-z-]+)\/([0-z-]+))|([0-9-]+))/i.exec(path)) !== null) {
     // https://f1000research.com:443/collections/BOSC/about-this-collection
     // https://f1000research.com:443/posters/6-499
     result.rtype = 'REF';
     result.mime  = 'HTML';
+    result.unitid = match[2];
+    result.title_id = match[2];
 
   } else if ((match = /^\/([0-9]{4})\/([0-9]{2})\/([0-9]{2})\/([a-z-]+)\/$/i.exec(path)) !== null) {
     // https://blog.f1000.com:443/2010/07/06/a-biologist-a-chemist-and-a-physicist-walk-into-a-bar/
     result.rtype = 'ARTICLE';
     result.mime  = 'HTML';
-
+    result.unitid = match[1] + '/' + match[2] + '/' + match[3] + '/' + match[4];
+    result.title_id = match[1] + '/' + match[2] + '/' + match[3] + '/' + match[4];
   } else if (((match = /^\/prime\/([0-9]+)$/i.exec(path)) !== null) || ((match = /^\/articles\/([0-9-]{5}\/v[0-9]+)$/i.exec(path)) !== null) || ((match = /^\/documents\/([0-9-]{6})$/i.exec(path)) !== null) || ((match = /^\/slides\/([0-9-]{5})$/i.exec(path)) !== null) || ((match = /^\/prime\/interaction\/openarticle\/([0-9]+)$/i.exec(path)) !== null)) {
     // https://f1000research.com:443/articles/7-208/v1
     // https://f1000research.com:443/documents/7-1444
