@@ -14,11 +14,11 @@ out-print_identifier;out-title_id;out-unitid;out-doi;out-rtype;out-mime;in-url
 ;deor;deor;;TOC;HTML;https://elibrary.worldbank.org:443/loi/deor
 ;wber/24/3;wber/24/3;;TOC;HTML;https://elibrary.worldbank.org:443/toc/wber/24/3
 ;deor/12/2;deor/12/2;;TOC;HTML;https://elibrary.worldbank.org:443/toc/deor/12/2
-;be;be;;DATA_SET;HTML;https://elibrary.worldbank.org:443/action/showDataView?region=be
-;SH.DYN.MORT;SH.DYN.MORT;;DATA_SET;HTML;https://elibrary.worldbank.org:443/action/showDataView?indicator=SH.DYN.MORT
-;SH.STA.BRTC.ZS;SH.STA.BRTC.ZS;;DATA_SET;HTML;https://elibrary.worldbank.org:443/action/showDataView?indicator=SH.STA.BRTC.ZS
-;SH.DYN.MORT;SH.DYN.MORT;;DATA_SET;CSV;https://elibrary.worldbank.org:443/action/showDataView?indicator=SH.DYN.MORT&download=csv
-;SH.STA.BRTC.ZS;SH.STA.BRTC.ZS;;DATA_SET;CSV;https://elibrary.worldbank.org:443/action/showDataView?indicator=SH.STA.BRTC.ZS&download=csv
+;be;be;;DATASET;HTML;https://elibrary.worldbank.org:443/action/showDataView?region=be
+;SH.DYN.MORT;SH.DYN.MORT;;DATASET;HTML;https://elibrary.worldbank.org:443/action/showDataView?indicator=SH.DYN.MORT
+;SH.STA.BRTC.ZS;SH.STA.BRTC.ZS;;DATASET;HTML;https://elibrary.worldbank.org:443/action/showDataView?indicator=SH.STA.BRTC.ZS
+;SH.DYN.MORT;SH.DYN.MORT;;DATASET;CSV;https://elibrary.worldbank.org:443/action/showDataView?indicator=SH.DYN.MORT&download=csv
+;SH.STA.BRTC.ZS;SH.STA.BRTC.ZS;;DATASET;CSV;https://elibrary.worldbank.org:443/action/showDataView?indicator=SH.STA.BRTC.ZS&download=csv
 lhq018;10.1093/wber/lhq018;10.1093/wber/lhq018;10.1093/wber/lhq018;ABS;HTML;https://elibrary.worldbank.org:443/doi/abs/10.1093/wber/lhq018
 978-1-4648-1281-1_ch3;10.1596/978-1-4648-1281-1_ch3;10.1596/978-1-4648-1281-1_ch3;10.1596/978-1-4648-1281-1_ch3;ABS;HTML;https://elibrary.worldbank.org:443/doi/abs/10.1596/978-1-4648-1281-1_ch3
 1020-797X_12_2_19;10.1596/1020-797X_12_2_19;10.1596/1020-797X_12_2_19;10.1596/1020-797X_12_2_19;ABS;HTML;https://elibrary.worldbank.org:443/doi/abs/10.1596/1020-797X_12_2_19
@@ -41,5 +41,5 @@ lhq018;10.1093/wber/lhq018;10.1093/wber/lhq018;10.1093/wber/lhq018;ARTICLE;PDF;h
 ;2019/04/13;coalition-of-finance-ministers-for-climate-action;;ARTICLE;HTML;http://www.worldbank.org:80/en/news/press-release/2019/04/13/coalition-of-finance-ministers-for-climate-action
 9781464813306;10986/30418/9781464813306;10986/30418/9781464813306;;BOOK;PDF;https://openknowledge.worldbank.org:443/bitstream/handle/10986/30418/9781464813306.pdf
 127140;10986/30026/127140;10986/30026/127140;;BOOK;PDF;https://openknowledge.worldbank.org:443/bitstream/handle/10986/30026/127140.pdf?sequence=1&isAllowed=y
-;575341556832785539;CMO-Pink-Sheet-May-2019;;DATA_SET;PDF;http://pubdocs.worldbank.org:80/en/575341556832785539/CMO-Pink-Sheet-May-2019.pdf
-;faeroe-islands;faeroe-islands;;DATA_SET;HTML;http://data.worldbank.org:80/country/faeroe-islands
+;575341556832785539;CMO-Pink-Sheet-May-2019;;DATASET;PDF;http://pubdocs.worldbank.org:80/en/575341556832785539/CMO-Pink-Sheet-May-2019.pdf
+;faeroe-islands;faeroe-islands;;DATASET;HTML;http://data.worldbank.org:80/country/faeroe-islands

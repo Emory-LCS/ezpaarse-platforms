@@ -91,20 +91,20 @@ module.exports = new Parser(function analyseEC(parsedUrl, ec) {
     // https://elibrary.worldbank.org:443/action/showDataView?indicator=SH.DYN.MORT&download=csv
       result.mime    = 'HTML';
     }
-    result.rtype    = 'DATA_SET';
+    result.rtype    = 'DATASET';
     result.title_id = param.region || param.indicator;
     result.unitid   = param.region || param.indicator;
 
   } else if ((match = /^\/en\/([0-9]+)\/([a-zA-Z0-9+-]+).pdf$/i.exec(path)) !== null) {
     // http://pubdocs.worldbank.org:80/en/575341556832785539/CMO-Pink-Sheet-May-2019.pdf
-    result.rtype    = 'DATA_SET';
+    result.rtype    = 'DATASET';
     result.mime     = 'PDF';
     result.title_id = match[1];
     result.unitid   = match[2];
 
   } else if ((match = /^\/country\/([a-z+-]+)$/i.exec(path)) !== null) {
     // http://data.worldbank.org:80/country/faeroe-islands
-    result.rtype    = 'DATA_SET';
+    result.rtype    = 'DATASET';
     result.mime     = 'HTML';
     result.title_id = match[1];
     result.unitid   = match[1];
