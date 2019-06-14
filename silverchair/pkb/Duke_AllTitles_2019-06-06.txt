@@ -1,0 +1,52 @@
+publication_title	print_identifier	online_identifier	date_first_issue_online	num_first_vol_online	num_first_issue_online	date_last_issue_online	num_last_vol_online	num_last_issue_online	title_url	first_author	title_id	embargo_info	coverage_depth	coverage_notes	publisher_name	pkb-domain
+American Literary Scholarship									http://als.dukejournals.org		als.dukejournals.org				Duke University Press	als.dukejournals.org
+American Literature									http://americanliterature.dukejournals.org		americanliterature.dukejournals.org				Duke University Press	americanliterature.dukejournals.org
+American Speech									http://americanspeech.dukejournals.org		americanspeech.dukejournals.org				Duke University Press	americanspeech.dukejournals.org
+boundary 2									http://boundary2.dukejournals.org		boundary2.dukejournals.org				Duke University Press	boundary2.dukejournals.org
+Camera Obscura: Feminism, Culture, and Media Studies									http://cameraobscura.dukejournals.org		cameraobscura.dukejournals.org				Duke University Press	cameraobscura.dukejournals.org
+The Carlyle Letters Online									http://carlyleletters.dukejournals.org		carlyleletters.dukejournals.org				Duke University Press	carlyleletters.dukejournals.org
+Common Knowledge									http://commonknowledge.dukejournals.org		commonknowledge.dukejournals.org				Duke University Press	commonknowledge.dukejournals.org
+Comparative Literature									http://complit.dukejournals.org		complit.dukejournals.org				Duke University Press	complit.dukejournals.org
+Comparative Studies of South Asia, Africa and the Middle East									http://cssaame.dukejournals.org		cssaame.dukejournals.org				Duke University Press	cssaame.dukejournals.org
+Cultural Politics an International Journal									http://culturalpolitics.dukejournals.org		culturalpolitics.dukejournals.org				Duke University Press	culturalpolitics.dukejournals.org
+differences									http://differences.dukejournals.org		differences.dukejournals.org				Duke University Press	differences.dukejournals.org
+East Asian Science, Technology and Society									http://easts.dukejournals.org		easts.dukejournals.org				Duke University Press	easts.dukejournals.org
+Eighteenth-Century Life									http://ecl.dukejournals.org		ecl.dukejournals.org				Duke University Press	ecl.dukejournals.org
+Ethnohistory									http://ethnohistory.dukejournals.org		ethnohistory.dukejournals.org				Duke University Press	ethnohistory.dukejournals.org
+French Historical Studies									http://fhs.dukejournals.org		fhs.dukejournals.org				Duke University Press	fhs.dukejournals.org
+Genre									http://genre.dukejournals.org		genre.dukejournals.org				Duke University Press	genre.dukejournals.org
+GLQ: A Journal of Lesbian and Gay Studies									http://glq.dukejournals.org		glq.dukejournals.org				Duke University Press	glq.dukejournals.org
+Hispanic American Historical Review									http://hahr.dukejournals.org		hahr.dukejournals.org				Duke University Press	hahr.dukejournals.org
+History of Political Economy									http://hope.dukejournals.org		hope.dukejournals.org				Duke University Press	hope.dukejournals.org
+Journal of Chinese Literature and Culture									http://jclc.dukejournals.org		jclc.dukejournals.org				Duke University Press	jclc.dukejournals.org
+Journal of Health Politics, Policy and Law									http://jhppl.dukejournals.org		jhppl.dukejournals.org				Duke University Press	jhppl.dukejournals.org
+Journal of Medieval and Early Modern Studies									http://jmems.dukejournals.org		jmems.dukejournals.org				Duke University Press	jmems.dukejournals.org
+Journal of Middle East Women's Studies									http://jmews.dukejournals.org		jmews.dukejournals.org				Duke University Press	jmews.dukejournals.org
+Journal of Music Theory									http://jmt.dukejournals.org		jmt.dukejournals.org				Duke University Press	jmt.dukejournals.org
+Labor Studies in Working-Class History of the Americas									http://labor.dukejournals.org		labor.dukejournals.org				Duke University Press	labor.dukejournals.org
+Limnology & Oceanography: Fluids & Environments									http://lofe.dukejournals.org		lofe.dukejournals.org				Duke University Press	lofe.dukejournals.org
+the minnesota review									http://minnesotareview.dukejournals.org		minnesotareview.dukejournals.org				Duke University Press	minnesotareview.dukejournals.org
+Modern Language Quarterly									http://mlq.dukejournals.org		mlq.dukejournals.org				Duke University Press	mlq.dukejournals.org
+Mediterranean Quarterly									http://mq.dukejournals.org		mq.dukejournals.org				Duke University Press	mq.dukejournals.org
+New German Critique									http://ngc.dukejournals.org		ngc.dukejournals.org				Duke University Press	ngc.dukejournals.org
+Nka Journal of Contemporary African Art									http://nka.dukejournals.org		nka.dukejournals.org				Duke University Press	nka.dukejournals.org
+NOVEL A Forum on Fiction									http://novel.dukejournals.org		novel.dukejournals.org				Duke University Press	novel.dukejournals.org
+Publication of the American Dialect Society									http://pads.dukejournals.org		pads.dukejournals.org				Duke University Press	pads.dukejournals.org
+Pedagogy Critical Approaches to Teaching Literature Language Composition and Culture									http://pedagogy.dukejournals.org		pedagogy.dukejournals.org				Duke University Press	pedagogy.dukejournals.org
+Philosophical Review									http://philreview.dukejournals.org		philreview.dukejournals.org				Duke University Press	philreview.dukejournals.org
+Poetics Today									http://poeticstoday.dukejournals.org		poeticstoday.dukejournals.org				Duke University Press	poeticstoday.dukejournals.org
+positions: asia critique									http://positions.dukejournals.org		positions.dukejournals.org				Duke University Press	positions.dukejournals.org
+Public Culture									http://publicculture.dukejournals.org		publicculture.dukejournals.org				Duke University Press	publicculture.dukejournals.org
+Radical History Review									http://rhr.dukejournals.org		rhr.dukejournals.org				Duke University Press	rhr.dukejournals.org
+South Atlantic Quarterly									http://saq.dukejournals.org		saq.dukejournals.org				Duke University Press	saq.dukejournals.org
+Small Axe: A Caribbean Journal of Criticism									http://smallaxe.dukejournals.org		smallaxe.dukejournals.org				Duke University Press	smallaxe.dukejournals.org
+Social Text									http://socialtext.dukejournals.org		socialtext.dukejournals.org				Duke University Press	socialtext.dukejournals.org
+Twentieth-Century Literature									http://tcl.dukejournals.org		tcl.dukejournals.org				Duke University Press	tcl.dukejournals.org
+Theater									http://theater.dukejournals.org		theater.dukejournals.org				Duke University Press	theater.dukejournals.org
+Tikkun									http://tikkun.dukejournals.org		tikkun.dukejournals.org				Duke University Press	tikkun.dukejournals.org
+TSQ: Transgender Studies Quarterly									http://tsq.dukejournals.org		tsq.dukejournals.org				Duke University Press	tsq.dukejournals.org
+World Policy Journal									http://wpj.dukejournals.org		wpj.dukejournals.org				Duke University Press	wpj.dukejournals.org
+Duke University Press									http://www.dukeupress.edu		www.dukeupress.edu				Duke University Press	www.dukeupress.edu
+Duke University Press									http://read.dukeupress.edu		read.dukeupress.edu				Duke University Press	read.dukeupress.edu
+Duke University Press									http://reader.dukeupress.edu		reader.dukeupress.edu				Duke University Press	reader.dukeupress.edu
+
