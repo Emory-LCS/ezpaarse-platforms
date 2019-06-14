@@ -1,3 +1,14 @@
-out-unitid;out-rtype;out-mime;in-url
-freud_de.04;BOOK;HTML;"http://pm.nlx.com/xtf/view?docId=freud_de/freud_de.04.xml;chunk.id=div.freud.v4.33;toc.depth=1;toc.id=;brand=default"
-beauvoir_fr.06_00001;BOOK;PDF;http://pm.nlx.com/xtf/page_pdfs/beauvoir_fr/beauvoir_fr.06/beauvoir_fr.06_00001.pdf
+out-title_id;out-unitid;out-rtype;out-mime;in-url
+;;SEARCH;HTML;http://www.library.nlx.com:80/xtf/search?keyword=bananas&smode=advanced&brand=default
+;;SEARCH;HTML;http://www.library.nlx.com:80/xtf/search?browse-subject-classical=true;brand=default
+lutherworks;lutherworks;REF;PDF;http://www.nlx.com:80/pdf/lutherworks.pdf
+nlx-2019-commons-releases;nlx-2019-commons-releases;REF;PDF;http://www.nlx.com:80/pdf/nlx-2019-commons-releases.pdf
+fichte_de.00;fichte_de.00;BOOK_SECTION;HTML;http://www.library.nlx.com:80/xtf/view?docId=fichte_de/fichte_de.00.xml;brand=default
+fichte_de.01;fichte_de.01;BOOK_SECTION;HTML;http://www.library.nlx.com:80/xtf/view?docId=fichte_de/fichte_de.01.xml;chunk.id=div.fichte.I.35;toc.depth=1;toc.id=div.fichte.I.35;brand=default
+chinese1.00;chinese1.00;BOOK_SECTION;HTML;http://www.library.nlx.com:80/xtf/view?docId=chinese1/chinese1.00.xml;brand=default
+chinese1.00;chinese1.00;BOOK_SECTION;HTML;http://www.library.nlx.com:80/xtf/view?docId=chinese1/chinese1.00.xml;chunk.id=div.ratio.pmpreface.1;toc.depth=2;toc.id=div.ratio.pmpreface.1;hit.rank=0;brand=default
+kierkegaard_da.00;kierkegaard_da.00;BOOK_SECTION;HTML;http://www.library.nlx.com:80/xtf/view?docId=kierkegaard_da/kierkegaard_da.00.xml;brand=default
+kierkegaard_da.06;kierkegaard_da.06;BOOK_SECTION;HTML;http://www.library.nlx.com:80/xtf/view?docId=kierkegaard_da/kierkegaard_da.06.xml;chunk.id=div.kierk.FB.8;toc.depth=1;toc.id=div.kierk.FB.3;brand=default
+austen_c.00;austen_c.00;BOOK_SECTION;HTML;http://pm.nlx.com:80/xtf/view?docId=austen_c/austen_c.00.xml;chunk.id=div.austen_c.pmpreface.1;toc.depth=2;toc.id=div.austen_c.pmpreface.1;hit.rank=0;brand=default
+freud_de.04;freud_de.04;BOOK_SECTION;HTML;http://pm.nlx.com/xtf/view?docId=freud_de/freud_de.04.xml;chunk.id=div.freud.v4.33;toc.depth=1;toc.id=;brand=default
+beauvoir_fr.06;beauvoir_fr.06_00001;BOOK_SECTION;PDF;http://pm.nlx.com:80/xtf/page_pdfs/beauvoir_fr/beauvoir_fr.06/beauvoir_fr.06_00001.pdf

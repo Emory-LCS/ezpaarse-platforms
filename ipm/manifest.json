@@ -2,7 +2,12 @@
   "version": "2016-04-25",
   "status": "beta",
   "domains": [
-    "pm.nlx.com"
+    "www.nlx.com",
+    "nlx.com",
+    "crkn.nlx.com",
+    "library.nlx.com",
+    "pm.nlx.com",
+    "trial.nlx.com"
   ],
   "recognize": {
     "rid": [
@@ -13,6 +18,6 @@
   "longname": "Intelex Past Masters",
   "describe": "Recognizes the accesses to the platform Intelex Past Masters",
   "docurl": "http://ang.couperin.org/platforms/55898a4d612f07f5d906940f/",
-  "contact": "abderrazzak.loukili@inist.fr",
+  "contact": "abderrazzak.loukili@inist.fr;acoope5@emory.edu",
   "pkb": false
 }
