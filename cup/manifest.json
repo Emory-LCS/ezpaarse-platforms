@@ -10,8 +10,13 @@
   "contact": "yannick.schurter at inist.fr",
   "pkb": true,
   "domains": [
+    "www.cambridge.org",
+    "cambridge.org",
+    "africabibliography.cambridge.org",
+    "dib.cambridge.org",
+    "hsus.cambridge.org",
     "journals.cambridge.org",
-    "www.cambridge.org"
+    "stahlonline.cambridge.org"
   ],
   "recognize": {
     "rid": [
