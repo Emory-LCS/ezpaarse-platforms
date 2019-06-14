@@ -80,6 +80,7 @@ module.exports = new Parser(function analyseEC(parsedUrl, ec) {
     result.mime     = 'PDF';
     result.title_id = match[1] + '/' + match[2];
     result.unitid   = match[1] + '/' + match[2];
+    result.print_identifier = match[2];
 
   } else if (/^\/action\/showDataView$/i.test(path)) {
     if (param.download == 'csv') {
@@ -90,25 +91,25 @@ module.exports = new Parser(function analyseEC(parsedUrl, ec) {
     // https://elibrary.worldbank.org:443/action/showDataView?indicator=SH.DYN.MORT&download=csv
       result.mime    = 'HTML';
     }
-    result.rtype    = 'DATA';
+    result.rtype    = 'DATASET';
     result.title_id = param.region || param.indicator;
     result.unitid   = param.region || param.indicator;
 
   } else if ((match = /^\/en\/([0-9]+)\/([a-zA-Z0-9+-]+).pdf$/i.exec(path)) !== null) {
     // http://pubdocs.worldbank.org:80/en/575341556832785539/CMO-Pink-Sheet-May-2019.pdf
-    result.rtype    = 'DATA';
+    result.rtype    = 'DATASET';
     result.mime     = 'PDF';
     result.title_id = match[1];
     result.unitid   = match[2];
 
   } else if ((match = /^\/country\/([a-z+-]+)$/i.exec(path)) !== null) {
     // http://data.worldbank.org:80/country/faeroe-islands
-    result.rtype    = 'DATA';
+    result.rtype    = 'DATASET';
     result.mime     = 'HTML';
     result.title_id = match[1];
     result.unitid   = match[1];
 
-  } else if ((match = /^\/doi\/([a-z]+)\/(.*)/i.exec(path)) !== null) {
+  } else if ((match = /^\/doi\/([a-z]+)\/(.*)\/(.*)/i.exec(path)) !== null) {
     if (match[1] == 'abs') {
     // https://elibrary.worldbank.org:443/doi/abs/10.1596/1020-797X_12_2_19
       result.rtype    = 'ABS';
@@ -141,9 +142,10 @@ module.exports = new Parser(function analyseEC(parsedUrl, ec) {
       result.rtype    = 'REF';
       result.mime     = 'HTML';
     }
-    result.title_id = match[2];
-    result.unitid   = match[2];
-    result.doi      = match[2];
+    result.title_id = match[2] + '/' + match[3];
+    result.unitid   = match[2] + '/' + match[3];
+    result.doi      = match[2] + '/' + match[3];
+    result.print_identifier = match[3];
   }
 
   return result;
