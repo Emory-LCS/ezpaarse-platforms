@@ -103,7 +103,7 @@ module.exports = new Parser(function analyseEC(parsedUrl, ec) {
     // https://www.jaacap.org:443/pb/assets/raw/Health%20Advance/journals/jaac/jaac_pc_58_06-1558713372970.mp3
     // https://www.jaacap.org:443/pb/assets/raw/Health%20Advance/journals/jaac/jaac_pc_58_03-1551734789133.mp3
     result.rtype = 'AUDIO';
-    result.mime = 'MP3';
+    result.mime = 'MISC';
     result.unitid = match[1];
     result.title_id = match[1];
 
