@@ -44,6 +44,7 @@ module.exports = new Parser(function analyseEC(parsedUrl, ec) {
     // http://kiss.kstudy.com:80/publish/pub-office.asp?queryIn=7120
     result.rtype = 'REF';
     result.mime = 'HTML';
+    result.unitid = param.queryIn;
 
   } else if (/^\/journal\/journal-view\.asp/i.test(path)) {
     // http://kiss.kstudy.com:80/journal/journal-view.asp?key1=30199&key2=7136
