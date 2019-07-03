@@ -7,10 +7,12 @@ SEARCH;HTML;;;https://ehrafarchaeology.yale.edu:443/ehrafa/dispatchSearch.do?met
 SEARCH;HTML;;;https://ehrafarchaeology.yale.edu:443/ehrafa/browseCultures.do?context=main
 SEARCH;HTML;;;http://ehrafworldcultures.yale.edu:80/ehrafe/cultureResults.do?selectedIndex=1 
 SEARCH;HTML;;;https://ehrafworldcultures.yale.edu:443/ehrafe/dispatchSearch.do?method=documentSearch&col=collection%28%27%2FeHRAF%2Fethnography%2FOceania%2FOP04%27%29&owc=OP04&owcMatches=1&owcDocs=1&cache=0 
-SEARCH;HTML;;;https://hraf.yale.edu:443/ehc/api/ehc_variables/?q=id:5&wt=json
 SEARCH;HTML;;;https://hraf.yale.edu:443/ehc/api/ehc_documents?defType=edismax&lowerCaseOperators=true&stopwords:true&hl.fl=title,abstract&hl=true&hl.simple.pre=%3Cmark%3E&hl.simple.post=%3C/mark%3E&hl.fragsize=0&hl.preserveMulti=true&qf=abstract^4%20author^3%20title^3%20text&json={%22fields%22:%22id,title,author,host_title,material_type,pub_year,hypo_id,abstract,current_status%22,%22offset%22:0,%22limit%22:10,%22sort%22:%22score+desc%22,%22query%22:%22author:\\%22Barry%20III,%20Herbert\\%22^2%20OR%20additional_authors:\\%22Barry%20III,%20Herbert\\%22%22}
+REF;HTML;id:5;id:5;https://hraf.yale.edu:443/ehc/api/ehc_variables/?q=id:5&wt=json
 REF;HTML;outline-of-cultural-materials;outline-of-cultural-materials;https://hraf.yale.edu:443/resources/reference/outline-of-cultural-materials/
 REF;HTML;fa75-000;eHRAF/archaeology/Africa/FA75;https://ehrafarchaeology.yale.edu:443/ehrafa/citation.do?method=citation&forward=searchFullContext&col=collection(%27/eHRAF/archaeology/Africa/FA75%27)&docId=fa75-000&tocOffsetId=tocPubInfoP
 REF;HTML;nt76-001;eHRAF/archaeology/NorthAmer/NT76;https://ehrafarchaeology.yale.edu:443/ehrafa/citation.do?method=citation&forward=browseAuthorsFullContext&col=collection(%27/eHRAF/archaeology/NorthAmer/NT76%27)&docId=nt76-001&tocOffset=tocPubInfoP
 REF;HTML;fl12-010;eHRAF/ethnography/Africa/FL12;https://ehrafworldcultures.yale.edu:443/ehrafe/citation.do?method=citation&forward=browseCulturesFullContext&col=collection(%27/eHRAF/ethnography/Africa/FL12%27)&docId=fl12-010&tocOffsetId=tocPubInfoP
 REF;HTML;m013-026;eHRAF/ethnography/MidEast/M013;https://ehrafworldcultures.yale.edu:443/ehrafe/citation.do?method=citation&forward=browseAuthorsFullContext&col=collection(%27/eHRAF/ethnography/MidEast/M013%27)&docId=m013-026&tocOffset=tocPubInfoP
+ABS;HTML;id:135;id:135;https://hraf.yale.edu:443/ehc/api/ehc_documents?q=id:135&wt=json
+ABS;HTML;id:26;id:26;https://hraf.yale.edu:443/ehc/api/ehc_documents?q=id:26&wt=json
