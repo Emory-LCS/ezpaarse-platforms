@@ -29,7 +29,6 @@ module.exports = new Parser(function analyseEC(parsedUrl, ec) {
     result.rtype  = 'TOC';
     result.mime   = 'HTML';
     result.unitid = param.PID;
-    result.print_identifier = param.PID;
 
   } else if ((/^\/dms\/met\/?$/i.test(path)) || (/^\/en\/dms\/met\/?$/i.test(path)) || (/^\/de\/dms\/met\/?$/i.test(path))) {
     // /dms/met/?PID=PPN487748506_0001
@@ -37,7 +36,6 @@ module.exports = new Parser(function analyseEC(parsedUrl, ec) {
     result.rtype  = 'CITATION';
     result.mime   = 'HTML';
     result.unitid = param.PID;
-    result.print_identifier = param.PID;
 
   } else if ((/^\/dms\/resolveppn\/?$/i.test(path)) || (/^\/dms\/img\/?$/i.test(path)) || (/^\/en\/dms\/img\/?$/i.test(path)) || (/^\/de\/dms\/img\/?$/i.test(path))) {
     // /dms/resolveppn/?PID=urn:nbn:de:bsz:16-diglit-64819%7Clog00005
@@ -46,7 +44,6 @@ module.exports = new Parser(function analyseEC(parsedUrl, ec) {
     result.rtype  = 'ARTICLE';
     result.mime   = 'HTML';
     result.unitid = param.PID;
-    result.print_identifier = param.PID;
 
   } else if ((match = /^\/download\/[a-z0-9:_-]+\/([a-z0-9:_-]+)\.pdf$/i.exec(path)) !== null) {
     // /download/PPN235181684_0306/PPN235181684_0306___log8.pdf
@@ -54,7 +51,6 @@ module.exports = new Parser(function analyseEC(parsedUrl, ec) {
     result.rtype  = 'ARTICLE';
     result.mime   = 'PDF';
     result.unitid = match[1];
-    result.print_identifier = match[1];
   }
 
   return result;
