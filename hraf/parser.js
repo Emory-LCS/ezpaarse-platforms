@@ -92,6 +92,48 @@ module.exports = new Parser(function analyseEC(parsedUrl, ec) {
     result.mime = 'HTML';
     result.unitid = param.docId;
     result.title_id = param.docId;
+
+
+  } if ((match = /^\/([a-z-]+\/)$/i.exec(path)) !== null) {
+    // https://hraf.yale.edu:443/how-do-parents-around-the-world-teach-children-to-control-their-anger/
+    // https://hraf.yale.edu:443/ccc/
+    result.rtype = 'ARTICLE';
+    result.mime = 'HTML';
+    result.unitid = match[1].slice(0, -1);
+    result.title_id = match[1].slice(0, -1);
+
+  } if ((match = /^\/ehc\/assets\/summaries\/([a-z-]+)/i.exec(path)) !== null) {
+    // https://hraf.yale.edu:443/ehc/assets/summaries/altered-states-of-consciousness
+    // https://hraf.yale.edu:443/ehc/assets/summaries/adolescence
+    result.rtype = 'ARTICLE';
+    result.mime = 'HTML';
+    result.unitid = match[1];
+    result.title_id = match[1];
+
+  } if (/^\/ehrafe\/cultureSummary\.do/i.test(path)) {
+    // https://ehrafworldcultures.yale.edu:443/ehrafe/cultureSummary.do?owc=FL12&_=1562008538137
+    result.rtype = 'ARTICLE';
+    result.mime = 'HTML';
+    result.unitid = param.owc + '/' + param._;
+    result.title_id = param.owc + '/' + param._;
+
+  } if ((match = /^\/(ehc|wp-content)\/(assets|uploads)\/(summaries|([0-9]{4}))\/(pdfs|([0-9]{2}))\/([0-z-]+)\.pdf$/i.exec(path)) !== null) {
+    // https://hraf.yale.edu:443/ehc/assets/summaries/pdfs/adolescence.pdf
+    // https://hraf.yale.edu:443/wp-content/uploads/2016/06/hraf-ccc-ch8-III.pdf
+    result.rtype = 'ARTICLE';
+    result.mime = 'PDF';
+    result.unitid = match[7];
+    result.title_id = match[7];
+
+  } if (/^\/ehc\/api\/ehc_hypotheses/i.test(path)) {
+    // https://hraf.yale.edu:443/ehc/api/ehc_hypotheses?q=id:1065&wt=json&mlt=true&mlt.fl=text
+    // https://hraf.yale.edu:443/ehc/api/ehc_hypotheses?q=id:142&wt=json&mlt=true&mlt.fl=text
+    // https://hraf.yale.edu:443/ehc/api/ehc_hypotheses?q=id:262&wt=json&mlt=true&mlt.fl=text
+    result.rtype = 'DATA';
+    result.mime = 'HTML';
+    result.unitid = param.q;
+    result.title_id = param.q;
+
   }
 
   return result;
