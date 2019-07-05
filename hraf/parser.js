@@ -80,6 +80,18 @@ module.exports = new Parser(function analyseEC(parsedUrl, ec) {
       result.rtype = 'SEARCH';
       result.mime = 'HTML';
     }
+
+  } if (/^\/(ehrafa|ehrafe)\/fullContext\.do/i.test(path)) {
+    // https://ehrafarchaeology.yale.edu:443/ehrafa/fullContext.do?method=fullContext&forward=searchFullContext&col=collection(%27/eHRAF/archaeology/SouthAmer/SE80%27)&docId=se80-002&page=se80-002-01281&offsetId=se80-002-01292&tocOffsetId=tocse8000201224&resultSelect=2
+    // https://ehrafarchaeology.yale.edu:443/ehrafa/fullContext.do?method=fullContext&forward=searchFullContext&col=SE80InkaSouth%20AmericaSouthAmer&docId=se80-002&page=se80-002-00046&offsetId=se8000200085&tocOffsetId=tocse8000200085
+    // https://ehrafarchaeology.yale.edu:443/ehrafa/fullContext.do?method=fullContext&forward=searchFullContext&col=collection(%27/eHRAF/archaeology/Africa/FA75%27)&docId=fa75-000&page=fa75-000-00028-001&offsetId=fa75-000-00038&tocOffsetId=tocfa7500000037&resultSelect=2 
+    // https://ehrafarchaeology.yale.edu:443/ehrafa/fullContext.do?method=fullContext&forward=browseAuthorsFullContext&col=NT76HohokamNorth%20AmericaNorthAmer&docId=nt76-001&page=nt76-001-04585&offsetId=nt7600104597&tocOffsetId=tocnt7600104597
+    // https://ehrafworldcultures.yale.edu:443/ehrafe/fullContext.do?method=fullContext&forward=browseCulturesFullContext&col=&docId=fl12-010&page=fl12-010-000031&offsetId=fl12010000041&tocOffsetId=tocfl12010000041
+    // https://ehrafworldcultures.yale.edu:443/ehrafe/fullContext.do?method=fullContext&forward=browseAuthorsFullContext&col=collection(%27/eHRAF/ethnography/MidEast/M013%27)&docId=m013-026&page=m013-026-000147&offsetId=m013026000097
+    result.rtype = 'BOOK_SECTION';
+    result.mime = 'HTML';
+    result.unitid = param.docId;
+    result.title_id = param.docId;
   }
 
   return result;
