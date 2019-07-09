@@ -1,0 +1,14 @@
+{
+  "longname": "Elsevier Journals",
+  "name": "elsevier",
+  "describe": "Recognizes the accesses to the platform Elsevier Journals",
+  "contact": "acoope5@emory.edu",
+  "pkb": false,
+  "docurl": "http://ang.couperin.org/platforms/to_be_completed/",
+  "domains": [
+    "www.journals.elsevier.com",
+    "journals.elsevier.com"
+  ],
+  "version": "2019-07-09",
+  "status": "beta"
+}
