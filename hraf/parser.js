@@ -44,6 +44,13 @@ module.exports = new Parser(function analyseEC(parsedUrl, ec) {
     result.rtype = 'SEARCH';
     result.mime = 'HTML';
 
+  } if (/^\/ehrafe\/subjectToc\.do/i.test(path)) {
+    // https://ehrafworldcultures.yale.edu:443/ehrafe/subjectToc.do?ocm=721&_=1562597591727
+    result.rtype = 'TOC';
+    result.mime = 'HTML';
+    result.unitid = param.ocm + '/' + param._;
+    result.title_id = param.ocm + '/' + param._;
+
   } if (/^\/ehc\/api\/ehc_variables/i.test(path)) {
     // https://hraf.yale.edu:443/ehc/api/ehc_variables/?q=id:5&wt=json
     result.rtype = 'REF';
@@ -88,7 +95,7 @@ module.exports = new Parser(function analyseEC(parsedUrl, ec) {
     // https://ehrafarchaeology.yale.edu:443/ehrafa/fullContext.do?method=fullContext&forward=browseAuthorsFullContext&col=NT76HohokamNorth%20AmericaNorthAmer&docId=nt76-001&page=nt76-001-04585&offsetId=nt7600104597&tocOffsetId=tocnt7600104597
     // https://ehrafworldcultures.yale.edu:443/ehrafe/fullContext.do?method=fullContext&forward=browseCulturesFullContext&col=&docId=fl12-010&page=fl12-010-000031&offsetId=fl12010000041&tocOffsetId=tocfl12010000041
     // https://ehrafworldcultures.yale.edu:443/ehrafe/fullContext.do?method=fullContext&forward=browseAuthorsFullContext&col=collection(%27/eHRAF/ethnography/MidEast/M013%27)&docId=m013-026&page=m013-026-000147&offsetId=m013026000097
-    result.rtype = 'BOOK_SECTION';
+    result.rtype = 'BOOK_PAGE';
     result.mime = 'HTML';
     result.unitid = param.docId;
     result.title_id = param.docId;
