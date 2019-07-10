@@ -12,15 +12,15 @@ const Parser = require('../.lib/parser.js');
  */
 module.exports = new Parser(function analyseEC(parsedUrl, ec) {
   let result = {};
-  let path   = parsedUrl.pathname;
+  // let path   = parsedUrl.pathname;
   // uncomment this line if you need parameters
   // let param = parsedUrl.query || {};
 
   // use console.error for debuging
   // console.error(parsedUrl);
 
-  let match;
+  // let match;
 
-  
+
   return result;
 });
