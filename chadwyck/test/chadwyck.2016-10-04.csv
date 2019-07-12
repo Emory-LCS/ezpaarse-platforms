@@ -1,5 +1,4 @@
-
-ut-publication_title;out-title_id;out-unitid;out-rtype;out-mime;in-url
+out-publication_title;out-title_id;out-unitid;out-rtype;out-mime;in-url
 Goethes Werke;11866021;11866021;BOOK_SECTION;HTML;http://goethe.chadwyck.com:80/all/fulltext?ACTION=byoffset&WARN=N&OFFSET=11866021&DIV=0&FILE=../session/1561752756_13199
 Goethes Werke;1990735;1990735;BOOK_SECTION;HTML;http://goethe.chadwyck.com:80/all/fulltext?ACTION=byoffset&WARN=N&OFFSET=1990735&DIV=4&FILE=../session/1561752062_3823
 Luthers Werke;Z000022651;Z000022651;BOOK_SECTION;HTML;http://luther.chadwyck.com:80/english/frames/werke/fulltext?ALL=Y&action=byid&warn=Y&size=2233&id=Z000022651&div=0&sequence=0&file=../session/1528322223_25559
@@ -7,7 +6,7 @@ Luthers Werke;Z000018206;Z000018206;BOOK_SECTION;HTML;http://luther.chadwyck.com
 Acta Sanctorum;Z300036009;Z300036009;BOOK_SECTION;HTML;http://acta.chadwyck.co.uk/all/fulltext?ALL=Y&action=byid&warn=N&id=Z300036009&div=3&file=../session/1475585193_28984&SOMQUERY=1&DBOFFSET=40649769&ENTRIES=46&CURDB=acta
 Luthers Werke;Z000022184;Z000022184;BOOK_SECTION;HTML;http://luther.chadwyck.co.uk/english/frames/werke/fulltext?ALL=Y&action=byid&warn=Y&size=2993&id=Z000022184&div=0&sequence=0&file=../session/1475497564_27586
 Patrologia Latina;Z500000014;Z500000014;BOOK_SECTION;HTML;http://pld.chadwyck.co.uk/all/fulltext?ALL=Y&WARN=N&PRINT=YES&ALL=Y&warn=N&ACTION=byid&ID=Z500000014&FILE=../session/1475584753_5580&PRINT=yes
-Acta Sanctorum;Z400061677;Z400061677;ENCYCLOPAEDIA_ENTRY;HTML;HTML;http://acta.chadwyck.com:80/all/fulltext?ACTION=byid&warn=N&ID=Z400061677&div=4&FILE=../session/1560543481_3864&DBOFFSET=6441487&ENTRIES=9
+Acta Sanctorum;Z400061677;Z400061677;BOOK_SECTION;HTML;HTML;http://acta.chadwyck.com:80/all/fulltext?ACTION=byid&warn=N&ID=Z400061677&div=4&FILE=../session/1560543481_3864&DBOFFSET=6441487&ENTRIES=9
 Black Studies Center;HNP_81124_18930429_0085;HNP_81124_18930429_0085;ARTICLE;HTML;http://bsc.chadwyck.com:80/search/displayfulltext.do?SearchEngine=Opentext&fromPage=fullrecord&page=10&pagenum=1&resultNum=1&numResults=55356&queryId=../session/1560543783_6017&area=cdef&QueryName=cdef&id=HNP_81124_18930429_0085
 Black Studies Center;16ABD299CE8;16ABD299CE8;ARTICLE;HTML;http://bsc.chadwyck.com:80/search/displayMultiEssayItem.do?Multi=yes&ResultsID=16ABD299CE8&fromPage=search&ItemNumber=1&QueryName=essay
 Black Studies Center;16ABD299CE8;16ABD299CE8;ARTICLE;HTML;http://bsc.chadwyck.com:80/search/displayMultiKeyresourceItem.do?Multi=yes&ResultsID=16ABD299CE8&fromPage=search&ItemNumber=3&QueryName=keyresource
