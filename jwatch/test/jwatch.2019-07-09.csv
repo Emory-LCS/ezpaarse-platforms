@@ -1,1 +1,7 @@
-out-rtype;out-mime;in-url
+out-rtype;out-mime;out-unitid;out-title_id;in-url
+SEARCH;HTML;;;https://www.jwatch.org:443/search/advanced?fulltext=electricity&hits=20&page=1
+SEARCH;HTML;;;https://www.jwatch.org:443/search/advanced?fulltext=podcast&hits=20&page=1
+SEARCH;HTML;;;https://www.jwatch.org:443/cardiology
+SEARCH;HTML;;;https://www.jwatch.org:443/depression-anxiety
+SEARCH;HTML;;;https://www.jwatch.org:443/clinical-spotlight
+TOC;HTML;2.172113696.243381463.1562588137-26633474.1562161140;hiv-id-observations;https://blogs.jwatch.org:443/hiv-id-observations/?_ga=2.172113696.243381463.1562588137-26633474.1562161140
