@@ -1,5 +1,114 @@
-out-publication_title;out-title_id;out-unitid;out-rtype;out-mime;in-url
-Acta Sanctorum;Z300036009;Z300036009;ENCYCLOPAEDIA_ENTRY;HTML;http://acta.chadwyck.co.uk/all/fulltext?ALL=Y&action=byid&warn=N&id=Z300036009&div=3&file=../session/1475585193_28984&SOMQUERY=1&DBOFFSET=40649769&ENTRIES=46&CURDB=acta
-Patrologia Latina;Z500000014;Z500000014;ENCYCLOPAEDIA_ENTRY;HTML;http://pld.chadwyck.co.uk/all/fulltext?ALL=Y&WARN=N&PRINT=YES&ALL=Y&warn=N&ACTION=byid&ID=Z500000014&FILE=../session/1475584753_5580&PRINT=yes
-Luthers Werke;Z000022184;Z000022184;ENCYCLOPAEDIA_ENTRY;HTML;http://luther.chadwyck.co.uk/english/frames/werke/fulltext?ALL=Y&action=byid&warn=Y&size=2993&id=Z000022184&div=0&sequence=0&file=../session/1475497564_27586
 
+ut-publication_title;out-title_id;out-unitid;out-rtype;out-mime;in-url
+Goethes Werke;11866021;11866021;BOOK_SECTION;HTML;http://goethe.chadwyck.com:80/all/fulltext?ACTION=byoffset&WARN=N&OFFSET=11866021&DIV=0&FILE=../session/1561752756_13199
+Goethes Werke;1990735;1990735;BOOK_SECTION;HTML;http://goethe.chadwyck.com:80/all/fulltext?ACTION=byoffset&WARN=N&OFFSET=1990735&DIV=4&FILE=../session/1561752062_3823
+Luthers Werke;Z000022651;Z000022651;BOOK_SECTION;HTML;http://luther.chadwyck.com:80/english/frames/werke/fulltext?ALL=Y&action=byid&warn=Y&size=2233&id=Z000022651&div=0&sequence=0&file=../session/1528322223_25559
+Luthers Werke;Z000018206;Z000018206;BOOK_SECTION;HTML;http://luther.chadwyck.com:80/english/frames/werke/fulltext?ALL=Y&action=byid&warn=Y&size=2877&id=Z000018206&div=0&sequence=0&file=../session/1528322223_25559
+Acta Sanctorum;Z300036009;Z300036009;BOOK_SECTION;HTML;http://acta.chadwyck.co.uk/all/fulltext?ALL=Y&action=byid&warn=N&id=Z300036009&div=3&file=../session/1475585193_28984&SOMQUERY=1&DBOFFSET=40649769&ENTRIES=46&CURDB=acta
+Luthers Werke;Z000022184;Z000022184;BOOK_SECTION;HTML;http://luther.chadwyck.co.uk/english/frames/werke/fulltext?ALL=Y&action=byid&warn=Y&size=2993&id=Z000022184&div=0&sequence=0&file=../session/1475497564_27586
+Patrologia Latina;Z500000014;Z500000014;BOOK_SECTION;HTML;http://pld.chadwyck.co.uk/all/fulltext?ALL=Y&WARN=N&PRINT=YES&ALL=Y&warn=N&ACTION=byid&ID=Z500000014&FILE=../session/1475584753_5580&PRINT=yes
+Acta Sanctorum;Z400061677;Z400061677;ENCYCLOPAEDIA_ENTRY;HTML;HTML;http://acta.chadwyck.com:80/all/fulltext?ACTION=byid&warn=N&ID=Z400061677&div=4&FILE=../session/1560543481_3864&DBOFFSET=6441487&ENTRIES=9
+Black Studies Center;HNP_81124_18930429_0085;HNP_81124_18930429_0085;ARTICLE;HTML;http://bsc.chadwyck.com:80/search/displayfulltext.do?SearchEngine=Opentext&fromPage=fullrecord&page=10&pagenum=1&resultNum=1&numResults=55356&queryId=../session/1560543783_6017&area=cdef&QueryName=cdef&id=HNP_81124_18930429_0085
+Black Studies Center;16ABD299CE8;16ABD299CE8;ARTICLE;HTML;http://bsc.chadwyck.com:80/search/displayMultiEssayItem.do?Multi=yes&ResultsID=16ABD299CE8&fromPage=search&ItemNumber=1&QueryName=essay
+Black Studies Center;16ABD299CE8;16ABD299CE8;ARTICLE;HTML;http://bsc.chadwyck.com:80/search/displayMultiKeyresourceItem.do?Multi=yes&ResultsID=16ABD299CE8&fromPage=search&ItemNumber=3&QueryName=keyresource
+Black Studies Center;AAI3075015;AAI3075015;ARTICLE;HTML;http://bsc.chadwyck.com:80/searchBsc/displayDissertationFulltextById.do?QueryName=dissertation&ItemID=AAI3075015&PageNumber=0687
+Early English Books Online;D00000120932690000;D00000120932690000;ARTICLE;HTML;http://eebo.chadwyck.com:80/search/fulltext?SOURCE=var_spell.cfg&FILE=../session/1561750644_7454&ACTION=ByID&ID=D00000120932690000&DISPLAY=AUTHOR&WARN=N&SIZE=274
+Index to Black Periodicals;2199062244;2199062244;ARTICLE;HTML;http://iibp.chadwyck.com:80/iimp/fulltext?ACTION=byoffset&warn=N&OFFSET=547351&div=0&SUBSET=1&ENTRIES=782&FILE=../session/1561753970_29268&RID=2199062244&JID=21522448&date=2019
+Black Studies Center;AAI3075015;AAI3075015;ARTICLE;PDF;http://bsc.chadwyck.com:80/bsc/displayPDF.do?ItemID=AAI3075015&pdfBaseName=dissertation&pdfFilename=AAI3075015/AAI3075015.pdf
+Black Studies Center;AAI3075015;AAI3075015;ARTICLE;PDF;http://bsc.chadwyck.com:80/bsc/displayPDF.do?ItemID=AAI3075015&pdfBaseName=dissertation&pdfFilename=AAI3075015/AAI3075015_preview.pdf&preview=true
+Black Studies Center;27CLEG.pdf;27CLEG.pdf;ARTICLE;PDF;http://bsc.chadwyck.com:80/common/displayPDF.do?pdfBaseName=essay&ItemID=27CLEG&pdfFilename=27CLEG.pdf
+Black Studies Center;HNP_81124_18930429_0085;HNP_81124_18930429_0085;ARTICLE;PDF;http://bsc.chadwyck.com:80/common/imageConversion.do?method=viewPdf&pdfPaperSize=letter&pdfHeadAllPages=false&pdfPageRange=1&id=HNP_81124_18930429_0085&configPrefix=cdefArticlePDF&pdfHeader=%3Ci%3EAfro-American%3C%2Fi%3E%3Cbr%3E(Apr%2029%2C%201893)%20p.10%2C%20col.2
+Black Studies Center;HNP_81124_18930429_0085;HNP_81124_18930429_0085;ARTICLE;PDF;http://bsc.chadwyck.com:80/search/logPDFpage.do?area=cdef&id=HNP_81124_18930429_0085&fromPage=fullrecord
+Early English Books Online;Nicholas_Bourne_publisher-Newsbooks_Seventh_Series_Printed-Dahl-219249-2082_09;Nicholas_Bourne_publisher-Newsbooks_Seventh_Series_Printed-Dahl-219249-2082_09;ARTICLE;PDF;http://eebo.chadwyck.com:80/downloadpdf?id=19&vid=177318&filename=Nicholas_Bourne_publisher-Newsbooks_Seventh_Series_Printed-Dahl-219249-2082_09&pages=1&rectype=PERIODICAL&database=Early%20English%20Books%201475-1640&pubyear=1630
+Index to Black Periodicals;2199050240;2199050240;ARTICLE;PDF;http://iibp.chadwyck.com:80/iimp/display_pq_pdf.cgi?docid=2199050240&goid=2199050240&product=iibp
+Chadwyck-Healey Literature Collections;Abdullah Yahya Taher;Abdullah Yahya Taher;BIO;HTML;http://collections.chadwyck.com:80/searchFulltext.do?id=43186&idType=bio&divLevel=0&area=ref&forward=critref_ft&extra_link=biog&name=%20Abdullah%20Yahya%20Taher
+Chadwyck-Healey Literature Collections;Z001162385;Z001162385;BIO;HTML;http://collections.chadwyck.com:80/searchFulltext.do?id=Z001162385&divLevel=0&queryId=../session/1560545581_16253&trailId=16ABD4511F8&area=aws_prose&forward=textsFT&warn=Yes&size=22Kb
+Queen Victoria's Journals;000128;000128;BIO;HTML;http://qvj.chadwyck.com:80/browse/displayNameRecord.do?personID=000128
+Chadwyck-Healey Literature Collections;%2e%2e/session/1560545016%5f11089&TOOLBAR=Y;%2e%2e/session/1560545016%5f11089&TOOLBAR=Y;BOOK_SECTION;HTML;http://collections.chadwyck.com:80/bie/fulltext?action=byoffset&warn=N&offset=20532464&div=5&sequence=1&file=%2e%2e/session/1560545016%5f11089&TOOLBAR=Y
+Chadwyck-Healey Literature Collections;../session/1560545232_12148;../session/1560545232_12148;BOOK_SECTION;HTML;http://collections.chadwyck.com:80/eas/fulltext?ACTION=BYOFFSET&WARN=N&SOMQUERY=&OFFSET=39212674&DIV=4&FILE=../session/1560545232_12148
+Die Deutsche Lyrik;%2e%2e/session/1561752984%5f16202;%2e%2e/session/1561752984%5f16202;BOOK_SECTION;HTML;http://glp.chadwyck.com:80/deutsch/frames/all/fulltext?action=byoffset&warn=N&offset=2056051&div=1&file=%2e%2e/session/1561752984%5f16202
+Die Deutsche Lyrik;%2e%2e/session/1561753036%5f16995;%2e%2e/session/1561753036%5f16995;BOOK_SECTION;HTML;http://glp.chadwyck.com:80/english/frames/all/fulltext?NONLIT=Y&action=byoffset&warn=N&offset=1563785&div=1&file=%2e%2e/session/1561753036%5f16995
+Goethes Werke;../session/1561752614_11267;../session/1561752614_11267;BOOK_SECTION;HTML;http://goethe.chadwyck.com:80/literary/fulltext?action=byoffset&warn=N&offset=914383&div=6&file=../session/1561752614_11267
+Goethes Werke;075260;075260;BOOK_SECTION;HTML;http://goethe.chadwyck.com:80/register/fulltext?action=REGISTER&type=S&idref=075260&file=../session/1561752756_13199&SOURCE=main_db.cfg
+Kafka Werke;../session/1561754792_4043;../session/1561754792_4043;BOOK_SECTION;HTML;http://kafka.chadwyck.com:80/deutsch/frames/literary/fulltext?ACTION=byoffset&WARN=N&OFFSET=1049&DIV=3&FILE=../session/1561754792_4043
+Kafka Werke;../session/1561754788_4020;../session/1561754788_4020;BOOK_SECTION;HTML;http://kafka.chadwyck.com:80/english/frames/literary/fulltext?ACTION=byoffset&WARN=N&OFFSET=1049&DIV=3&FILE=../session/1561754788_4020
+Bibliothek deutscher Klassiker;Z300046771;Z300046771;BOOK_SECTION;HTML;http://klassiker.chadwyck.com:80/deutsch/all/fulltext?ACTION=byid&warn=N&id=Z300046771&div=3&FILE=../session/1561755080_6068&DBOFFSET=764&ENTRIES=2872
+Bibliothek deutscher Klassiker;Z300046771;Z300046771;BOOK_SECTION;HTML;http://klassiker.chadwyck.com:80/english/all/fulltext?ACTION=byid&warn=N&id=Z300046771&div=3&FILE=../session/1561755076_6046&DBOFFSET=764&ENTRIES=4080
+Luthers Werke;Z000023239;Z000023239;BOOK_SECTION;HTML;http://luther.chadwyck.com:80/deutsch/frames/alle/fulltext?ALL=Y&action=byid&warn=Y&size=2238&id=Z000023239&div=0&sequence=0&file=../session/1528322217_25370
+Luthers Werke;Z000018206;Z000018206;BOOK_SECTION;HTML;http://luther.chadwyck.com:80/deutsch/frames/alle/fulltext?ALL=Y&action=byid&warn=Y&size=2877&id=Z000018206&div=0&sequence=0&file=../session/1528322217_25370
+Teatro Español del Siglo de Oro;%2e%2e/session/1561756006%5f26202;%2e%2e/session/1561756006%5f26202;BOOK_SECTION;HTML;http://teso.chadwyck.com:80/frames/fulltext?action=byoffset&warn=N&offset=6&div=0&file=%2e%2e/session/1561756006%5f26202
+Teatro Español del Siglo de Oro;%2e%2e/session/1561756006%5f26202;%2e%2e/session/1561756006%5f26202;BOOK_SECTION;HTML;http://teso.chadwyck.com:80/frames/fulltext?action=byoffset&warn=N&offset=6&div=0&file=%2e%2e/session/1561756006%5f26202&TOOLBAR=Y
+African American Biographical Database;../session/1560542880_606;../session/1560542880_606;BOOK_SECTION;PDF;http://aabd.chadwyck.com:80/main/htxview?template=basic.htx&content=ftfram.htx&aabdsource=com&HITSNAV=Yes&action=byoffset&warn=N&offset=579625&div=1&file=../session/1560542880_606&DBOFFSET=579625&ENTRIES=513&SUBSET=2&COMSIZE=10&COMFROM=0
+African American Biographical Database;14600150.pdf;14600150.pdf;BOOK_SECTION;PDF;http://aabd.chadwyck.com:80/main/htxview?template=basic.htx&content=ftfram.htx&aabdsource=prof&action=single&subset=1&file=../session/1560543066_1870&ENTRIES=86&SEARCH_NO=default&SIZE=50&RetrieveType=subset&TOCLINK=%20&BACKTOSOM=%20&ENTRYNO=11&DBOFFSET=568161&TEXT=None&NAME=Broyles,%20Moses&STARTx=&OCC=Religious%20worker&DEN=Baptist&A=None&pdffilename=14600150.pdf
+The Gerritsen Collection;Gerritsen-GP122_Volume_2-88;Gerritsen-GP122_Volume_2-88;BOOK_SECTION;PDF;http://gerritsen.chadwyck.com:80/fulltext/pdfview.do?id=Gerritsen-GP122_Volume_2-88&resultNum=1&area=documents&queryId=../session/1561751703_29005
+Black Studies Center;IIBP0005;P0025434;CITATION;HTML;http://bsc.chadwyck.com:80/search/displayIibpCitation.do?fromPage=viewContents&SearchEngine=Opentext&area=iibp&id=P0025434&date=19090901&journalID=IIBP0005
+Black Studies Center;Afro-American;HNP_81124_18930429_0085;CITATION;HTML;http://bsc.chadwyck.com:80/search/displayMultiCdefItem.do?fromPage=search&SearchEngine=Opentext&id=HNP_81124_18930429_0085&journalID=Afro-American&date=18930429&resultNum=1&numResults=55356&ItemNumber=1&area=cdef&QueryName=cdef&queryId=../session/1560543783_6017
+Black Studies Center;IIBP0005;P0023668;CITATION;HTML;http://bsc.chadwyck.com:80/search/displayMultiIibpItem.do?fromPage=search&SearchEngine=Opentext&id=P0023668&journalID=IIBP0005&date=1901&resultNum=2&numResults=55356&ItemNumber=2&area=iibp&QueryName=iibp&queryId=../session/1560543782_6012
+Black Studies Center;16ABD299CE8;16ABD299CE8;IMAGE;MISC;http://bsc.chadwyck.com:80/search/displayMultiMultimediaItem.do?Multi=yes&ResultsID=16ABD299CE8&fromPage=search&ItemNumber=1&QueryName=multimedia
+Early English Books Online;Addison_Lancelot-West_Barbary_or_A_short_narrative-Wing-A532-754_14;Addison_Lancelot-West_Barbary_or_A_short_narrative-Wing-A532-754_14;IMAGE;MISC;http://eebo.chadwyck.com:80/downloadtiff?vid=53922&eeboid=12093269&filename=Addison_Lancelot-West_Barbary_or_A_short_narrative-Wing-A532-754_14&page=122&database=Early%20English%20Books%201641-1700&rectype=MONOGRAPH&pubyear=0
+Early English Books Online;12093269;12093269;IMAGE;MISC;http://eebo.chadwyck.com:80/search/full_rec?action=ByID&source=pgimages.cfg&ID=12093269&VID=53922&PAGENO=1&SUBSCRIBER_TCP=Y&FILE=../session/1561750644_7454&SEARCHCONFIG=var_spell.cfg&HIGHLIGHT_KEYWORD=default&RESULTCLICK=default
+The Gerritsen Collection;Gerritsen-GP122_Volume_2-88;Gerritsen-GP122_Volume_2-88;IMAGE;MISC;http://gerritsen.chadwyck.com:80/imageserver/pageimage.cgi?RECORD=Gerritsen-GP122_Volume_2-88&PAGENO=1&ZOOM=
+The Gerritsen Collection;Gerritsen-GP122_Volume_2-88;Gerritsen-GP122_Volume_2-88;IMAGE;MISC;http://gerritsen.chadwyck.com:80/imageserver/tiff_download.cgi?RECORD=Gerritsen-GP122_Volume_2-88&PAGENO=1
+Queen Victoria's Journals;3123510914036;3123510914036;IMAGE;MISC;http://qvj.chadwyck.com:80/search/displayItem.do?FormatType=fulltextimgsrc&&QueryType=articles&ResultsID=3123510914036&ItemID=qvj01167&ItemNumber=1&PageNumber=1&volumeType=ESHER
+Queen Victoria's Journals;3123510914036;3123510914036;IMAGE;MISC;http://qvj.chadwyck.com:80/search/displayItem.do?FormatType=fulltextimgsrc&QueryType=articles&ResultsID=3123510914036&filterSequence=0&PageNumber=1&ItemNumber=1&ItemID=qvj01167&volumeType=ORIG
+Queen Victoria's Journals;18420101;18420101;IMAGE;MISC;http://qvj.chadwyck.com:80/search/displayItemFromId.do?FormatType=fulltextimgsrc&QueryType=articles&ItemID=18420101
+African American Biographical Database;../session/1560543066_1870;../session/1560543066_1870;REF;HTML;http://aabd.chadwyck.com:80/bbidx/full_rec?action=single&DBOFFSET=383050&SUBSET=10&FILE=../session/1560543066_1870&ENTRIES=86
+African American Biographical Database;../session/1560543066_1870;../session/1560543066_1870;REF;HTML;http://aabd.chadwyck.com:80/bbidx/full_rec?action=single&subset=11&file=../session/1560543066_1870&ENTRIES=86&SEARCH_NO=default
+Black Studies Center;vidwpa32_02;vidwpa32_02;REF;HTML;http://bsc.chadwyck.com:80/search/displayMultimediaItemById.do?fromPage=viewContents&QueryName=multimedia&ItemNumber=4&ItemID=vidwpa32_02
+Black Studies Center;16ABD299CE8;16ABD299CE8;REF;HTML;http://bsc.chadwyck.com:80/search/displayMultiRefItem.do?Multi=yes&ResultsID=16ABD299CE8&fromPage=search&ItemNumber=1&QueryName=ref_component
+Black Studies Center;16ABD299CE8;16ABD299CE8;REF;HTML;http://bsc.chadwyck.com:80/search/displayMultiTimelineItem.do?Multi=yes&ResultsID=16ABD299CE8&fromPage=search&ItemNumber=1&QueryName=events
+Black Studies Center;16ABD299CE8;16ABD299CE8;REF;HTML;http://bsc.chadwyck.com:80/searchBsc/displayMultiBliItem.do?Multi=yes&ResultsID=16ABD299CE8&fromPage=search&ItemNumber=1&QueryName=bli
+Chadwyck-Healey Literature Collections;43186;43186;REF;HTML;http://collections.chadwyck.com:80/searchFullrec.do?id=43186&area=authors&forward=author&trailId=16ABD432DBA&fromArea=aws_prose
+Early English Books Online;12284907;12284907;REF;HTML;http://eebo.chadwyck.com:80/search/full_rec?SOURCE=config.cfg&ACTION=ByID&ID=12284907&ECCO=&SEARCHSCREEN=default&DISPLAY=default&HIGHLIGHT_KEYWORD=default
+The Gerritsen Collection;Gerritsen-G1086;Gerritsen-G1086;REF;HTML;http://gerritsen.chadwyck.com:80/fullrec/fullrec.do?area=documents&id=Gerritsen-G1086&fromPage=browseBooks&browseType=title&expandtolevel=1&expandId=A
+The Gerritsen Collection;about;about;REF;HTML;http://gerritsen.chadwyck.com:80/infoCentre/about.jsp
+The Gerritsen Collection;inforesources;inforesources;REF;HTML;http://gerritsen.chadwyck.com:80/infoCentre/inforesources.jsp
+Index to Black Periodicals;../session/1561753970_29268;../session/1561753970_29268;REF;HTML;http://iibp.chadwyck.com:80/iimp/full_rec?action=single&SUBSET=1&ENTRIES=782&OFFSET=547349&RID=2199062244&JID=21522448&date=2019&FILE=../session/1561753970_29268
+Index to Black Periodicals;qrb;qrb;REF;HTML;http://iibp.chadwyck.com:80/infopage/publ/qrb.htm
+Index to Black Periodicals;sma;sma;REF;HTML;http://iibp.chadwyck.com:80/infopage/publ/sma.htm
+Queen Victoria's Journals;resources;resources;REF;HTML;http://qvj.chadwyck.com:80/info/resources.do
+African American Biographical Database;;;SEARCH;HTML;http://aabd.chadwyck.com:80/main/search
+Acta Sanctorum;;;SEARCH;HTML;http://acta.chadwyck.com:80/all/search
+Black Studies Center;;;SEARCH;HTML;http://bsc.chadwyck.com:80/common/viewContent.do?QueryName=multimedia&type=video
+Black Studies Center;;;SEARCH;HTML;http://bsc.chadwyck.com:80/search/displayMultiResults.do?ssbeSearch=quick
+Chadwyck-Healey Literature Collections;;;SEARCH;HTML;http://collections.chadwyck.com:80/bie/search?ACTION=GOTO&DBOFFSET=20050296&FILE=../session/1560545016_11089&SOMLEVEL=LEVEL2
+Chadwyck-Healey Literature Collections;;;SEARCH;HTML;http://collections.chadwyck.com:80/eas/com?ACTION=DISPLAY&OFFSET=39211987&FILE=%2e%2e/session/1560545232%5f12148&DIVLEVEL=3
+Chadwyck-Healey Literature Collections;;;SEARCH;HTML;http://collections.chadwyck.com:80/eas/search?ACTION=GOTO&SOMLEVEL=LEVEL2&DBOFFSET=39123147&FILE=../session/1560545232_12148&DIVLEVEL=default
+Chadwyck-Healey Literature Collections;;;SEARCH;HTML;http://collections.chadwyck.com:80/gotoSearchTexts.do?initialise=20drama&listType=Drama
+Chadwyck-Healey Literature Collections;;;SEARCH;HTML;http://collections.chadwyck.com:80/searchTextsByAuthor.do?value(ByAuthorId)=43186&area=aws&AuthorDisplayName=%20Abdullah%20Yahya%20Taher&listType=All
+Chadwyck-Healey Literature Collections;;;SEARCH;HTML;http://collections.chadwyck.com:80/yeats/com?ACTION=DISPLAY&OFFSET=953611&FILE=%2e%2e/session/1560545359%5f12748&BIOGRAPHY=default
+Chadwyck-Healey Literature Collections;;;SEARCH;HTML;http://collections.chadwyck.com:80/yeats/search?ACTION=DISPLAY&OFFSET=953611&FILE=%2e%2e/session/1560545359%5f12748&BIOGRAPHY=default
+Early English Books Online;;;SEARCH;HTML;http://eebo.chadwyck.com:80/authors/authorbrowse.pl?INITIAL=&GOTONAME=&FTONLY=&PAGENO=&ECCO=&PAGESIZE=
+Early English Books Online;;;SEARCH;HTML;http://eebo.chadwyck.com:80/search/com?ACTION=DISPLAY&SOURCE=var_spell.cfg&ID=D00000120932690000&SUBSET=1&ENTRIES=208&FILE=../session/1561750644_7454&DISPLAY=AUTHOR&USEALTCONFIG=Y
+Early English Books Online;;;SEARCH;HTML;http://eebo.chadwyck.com:80/works/search?SEARCH=submit+search&ACTION=SearchOrBrowse&AUTHOR=EXACT+%22A.%20C.%20%28Arthur%20Crowther%29%2C%201588-1666%22&FTONLY=&ECCO=N&INITIAL=A&PAGENO=1&TITLE=A.%20C.%20%28Arthur%20Crowther%29%2C%201588-1666&RETRIEVETYPE=subset&HISTLOGGING=N
+The Gerritsen Collection;;;SEARCH;HTML;http://gerritsen.chadwyck.com:80/browseBooks/browseBooks.jsp?browseType=title&expandtolevel=1&expandId=A
+The Gerritsen Collection;;;SEARCH;HTML;http://gerritsen.chadwyck.com:80/browsePeriodicals/index.do?id=A0&divLevel=2&action=new
+The Gerritsen Collection;;;SEARCH;HTML;http://gerritsen.chadwyck.com:80/saveditems/myArchive.do?action=getMarkedListRecordIds
+German Literature Collections;;;SEARCH;HTML;http://glc.chadwyck.com:80/cgi/search?
+Die Deutsche Lyrik;;;SEARCH;HTML;http://glp.chadwyck.com:80/deutsch/frames/all/com?ACTION=DISPLAY&OFFSET=2057155&FILE=%2e%2e/session/1561752984%5f16202&DIVLEVEL=2
+Die Deutsche Lyrik;;;SEARCH;HTML;http://glp.chadwyck.com:80/deutsch/frames/all/search?
+Die Deutsche Lyrik;;;SEARCH;HTML;http://glp.chadwyck.com:80/english/frames/all/com?ACTION=DISPLAY&OFFSET=1563787&FILE=%2e%2e/session/1561753036%5f16995&DIVLEVEL=1
+Die Deutsche Lyrik;;;SEARCH;HTML;http://glp.chadwyck.com:80/english/frames/all/search?
+Goethes Werke;;;SEARCH;HTML;http://goethe.chadwyck.com:80/all/search?
+Goethes Werke;;;SEARCH;HTML;http://goethe.chadwyck.com:80/literary/com?ACTION=DISPLAY&OFFSET=914385&FILE=../session/1561752614_11267&DIVLEVEL=6
+Goethes Werke;;;SEARCH;HTML;http://goethe.chadwyck.com:80/literary/search?ACTION=GOTO&SOMLEVEL=LEVEL2&DBOFFSET=787098&FILE=../session/1561752614_11267&DIVLEVEL=default
+Goethes Werke;;;SEARCH;HTML;http://goethe.chadwyck.com:80/register/search
+Index to Black Periodicals;;;SEARCH;HTML;http://iibp.chadwyck.com:80/iimp/search?
+Kafka Werke;;;SEARCH;HTML;http://kafka.chadwyck.com:80/deutsch/frames/literary/com?ACTION=DISPLAY&OFFSET=1051&FILE=%2e%2e/session/1561754792%5f4043&DIVLEVEL=3
+Kafka Werke;;;SEARCH;HTML;http://kafka.chadwyck.com:80/deutsch/frames/literary/search?
+Kafka Werke;;;SEARCH;HTML;http://kafka.chadwyck.com:80/english/frames/literary/com?ACTION=DISPLAY&OFFSET=1051&FILE=%2e%2e/session/1561754788%5f4020&DIVLEVEL=3
+Kafka Werke;;;SEARCH;HTML;http://kafka.chadwyck.com:80/english/frames/literary/search?
+Bibliothek deutscher Klassiker;;;SEARCH;HTML;http://klassiker.chadwyck.com:80/deutsch/all/search?ACCESS=NEW&ALL=Y
+Bibliothek deutscher Klassiker;;;SEARCH;HTML;http://klassiker.chadwyck.com:80/english/all/search
+Luthers Werke;;;SEARCH;HTML;http://luther.chadwyck.com:80/deutsch/frames/werke/search
+Luthers Werke;;;SEARCH;HTML;http://luther.chadwyck.com:80/english/frames/werke/search
+Queen Victoria's Journals;;;SEARCH;HTML;http://qvj.chadwyck.com:80/search/browseByDate.do
+Queen Victoria's Journals;;;SEARCH;HTML;http://qvj.chadwyck.com:80/search/browseByNamesAndPlaces.do
+Queen Victoria's Journals;;;SEARCH;HTML;http://qvj.chadwyck.com:80/search/results.do?SortType=oldestFirst&QueryType=articles
+Teatro Español del Siglo de Oro;;;SEARCH;HTML;http://teso.chadwyck.com:80/english/frames/com?ACTION=DISPLAY&OFFSET=31794546&FILE=%2e%2e/session/1561755998%5f26015
+Teatro Español del Siglo de Oro;;;SEARCH;HTML;http://teso.chadwyck.com:80/english/frames/search?
+Teatro Español del Siglo de Oro;;;SEARCH;HTML;http://teso.chadwyck.com:80/frames/com?ACTION=DISPLAY&OFFSET=6&FILE=%2e%2e/session/1561756006%5f26202
+Teatro Español del Siglo de Oro;;;SEARCH;HTML;http://teso.chadwyck.com:80/frames/search
+Black Studies Center;rtsp://multimedia.chadwyck.co.uk/wpa/qt/wpa32/wpa32_02.mov;rtsp://multimedia.chadwyck.co.uk/wpa/qt/wpa32/wpa32_02.mov;VIDEO;MISC;http://bsc.chadwyck.com:80/cgi-bin/playQT.cgi?url=rtsp://multimedia.chadwyck.co.uk/wpa/qt/wpa32/wpa32_02.mov
+Black Studies Center;mms://multimedia.chadwyck.co.uk/wpa/wmv/wpa32_220k.wmv;mms://multimedia.chadwyck.co.uk/wpa/wmv/wpa32_220k.wmv;VIDEO;MISC;http://bsc.chadwyck.com:80/cgi-bin/playWMV.cgi?url=mms://multimedia.chadwyck.co.uk/wpa/wmv/wpa32_220k.wmv&start=81.881&end=273.073
+;wpa32;wpa32_02;VIDEO;MISC;http://p8000-multimedia.chadwyck.co.uk:80/wpa/mpeg/wpa32/wpa32_02.mpg
