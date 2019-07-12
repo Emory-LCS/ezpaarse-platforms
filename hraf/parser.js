@@ -21,11 +21,8 @@ module.exports = new Parser(function analyseEC(parsedUrl, ec) {
 
   let match;
 
-  if (/^\/(ehrafa|ehrafe)\/(cultureResults|dispatchSearch|browseCultures)\.do/i.test(path)) {
-    // https://ehrafarchaeology.yale.edu:443/ehrafa/cultureResults.do?selectedIndex=0
-    // https://ehrafarchaeology.yale.edu:443/ehrafa/cultureResults.do?selectedIndex=1
-    // https://ehrafarchaeology.yale.edu:443/ehrafa/dispatchSearch.do?method=documentSearch&col=collection%28%27%2FeHRAF%2Farchaeology%2FSouthAmer%2FSE80%27%29&owc=SE80&owcMatches=12&owcDocs=8&cache=0
-    // https://ehrafarchaeology.yale.edu:443/ehrafa/browseCultures.do?context=main
+  if (/^\/(ehrafa|ehrafe)\/([A-z]+)\.do/i.test(path)) {
+    // https://ehrafworldcultbrowseCultures.do?context=main
     // http://ehrafworldcultures.yale.edu:80/ehrafe/cultureResults.do?selectedIndex=1 
     // https://ehrafworldcultures.yale.edu:443/ehrafe/dispatchSearch.do?method=documentSearch&col=collection%28%27%2FeHRAF%2Fethnography%2FOceania%2FOP04%27%29&owc=OP04&owcMatches=1&owcDocs=1&cache=0 
     result.rtype = 'SEARCH';
@@ -33,7 +30,6 @@ module.exports = new Parser(function analyseEC(parsedUrl, ec) {
 
   } if (/^\//i.test(path)) {
     // https://hraf.yale.edu:443/?submit=Search&s=barton
-    // https://hraf.yale.edu:443/?submit=Search&s=rainbow
     if (param.submit === 'Search') {
       result.rtype = 'SEARCH';
       result.mime = 'HTML';
@@ -67,16 +63,26 @@ module.exports = new Parser(function analyseEC(parsedUrl, ec) {
 
   } if (/^\/(ehrafa|ehrafe)\/citation\.do/i.test(path)) {
     // https://ehrafarchaeology.yale.edu:443/ehrafa/citation.do?method=citation&forward=searchFullContext&col=collection(%27/eHRAF/archaeology/Africa/FA75%27)&docId=fa75-000&tocOffsetId=tocPubInfoP
-    // https://ehrafarchaeology.yale.edu:443/ehrafa/citation.do?method=citation&forward=browseAuthorsFullContext&col=collection(%27/eHRAF/archaeology/NorthAmer/NT76%27)&docId=nt76-001&tocOffset=tocPubInfoP
-    // https://ehrafworldcultures.yale.edu:443/ehrafe/citation.do?method=citation&forward=browseCulturesFullContext&col=collection(%27/eHRAF/ethnography/Africa/FL12%27)&docId=fl12-010&tocOffsetId=tocPubInfoP
-    // https://ehrafworldcultures.yale.edu:443/ehrafe/citation.do?method=citation&forward=browseAuthorsFullContext&col=collection(%27/eHRAF/ethnography/MidEast/M013%27)&docId=m013-026&tocOffset=tocPubInfoP
     result.rtype = 'REF';
     result.mime = 'HTML';
     result.unitid = param.docId;
     result.title_id = param.col.slice(13, -2);
 
+  } if (/^\/(ehrafe|ehrafa)\/subjectDescription\.do/i.test(path)) {
+    // https://ehrafworldcultures.yale.edu:443/ehrafe/subjectDescription.do?ocm=460&_=1562698445108
+    result.rtype = 'REF';
+    result.mime = 'HTML';
+    result.unitid = param.ocm + '/' + param._;
+    result.title_id = param.ocm + '/' + param._;
+
+  } if (/^\/(ehrafe|ehrafa)\/pages\/notePopup\.jsp/i.test(path)) {
+    // https://ehrafworldcultures.yale.edu:443/ehrafe/pages/notePopup.jsp?code=NC04&facet=owc&_=1562698445111 
+    result.rtype = 'REF';
+    result.mime = 'HTML';
+    result.unitid = param.code + '/' + param._;
+    result.title_id = param.code + '/' + param._;
+
   } if (/^\/ehc\/api\/ehc_documents/i.test(path)) {
-    // https://hraf.yale.edu:443/ehc/api/ehc_documents?q=id:135&wt=json
     // https://hraf.yale.edu:443/ehc/api/ehc_documents?q=id:26&wt=json
     if (param.q) {
       result.rtype = 'ABS';
@@ -89,11 +95,6 @@ module.exports = new Parser(function analyseEC(parsedUrl, ec) {
     }
 
   } if (/^\/(ehrafa|ehrafe)\/fullContext\.do/i.test(path)) {
-    // https://ehrafarchaeology.yale.edu:443/ehrafa/fullContext.do?method=fullContext&forward=searchFullContext&col=collection(%27/eHRAF/archaeology/SouthAmer/SE80%27)&docId=se80-002&page=se80-002-01281&offsetId=se80-002-01292&tocOffsetId=tocse8000201224&resultSelect=2
-    // https://ehrafarchaeology.yale.edu:443/ehrafa/fullContext.do?method=fullContext&forward=searchFullContext&col=SE80InkaSouth%20AmericaSouthAmer&docId=se80-002&page=se80-002-00046&offsetId=se8000200085&tocOffsetId=tocse8000200085
-    // https://ehrafarchaeology.yale.edu:443/ehrafa/fullContext.do?method=fullContext&forward=searchFullContext&col=collection(%27/eHRAF/archaeology/Africa/FA75%27)&docId=fa75-000&page=fa75-000-00028-001&offsetId=fa75-000-00038&tocOffsetId=tocfa7500000037&resultSelect=2 
-    // https://ehrafarchaeology.yale.edu:443/ehrafa/fullContext.do?method=fullContext&forward=browseAuthorsFullContext&col=NT76HohokamNorth%20AmericaNorthAmer&docId=nt76-001&page=nt76-001-04585&offsetId=nt7600104597&tocOffsetId=tocnt7600104597
-    // https://ehrafworldcultures.yale.edu:443/ehrafe/fullContext.do?method=fullContext&forward=browseCulturesFullContext&col=&docId=fl12-010&page=fl12-010-000031&offsetId=fl12010000041&tocOffsetId=tocfl12010000041
     // https://ehrafworldcultures.yale.edu:443/ehrafe/fullContext.do?method=fullContext&forward=browseAuthorsFullContext&col=collection(%27/eHRAF/ethnography/MidEast/M013%27)&docId=m013-026&page=m013-026-000147&offsetId=m013026000097
     result.rtype = 'BOOK_PAGE';
     result.mime = 'HTML';
@@ -111,7 +112,6 @@ module.exports = new Parser(function analyseEC(parsedUrl, ec) {
 
   } if ((match = /^\/ehc\/assets\/summaries\/([a-z-]+)/i.exec(path)) !== null) {
     // https://hraf.yale.edu:443/ehc/assets/summaries/altered-states-of-consciousness
-    // https://hraf.yale.edu:443/ehc/assets/summaries/adolescence
     result.rtype = 'ARTICLE';
     result.mime = 'HTML';
     result.unitid = match[1];
@@ -133,8 +133,6 @@ module.exports = new Parser(function analyseEC(parsedUrl, ec) {
     result.title_id = match[7];
 
   } if (/^\/ehc\/api\/ehc_hypotheses/i.test(path)) {
-    // https://hraf.yale.edu:443/ehc/api/ehc_hypotheses?q=id:1065&wt=json&mlt=true&mlt.fl=text
-    // https://hraf.yale.edu:443/ehc/api/ehc_hypotheses?q=id:142&wt=json&mlt=true&mlt.fl=text
     // https://hraf.yale.edu:443/ehc/api/ehc_hypotheses?q=id:262&wt=json&mlt=true&mlt.fl=text
     result.rtype = 'DATA';
     result.mime = 'HTML';
