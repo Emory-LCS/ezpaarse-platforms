@@ -32,13 +32,45 @@ module.exports = new Parser(function analyseEC(parsedUrl, ec) {
 
   } if ((match = /^\/([a-z-]+)\//i.exec(path)) !== null) {
     // https://blogs.jwatch.org:443/hiv-id-observations/?_ga=2.172113696.243381463.1562588137-26633474.1562161140
-    if (match[1] !== 'search') {
+    if (match[1] !== 'search' && param._ga) {
       result.rtype = 'TOC';
       result.mime = 'HTML';
       result.unitid = param._ga;
       result.title_id = match[1];
     }
-  }
 
+  } if ((match = /^\/index\.php\/([0-9a-z-]+)\/([0-9/]{10})\/$/i.exec(path)) !== null) {
+    // https://podcasts.jwatch.org:443/index.php/podcast-226-what-we-need-to-talk-about-when-we-talk-about-health/2019/06/11/
+    result.rtype = 'ABS';
+    result.mime = 'HTML';
+    result.unitid = match[1].slice(0, 11);
+    result.title_id = match[1] + '/' + match[2];
+
+  } if ((match = /^\/([a-z]{2})([0-9]+)\/([0-9/]{10})\/([a-z-]+)/i.exec(path)) !== null) {
+    // https://www.jwatch.org:443/fw115583/2019/07/08/synthetic-cannabinoids-associated-with-more-comas-and
+    // https://www.jwatch.org:443/na47534/2018/10/05/bleeding-synthetic-cannabinoid-additives-coming-ed-near
+    result.rtype = 'ARTICLE';
+    result.mime = 'HTML';
+    result.unitid = match[1] + match[2];
+    result.title_id = match[4];
+
+  } if ((match = /^\/([a-z-]+)\/index\.php\/([a-z-]+)\/([0-9/]{10})\/$/i.exec(path)) !== null) {
+  // https://blogs.jwatch.org:443/hiv-id-observations/index.php/in-praise-of-experienced-id-fellows-and-a-dozen-on-service-id-learning-units/2019/07/07/
+  // https://blogs.jwatch.org:443/hiv-id-observations/index.php/antibiotic-development-is-broken-brothers-in-id-practice-and-this-years-winner-of-the-id-related-social-media-award/2019/06/30/
+    if (match[3]) {
+      result.rtype = 'ARTICLE';
+      result.mime = 'HTML';
+      result.unitid = match[1] + '/' + match[3];
+      result.title_id = match[2];
+    }
+
+  } if ((match = /^\/([a-z-]+)\/index\.php\/([0-9/]{7})\/([a-z-]+)\/$/i.exec(path)) !== null) {
+    // https://blogs.jwatch.org:443/general-medicine/index.php/2019/04/the-nephrology-social-media-collective/
+    result.rtype = 'ARTICLE';
+    result.mime = 'HTML';
+    result.unitid = match[1] + '/' + match[2];
+    result.title_id = match[3];
+
+  }
   return result;
 });
