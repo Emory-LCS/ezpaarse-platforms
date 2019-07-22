@@ -28,11 +28,11 @@ module.exports = new Parser(function analyseEC(parsedUrl, ec) {
     result.title_id = param.id || param.ID || param.ResultsID || param.RID || param.ItemID;
     result.unitid   = param.id || param.ID || param.ResultsID || param.RID || param.ItemID;
 
-  } else if ((/^\/bsc\/displayPDF.do/i.test(path)) || (/^\/bsc\/displayPDF.do/i.test(path)) || (/^\/common\/displayPDF.do/i.test(path)) || (/^\/common\/imageConversion.do/i.test(path)) || (/^\/downloadpdf/i.test(path)) || (/^\/iimp\/display_pq_pdf.cgi/i.test(path)) || (/^\/search\/logPDFpage.do/i.test(path))) {
+  } else if ((/^\/bsc\/displayPDF.do/i.test(path)) || (/^\/bsc\/displayPDF.do/i.test(path)) || (/^\/common\/displayPDF.do/i.test(path)) || (/^\/common\/imageConversion.do/i.test(path)) || (/^\/downloadpdf/i.test(path)) || (/^\/fulltext\/fulltext.do/i.test(path)) || (/^\/iimp\/display_pq_pdf.cgi/i.test(path)) || (/^\/search\/displayProquestPDF.do/i.test(path)) || (/^\/search\/logPDFpage.do/i.test(path))) {
     result.rtype    = 'ARTICLE';
     result.mime     = 'PDF';
-    result.title_id = param.pdfFilename || param.ItemID || param.filename || param.id || param.docid;
-    result.unitid   = param.pdfFilename || param.ItemID || param.filename || param.id || param.docid;
+    result.title_id = param.pdfFilename || param.ItemID || param.filename || param.id || param.docid || param.PQID;
+    result.unitid   = param.pdfFilename || param.ItemID || param.filename || param.id || param.docid || param.PQID;
 
   } else if ((match = /^\/([0-z/]+)\/fulltext/i.exec(path)) !== null) {
     if ((match[1] === 'all') || (match[1] === 'bie') || (match[1] === 'deutsch/all') || (match[1] === 'deutsch/frames/all') || (match[1] === 'deutsch/frames/alle') || (match[1] === 'deutsch/frames/literary') || (match[1] === 'deutsch/frames/werke') || (match[1] === 'eas') || (match[1] === 'english/all') || (match[1] === 'english/frames/all') || (match[1] === 'english/frames/literary') || (match[1] === 'english/frames/werke') || (match[1] === 'frames') || (match[1] === 'literary') || (match[1] === 'register')) {
@@ -48,11 +48,19 @@ module.exports = new Parser(function analyseEC(parsedUrl, ec) {
     result.title_id = param.id || param.pdffilename || param.file;
     result.unitid   = param.id || param.pdffilename || param.file;
 
+  } else if ((match = /^\/facs\/([0-9]+)\/([0-9]+).pdf$/i.exec(path)) !== null) {
+    result.rtype    = 'BOOK_SECTION';
+    result.mime     = 'PDF';
+    result.title_id = match[1] + '/' + match[2];
+    result.unitid   = match[2];
+
+  } else if (/^\/search$/i.test(path)) {
+    result.rtype  = 'SEARCH';
+    result.mime   = 'HTML';
+
   } else if ((match = /^\/([0-z/]+)\/search$/i.exec(path)) !== null) {
-    if ((match[1] === 'all') || (match[1] === 'bie') || (match[1] === 'cgi') || (match[1] === 'deutsch/all') || (match[1] === 'deutsch/frames') || (match[1] === 'deutsch/frames/all') || (match[1] === 'deutsch/frames/alle') || (match[1] === 'deutsch/frames/literary') || (match[1] === 'deutsch/frames/werke') || (match[1] === 'eas') || (match[1] === 'english/all') || (match[1] === 'english/frames') || (match[1] === 'english/frames/all') || (match[1] === 'english/frames/literary') || (match[1] === 'english/frames/werke') || (match[1] === 'frames') || (match[1] === 'iimp') || (match[1] === 'literary') || (match[1] === 'main') || (match[1] === 'register') ||(match[1] === 'works') || (match[1] === 'yeats')) {
-      result.rtype  = 'SEARCH';
-      result.mime   = 'HTML';
-    }
+    result.rtype  = 'SEARCH';
+    result.mime   = 'HTML';
 
   } else if ((match = /^\/([0-z/]+)\/com?$/i.exec(path)) !== null) {
     if ((match[1] === 'all') || (match[1] === 'bie') || (match[1] === 'cgi') || (match[1] === 'deutsch/all') || (match[1] === 'deutsch/frames') || (match[1] === 'deutsch/frames/all') || (match[1] === 'deutsch/frames/alle') || (match[1] === 'deutsch/frames/literary') || (match[1] === 'deutsch/frames/werke') || (match[1] === 'eas') || (match[1] === 'english/all') || (match[1] === 'english/frames') || (match[1] === 'english/frames/all') || (match[1] === 'english/frames/literary') || (match[1] === 'english/frames/werke') || (match[1] === 'frames') || (match[1] === 'iimp') || (match[1] === 'literary') || (match[1] === 'main') || (match[1] === 'register') || (match[1] === 'search') || (match[1] === 'works') || (match[1] === 'yeats')) {
@@ -64,7 +72,13 @@ module.exports = new Parser(function analyseEC(parsedUrl, ec) {
     result.rtype    = 'SEARCH';
     result.mime     = 'HTML';
 
-  } else if ((/^\/browse\/displayNameRecord.do/i.test(path)) || (/^\/searchFulltext.do/i.test(path))) {
+  } else if ((match = /^\/([0-z/]+)\/displayDissertationCitationById.do$/i.exec(path)) !== null) {
+    result.rtype  = 'ABS';
+    result.mime   = 'HTML';
+    result.title_id = param.ItemID;
+    result.unitid   = param.ItemID;
+
+  } else if (/^\/browse\/displayNameRecord.do/i.test(path)) {
     result.rtype    = 'BIO';
     result.mime     = 'HTML';
     result.title_id = param.personID || param.name || param.id;
@@ -88,11 +102,11 @@ module.exports = new Parser(function analyseEC(parsedUrl, ec) {
     result.title_id = param.url || match[2];
     result.unitid   = param.url || match[2];
 
-  } else if ((/^\/search\/full_rec/i.test(path)) || (/^\/bbidx\/full_rec/i.test(path)) || (/^\/bbidx\/full_rec/i.test(path)) || (/^\/fullrec\/fullrec.do/i.test(path)) || (/^\/iimp\/full_rec/i.test(path)) || (/^\/search\/displayMultimediaItemById.do/i.test(path)) || (/^\/search\/displayMultiRefItem.do/i.test(path)) || (/^\/search\/displayMultiTimelineItem.do/i.test(path)) || (/^\/search\/full_rec/i.test(path)) || (/^\/searchBsc\/displayMultiBliItem.do/i.test(path)) || (/^\/searchFullrec.do/i.test(path))) {
+  } else if ((/^\/search\/full_rec/i.test(path)) || (/^\/bbidx\/full_rec/i.test(path)) || (/^\/bbidx\/full_rec/i.test(path)) || (/^\/fullrec\/fullrec.do/i.test(path)) || (/^\/iimp\/full_rec/i.test(path)) || (/^\/search\/displayMultimediaItemById.do/i.test(path)) || (/^\/search\/displayMultiRefItem.do/i.test(path)) || (/^\/search\/displayMultiTimelineItem.do/i.test(path)) || (/^\/search\/full_rec/i.test(path)) || (/^\/searchBsc\/displayMultiBliItem.do/i.test(path)) || (/^\/searchFullrec.do/i.test(path)) || (/^\/searchFulltext.do/i.test(path))) {
     result.rtype    = 'REF';
     result.mime     = 'HTML';
-    result.title_id = param.ID || param.ResultsID || param.ItemID || param.id || param.FILE || param.file;
-    result.unitid   = param.ID || param.ResultsID || param.ItemID || param.id || param.FILE || param.file;
+    result.title_id = param.name || param.ID || param.ResultsID || param.ItemID || param.id || param.FILE || param.file;
+    result.unitid   = param.name || param.ID || param.ResultsID || param.ItemID || param.id || param.FILE || param.file;
 
   } else if (((match = /^\/info\/([a-z]+).do$/i.exec(path)) !== null) || ((match = /^\/infoCentre\/([a-z]+).jsp$/i.exec(path)) !== null) || ((match = /^\/infoCentre\/([a-z]+).jsp$/i.exec(path)) !== null) || ((match = /^\/infopage\/publ\/([a-z]+).htm$/i.exec(path)) !== null) || ((match = /^\/infopage\/publ\/([a-z]+).htm$/i.exec(path)) !== null)) {
     result.rtype    = 'REF';
