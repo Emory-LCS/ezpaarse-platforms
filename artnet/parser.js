@@ -50,6 +50,28 @@ module.exports = new Parser(function analyseEC(parsedUrl, ec) {
     result.unitid = match[1];
     result.title_id = match[1];
 
+  } if ((match = /^\/(artists|auctions)\/([0-9a-z-/]+)$/i.exec(path)) !== null) {
+    if (!match[2].startsWith('artists-starting-with-')) {
+      // http://www.artnet.com:80/artists/alexander-barton/
+      // http://www.artnet.com:80/artists/perrine-lievens/
+      // https://www.artnet.com:443/auctions/photographs-0719
+      // https://www.artnet.com:443/auctions/post-war-and-contemporary-art
+      result.rtype = 'TOC';
+      result.mime = 'HTML';
+      result.unitid = match[1] + '/' + match[2];
+      result.title_id = match[1] + '/' + match[2];
+    }
+  } if ((match = /^\/(galleries)\/([0-9a-z-]+)\/(([0-9a-z-]+)|([0-9a-z/]+))$/i.exec(path)) !== null) {
+    // http://www.artnet.com:80/galleries/aca-galleries/the-end-of-western-art
+    // ttp://www.artnet.com:80/galleries/avant-gallery/there-goes-the-neighborhood-new-art-for-the-new-new-york
+    // http://www.artnet.com:80/galleries/roberts-projects/control/
+    // http://www.artnet.com:80/galleries/galerie-von-bartha/artists/
+    // http://www.artnet.com:80/galleries/avant-gallery/artworks/
+    result.rtype = 'TOC';
+    result.mime = 'HTML';
+    result.unitid = match[1] + '/' + match[2] + '/' + match[3];
+    result.title_id = match[1] + '/' + match[2] + '/' + match[3];
+
   }
   return result;
 });
