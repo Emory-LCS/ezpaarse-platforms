@@ -21,27 +21,35 @@ module.exports = new Parser(function analyseEC(parsedUrl, ec) {
 
   let match;
 
-  if ((match = /^\/platform\/path\/to\/(document-([0-9]+)-test\.pdf)$/i.exec(path)) !== null) {
-    // http://parser.skeleton.js/platform/path/to/document-123456-test.pdf?sequence=1
-    result.rtype    = 'ARTICLE';
-    result.mime     = 'PDF';
+  if (/^\/search\/(artists|articles|)/i.test(path)) {
+  // http://www.artnet.com:80/search/artists/?q=barton
+  // http://www.artnet.com:80/search/?q=rainbow
+  // http://www.artnet.com:80/search/articles/?q=luis-de-jesus
+    result.rtype = 'SEARCH';
+    result.mime = 'HTML';
+
+  } if (/^\/artists\/artists-starting-with-(.*)$/i.test(path)) {
+  // http://www.artnet.com:80/artists/artists-starting-with-b
+  // http://www.artnet.com:80/artists/artists-starting-with-b%c3%adr%e2%80%93bis
+    result.rtype = 'SEARCH';
+    result.mime = 'HTML';
+
+  } if (/^\/(api|pdb|PDB)\/(search|galleries|faadsearch|FAADSearch)\/([0-z]+)/i.test(path)) {
+  // http://www.artnet.com:80/api/search/rainbow/artworks
+  // http://www.artnet.com:80/api/galleries/rainbow/1/0
+  // http://www.artnet.com:80/pdb/faadsearch/FAADResults3.aspx?Page=1&ArtType=FineArt
+  // http://www.artnet.com:80/PDB/FAADSearch/FAADResults3.aspx?Page=1&ArtType=DecArt
+    result.rtype = 'SEARCH';
+    result.mime = 'HTML';
+
+  } if ((match = /^\/galleries\/([a-z-]+)/i.exec(path)) !== null) {
+  // http://www.artnet.com:80/galleries/luis-de-jesus
+  // http://www.artnet.com:80/galleries/avant-gallery/
+    result.rtype = 'ABS';
+    result.mime = 'HTML';
+    result.unitid = match[1];
     result.title_id = match[1];
 
-    /**
-     * unitid is a crucial information needed to filter double-clicks phenomenon, like described by COUNTER
-     * it described the most fine-grained of what's being accessed by the user
-     * it can be a DOI, an internal identifier or a part of the accessed URL
-     * more at http://ezpaarse.readthedocs.io/en/master/essential/ec-attributes.html#unitid
-     */
-    result.unitid = match[2];
-
-  } else if ((match = /^\/platform\/path\/to\/(document-([0-9]+)-test\.html)$/i.exec(path)) !== null) {
-    // http://parser.skeleton.js/platform/path/to/document-123456-test.html?sequence=1
-    result.rtype    = 'ARTICLE';
-    result.mime     = 'HTML';
-    result.title_id = match[1];
-    result.unitid   = match[2];
   }
-
   return result;
 });

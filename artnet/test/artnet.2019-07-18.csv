@@ -1,1 +1,12 @@
-out-rtype;out-mime;in-url
+out-rtype;out-mime;out-unitid;out-title_id;in-url
+SEARCH;HTML;;;http://www.artnet.com:80/search/artists/?q=barton
+SEARCH;HTML;;;http://www.artnet.com:80/search/?q=rainbow
+SEARCH;HTML;;;http://www.artnet.com:80/search/articles/?q=luis-de-jesus
+SEARCH;HTML;;;http://www.artnet.com:80/artists/artists-starting-with-b
+SEARCH;HTML;;;http://www.artnet.com:80/artists/artists-starting-with-b%c3%adr%e2%80%93bis
+SEARCH;HTML;;;http://www.artnet.com:80/api/search/rainbow/artworks
+SEARCH;HTML;;;http://www.artnet.com:80/api/galleries/rainbow/1/0
+SEARCH;HTML;;;http://www.artnet.com:80/pdb/faadsearch/FAADResults3.aspx?Page=1&ArtType=FineArt
+SEARCH;HTML;;;http://www.artnet.com:80/PDB/FAADSearch/FAADResults3.aspx?Page=1&ArtType=DecArt
+ABS;HTML;luis-de-jesus;luis-de-jesus;http://www.artnet.com:80/galleries/luis-de-jesus
+ABS;HTML;avant-gallery;avant-gallery;http://www.artnet.com:80/galleries/avant-gallery/
