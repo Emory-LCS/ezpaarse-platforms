@@ -112,6 +112,15 @@ module.exports = new Parser(function analyseEC(parsedUrl, ec) {
     result.unitid = match[1] + '/' + match[2];
     result.title_id = match[1] + '/' + match[2];
 
+  } if ((match = /^\/artists\/([a-z-]+)\/([0-z-]+)$/i.exec(path)) !== null) {
+    // http://www.artnet.com:80/artists/landon-metz/untitled-a-F-4-l8cx00TtsWGlxClVWg2
+    // http://www.artnet.com:80/artists/guy-le-baube/wool-a-1GdD4YzM8KIbY5srOuiETA2
+    // http://www.artnet.com:80/artists/billy-apple/four-blue-knots-for-r-d-laing-a-rq3XAg8ygsCFqp9r2j9kZA2
+    result.rtype = 'IMAGE';
+    result.mime = 'HTML';
+    result.unitid = match[2];
+    result.title_id = match[1] + '/' + match[2];
+
   }
   return result;
 });
