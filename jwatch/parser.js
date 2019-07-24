@@ -21,7 +21,7 @@ module.exports = new Parser(function analyseEC(parsedUrl, ec) {
 
   let match;
 
-  if (/^\/(search\/advanced)|([a-z-]+$)/i.test(path)) {
+  if (/^\/((search\/advanced)|([a-z-]+))$/i.test(path)) {
     // https://www.jwatch.org:443/search/advanced?fulltext=electricity&hits=20&page=1
     // https://www.jwatch.org:443/search/advanced?fulltext=podcast&hits=20&page=1
     // https://www.jwatch.org:443/cardiology
