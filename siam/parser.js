@@ -29,7 +29,7 @@ module.exports = new Parser(function analyseEC(parsedUrl, ec) {
     if (param.publication) {
       result.title_id = param.publication;
     }
-  } if ((match = /^\/doi\/([a-z]+)\/(([0-9.]+)\/([0-9a-z]+))/i.exec(path)) !== null) {
+  } if ((match = /^\/doi\/([a-z]+)\/(([0-9.]+)\/([0-9a-z]+))$/i.exec(path)) !== null) {
     // http://epubs.siam.org.insmi.bib.cnrs.fr/doi/pdf/10.1137/100811970
     // http://epubs.siam.org.insmi.bib.cnrs.fr/doi/ref/10.1137/100811970
     // http://epubs.siam.org.insmi.bib.cnrs.fr/doi/abs/10.1137/100811970
@@ -80,6 +80,33 @@ module.exports = new Parser(function analyseEC(parsedUrl, ec) {
     result.unitid = match[1] + '.' + match[2];
     result.title_id = match[2];
     result.doi = match[1];
+
+  } if ((match = /^\/doi\/abs\/([0-9/.]{9})\.([0-9]{13})\.([0-z]+)/i.exec(path)) !== null) {
+    // https://epubs.siam.org:443/doi/abs/10.1137/1.9781611975529.ch1
+    result.rtype = 'ABS';
+    result.mime = 'HTML';
+    result.print_identifier = match[2];
+    result.unitid = match[1] + '.' + match[2] + '.' + match[3];
+    result.doi = match[1];
+    result.title_id = match[2];
+
+  } if ((match = /^\/journal\/([a-z]{6})$/i.exec(path)) !== null) {
+  //   https://epubs.siam.org:443/journal/mmsubt 
+  // https://epubs.siam.org:443/journal/sjmaah
+    result.rtype = 'REF';
+    result.mime = 'HTML';
+    result.unitid = match[1];
+    result.title_id = match[1];
+
+  } if ((match = /^\/doi\/pdf\/([0-9/.]{9})\.([0-9]{13})\.([0-z]+)$/i.exec(path)) !== null) {
+    // https://epubs.siam.org:443/doi/pdf/10.1137/1.9781611975529.fm (parses as article, pdf... print_identifier should be 9781611975529)
+    // https://epubs.siam.org:443/doi/pdf/10.1137/1.9781611975529.ch1 
+    result.rtype = 'BOOK_SECTION';
+    result.mime = 'PDF';
+    result.print_identifier = match[2];
+    result.doi = match[1];
+    result.unitid = match[1] + '.' + match[2] + '.' + match[3];
+    result.title_id = match[2];
 
   }
   return result;
