@@ -20,8 +20,8 @@ module.exports = new Parser(function analyseEC(parsedUrl, ec) {
   if ((match = /^\/action\/doSearch/i.exec(path)) !== null) {
     // http://epubs.siam.org.insmi.bib.cnrs.fr/action/doSearch?publication=40000033
     // http://epubs.siam.org.insmi.bib.cnrs.fr/action/doSearch?publication=40000033&startPage=&Year=2013
-    result.rtype = 'TOC';
-    result.mime  = 'MISC';
+    result.rtype = 'SEARCH';
+    result.mime  = 'HTML';
 
     if (param.Year) {
       result.publication_date = param.Year;
@@ -29,7 +29,7 @@ module.exports = new Parser(function analyseEC(parsedUrl, ec) {
     if (param.publication) {
       result.title_id = param.publication;
     }
-  } else if ((match = /^\/doi\/([a-z]+)\/(([0-9.]+)\/([0-9a-z]+))/i.exec(path)) !== null) {
+  } if ((match = /^\/doi\/([a-z]+)\/(([0-9.]+)\/([0-9a-z]+))$/i.exec(path)) !== null) {
     // http://epubs.siam.org.insmi.bib.cnrs.fr/doi/pdf/10.1137/100811970
     // http://epubs.siam.org.insmi.bib.cnrs.fr/doi/ref/10.1137/100811970
     // http://epubs.siam.org.insmi.bib.cnrs.fr/doi/abs/10.1137/100811970
@@ -51,7 +51,63 @@ module.exports = new Parser(function analyseEC(parsedUrl, ec) {
 
     result.unitid = match[4];
     result.doi = match[2];
-  }
 
+  } if (/^\/((action\/(doSearch|showPublications))|(keyword\/([A-z+]+)))/i.test(path)) {
+    // https://epubs.siam.org:443/action/doSearch?AllField=physics&publication=  
+    // https://epubs.siam.org:443/action/doSearch?publication=40000029
+    // https://epubs.siam.org:443/keyword/Conservation+Laws
+    // https://epubs.siam.org:443/action/showPublications?pubType=book&category=10.1555/category.40000049&expand=10.1555/category.40000049
+    // https://epubs.siam.org:443/action/showPublications?pubType=proceedings&category=10.1555/category.40105910&expand=10.1555/category.40105910
+    result.rtype = 'SEARCH';
+    result.mime = 'HTML';
+
+  } if ((match = /^\/(toc|page)\/([0-z/.]+)$/i.exec(path)) !== null) {
+    // https://epubs.siam.org:443/toc/sjcodc/13/6
+    // https://epubs.siam.org:443/toc/mmsubt/17/2
+    // https://epubs.siam.org:443/toc/smjmap.1/4/4
+    // https://epubs.siam.org:443/page/locus
+    result.rtype = 'TOC';
+    result.mime = 'HTML';
+    result.unitid = match[2];
+    result.title_id = match[2];
+
+  } if ((match = /^\/doi\/book\/([0-9/.]{9})\.([0-9]{13})$/i.exec(path)) !== null) {
+  // https://epubs.siam.org:443/doi/book/10.1137/1.9781611972863"  (gives "unitid":"1","doi":"10.1137/1")
+  // https://epubs.siam.org:443/doi/book/10.1137/1.9781611975529 (print_identifier should be 9781611975529)
+    result.rtype = 'TOC';
+    result.mime = 'HTML';
+    result.print_identifier = match[2];
+    result.unitid = match[1] + '.' + match[2];
+    result.title_id = match[2];
+    result.doi = match[1];
+
+  } if ((match = /^\/doi\/abs\/([0-9/.]{9})\.([0-9]{13})\.([0-z]+)/i.exec(path)) !== null) {
+    // https://epubs.siam.org:443/doi/abs/10.1137/1.9781611975529.ch1
+    result.rtype = 'ABS';
+    result.mime = 'HTML';
+    result.print_identifier = match[2];
+    result.unitid = match[1] + '.' + match[2] + '.' + match[3];
+    result.doi = match[1];
+    result.title_id = match[2];
+
+  } if ((match = /^\/journal\/([a-z]{6})$/i.exec(path)) !== null) {
+  //   https://epubs.siam.org:443/journal/mmsubt 
+  // https://epubs.siam.org:443/journal/sjmaah
+    result.rtype = 'REF';
+    result.mime = 'HTML';
+    result.unitid = match[1];
+    result.title_id = match[1];
+
+  } if ((match = /^\/doi\/pdf\/([0-9/.]{9})\.([0-9]{13})\.([0-z]+)$/i.exec(path)) !== null) {
+    // https://epubs.siam.org:443/doi/pdf/10.1137/1.9781611975529.fm (parses as article, pdf... print_identifier should be 9781611975529)
+    // https://epubs.siam.org:443/doi/pdf/10.1137/1.9781611975529.ch1 
+    result.rtype = 'BOOK_SECTION';
+    result.mime = 'PDF';
+    result.print_identifier = match[2];
+    result.doi = match[1];
+    result.unitid = match[1] + '.' + match[2] + '.' + match[3];
+    result.title_id = match[2];
+
+  }
   return result;
 });
