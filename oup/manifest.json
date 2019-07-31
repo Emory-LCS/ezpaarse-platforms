@@ -22,7 +22,9 @@
     "www.oed.com",
     "annualreport.oup.com",
     "www.oxfordartonline.com",
-    "www.oxfordscholarship.com"
+    "www.oxfordscholarship.com",
+    "www.oxfordre.com",
+    "oxfordre.com"
 	],
   "bacon": {
     "provider": "OUP"
