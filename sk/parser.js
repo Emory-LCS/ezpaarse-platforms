@@ -17,28 +17,6 @@ module.exports = new Parser(function analyseEC(parsedUrl, ec) {
 
   let match;
 
-  //these first two if statements were written by the original parser writer.
-  //however, because i could use an alternate URL to obtain doi and isbn info for the book_sections
-  //and the toc was conflicting with another definition of mine, i commented them out. cb987 2019/07/24
-  // /books/10-winning-strategies-for-leaders-in-the-classroom
-  // /reference/21stcenturyanthro
-  // if ((match = /^\/(books|reference)\/([a-z0-9-]+)\/*$/i.exec(path)) !== null) {
-  //   result.rtype    = 'TOC';
-  //   result.mime     = 'HTML';
-  //   result.unitid   = match[2];
-  //   result.title_id = match[2];
-  // }
-
-  // /books/10-winning-strategies-for-leaders-in-the-classroom/n1.xml
-  // /books/download/10-winning-strategies-for-leaders-in-the-classroom/n10.pdf
-  // /reference/21stcenturyanthro/n29.xml
-  // /reference/download/a-handbook-for-social-science-field-research/n8.pdf
-  // else if ((match = /^\/(?:books|reference)\/(?:download\/)?(([a-z0-9-]+)\/[a-z0-9]+)\.(pdf|xml)$/i.exec(path)) !== null) {
-  //   result.rtype    = 'BOOK_SECTION';
-  //   result.mime     = (match[3].toUpperCase() === 'PDF') ? 'PDF' : 'HTML';
-  //   result.unitid   = match[1];
-  //   result.title_id = match[2];
-
   if (/^\/Data\/GetAllLists/i.test(path)) {
     // http://sk.sagepub.com:80/Data/GetAllLists
     result.rtype = 'SEARCH';
