@@ -15,7 +15,7 @@ module.exports = new Parser(function analyseEC(parsedUrl, ec) {
   let path   = parsedUrl.pathname;
   let match;
 
-  if ((match = /^\/([a-z]+)\/([a-z0-9]+)$/i.exec(path)) !== null) {
+  if ((match = /^\/([a-z]+)\/([a-z0-9_]+)$/i.exec(path)) !== null) {
     // http://www.nber.org/papers/w20518
     result.rtype  = 'REF';
     result.mime   = 'HTML';
@@ -24,6 +24,17 @@ module.exports = new Parser(function analyseEC(parsedUrl, ec) {
     if (match[1] === 'papers') {
       result.rtype = 'ABS';
     }
+
+    if (match[1] === 'people') {
+      result.rtype = 'BIO';
+    }
+
+  } else if ((match = /^\/([a-z]+)\/([a-z]+)\/([a-z]+).html$/i.exec(path)) !== null) {
+    // /workinggroups/ent/ent.html
+    result.rtype = 'REF';
+    result.mime  = 'HTML';
+    result.unitid = match[1] + '/' + match[2];
+
   } else if (/^\/[a-z]+.html$/i.test(path)) {
     // /papers.html
     result.rtype = 'TOC';
@@ -55,6 +66,32 @@ module.exports = new Parser(function analyseEC(parsedUrl, ec) {
     result.rtype  = 'TOC';
     result.mime   = 'HTML';
     result.unitid = match[2];
+
+  } else if (((match = /^\/([a-z]+)\/([0-9]+)\/([a-zA-Z0-9/]+)\/summary.html?$/i.exec(path)) !== null) || ((match = /^\/([a-z]+)\/([a-z]+)\/([a-z]+)summary.shtml?$/i.exec(path)) !== null)) {
+    // /conferences/2019/SI2019/EFGs19/summary.html
+    // /themes/energy/energysummary.shtml
+    result.rtype  = 'TOC';
+    result.mime   = 'HTML';
+    result.unitid = match[3];
+
+  } else if ((match = /^\/([a-zA-Z0-9_-]+)lecture([a-zA-Z0-9_-]+)\/([a-zA-Z0-9_-]+).pdf$/i.exec(path)) !== null) {
+    // /feldstein_lecture_2018/2018feldstein_lecture.pdf
+    result.rtype  = 'SUPPL';
+    result.mime   = 'PDF';
+    result.unitid = match[3];
+
+  } else if ((match = /^\/([a-zA-Z0-9_-]+)lecture([a-zA-Z0-9_-]+)\/([a-zA-Z0-9_-]+).html$/i.exec(path)) !== null) {
+    // https://conference.nber.org:443/feldstein_lecture_2018/feldstein_lecture_2018.html
+    result.rtype  = 'VIDEO';
+    result.mime   = 'MISC';
+    result.unitid = match[3];
+
+  } else if ((match = /^\/([a-zA-Z0-9_-]+)video\/([a-zA-Z0-9_-]+)\/$/i.exec(path)) !== null) {
+    // https://conference.nber.org:443/si2018_video/tradepanel/
+    result.rtype  = 'VIDEO';
+    result.mime   = 'MISC';
+    result.unitid = match[1] + 'video/' + match[2];
+
   }
 
   return result;

@@ -1,8 +1,12 @@
 {
-  "version": "2016-04-26",
+  "version": "2019-08-02",
   "status": "beta",
   "domains": [
-    "www.nber.org"
+    "admin.nber.org",
+    "conference.nber.org",
+    "papers.nber.org",
+    "www.nber.org",
+    "nber.org"
   ],
   "recognize": {
     "rid": [
@@ -12,7 +16,7 @@
   "name": "nber",
   "longname": "NBER",
   "describe": "Recognizes the accesses to the platform NBER",
-  "docurl": "http://ang.couperin.org/platforms/nber/start",
-  "contact": "abderrazzak.loukili@inist.fr",
+  "docurl": "http://analyses.ezpaarse.org/platforms/54661af263198b780a729ad4",
+  "contact": "abderrazzak.loukili@inist.fr,acoope5@emory.edu",
   "pkb": false
 }
