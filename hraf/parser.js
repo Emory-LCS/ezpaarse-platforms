@@ -134,7 +134,7 @@ module.exports = new Parser(function analyseEC(parsedUrl, ec) {
 
   } if (/^\/ehc\/api\/ehc_hypotheses/i.test(path)) {
     // https://hraf.yale.edu:443/ehc/api/ehc_hypotheses?q=id:262&wt=json&mlt=true&mlt.fl=text
-    result.rtype = 'DATA';
+    result.rtype = 'DATASET';
     result.mime = 'HTML';
     result.unitid = param.q;
     result.title_id = param.q;

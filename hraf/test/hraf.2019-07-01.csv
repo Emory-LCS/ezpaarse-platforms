@@ -46,6 +46,6 @@ ARTICLE;HTML;adolescence;adolescence;https://hraf.yale.edu:443/ehc/assets/summar
 ARTICLE;HTML;ccc;ccc;https://hraf.yale.edu:443/ccc/
 ARTICLE;PDF;adolescence;adolescence;https://hraf.yale.edu:443/ehc/assets/summaries/pdfs/adolescence.pdf
 ARTICLE;PDF;hraf-ccc-ch8-III;hraf-ccc-ch8-III;https://hraf.yale.edu:443/wp-content/uploads/2016/06/hraf-ccc-ch8-III.pdf
-DATA;HTML;id:1065;id:1065;https://hraf.yale.edu:443/ehc/api/ehc_hypotheses?q=id:1065&wt=json&mlt=true&mlt.fl=text
-DATA;HTML;id:142;id:142;https://hraf.yale.edu:443/ehc/api/ehc_hypotheses?q=id:142&wt=json&mlt=true&mlt.fl=text
-DATA;HTML;id:262;id:262;https://hraf.yale.edu:443/ehc/api/ehc_hypotheses?q=id:262&wt=json&mlt=true&mlt.fl=text
+DATASET;HTML;id:1065;id:1065;https://hraf.yale.edu:443/ehc/api/ehc_hypotheses?q=id:1065&wt=json&mlt=true&mlt.fl=text
+DATASET;HTML;id:142;id:142;https://hraf.yale.edu:443/ehc/api/ehc_hypotheses?q=id:142&wt=json&mlt=true&mlt.fl=text
+DATASET;HTML;id:262;id:262;https://hraf.yale.edu:443/ehc/api/ehc_hypotheses?q=id:262&wt=json&mlt=true&mlt.fl=text
