@@ -13,34 +13,34 @@ const Parser = require('../.lib/parser.js');
 module.exports = new Parser(function analyseEC(parsedUrl, ec) {
   let result = {};
   let path   = parsedUrl.pathname;
-  // uncomment this line if you need parameters
-  // let param = parsedUrl.query || {};
-
-  // use console.error for debuging
-  // console.error(parsedUrl);
+  let param = parsedUrl.query || {};
 
   let match;
 
-  if ((match = /^\/platform\/path\/to\/(document-([0-9]+)-test\.pdf)$/i.exec(path)) !== null) {
-    // http://parser.skeleton.js/platform/path/to/document-123456-test.pdf?sequence=1
-    result.rtype    = 'ARTICLE';
-    result.mime     = 'PDF';
-    result.title_id = match[1];
+  if (/^\/V1\/Session\/GetSponsorInformation/i.test(path)) {
+    // https://1.next.westlaw.com:443/V1/Session/GetSponsorInformation?sp=002057769-2100
+    result.rtype    = 'CONNECTION';
+    result.mime     = 'MISC';
+    result.unitid   = param.sp;
 
-    /**
-     * unitid is a crucial information needed to filter double-clicks phenomenon, like described by COUNTER
-     * it described the most fine-grained of what's being accessed by the user
-     * it can be a DOI, an internal identifier or a part of the accessed URL
-     * more at http://ezpaarse.readthedocs.io/en/master/essential/ec-attributes.html#unitid
-     */
-    result.unitid = match[2];
+  } else if (/^\/Search\/Results.html/i.test(path)) {
+    // https://1.next.westlaw.com:443/Search/Results.html?...
+    result.rtype    = 'SEARCH';
+    result.mime     = 'HTML';
 
-  } else if ((match = /^\/platform\/path\/to\/(document-([0-9]+)-test\.html)$/i.exec(path)) !== null) {
-    // http://parser.skeleton.js/platform/path/to/document-123456-test.html?sequence=1
+  } else if ((match = /^\/Document\/([a-zA-Z0-9]+)\/View\/FullText.html/i.exec(path)) !== null) {
+    // https://1.next.westlaw.com:443/Document/Ib8b8e0f149af11db99a18fc28eb0d9ae/View/FullText.html?...
     result.rtype    = 'ARTICLE';
     result.mime     = 'HTML';
-    result.title_id = match[1];
-    result.unitid   = match[2];
+    result.unitid   = match[1];
+
+  } else if ((match = /^\/RelatedInformation\/([a-zA-Z0-9]+)\/([a-zA-Z0-9]+).html/i.exec(path)) !== null) {
+    // https://1.next.westlaw.com:443/RelatedInformation/I4374de02468811dabbce983553c9ef8b/kcCitingReferences.html?...
+    // https://1.next.westlaw.com:443/RelatedInformation/I4374de02468811dabbce983553c9ef8b/kcTableOfAuthorities.html?...
+    result.rtype    = 'SUPPL';
+    result.mime     = 'HTML';
+    result.unitid   = match[1];
+
   }
 
   return result;
