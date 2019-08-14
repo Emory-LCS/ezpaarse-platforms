@@ -62,6 +62,7 @@ module.exports = new Parser(function analyseEC(parsedUrl, ec) {
     // https://www.aeaweb.org:443/research/charts/kidney-donor-paid-repugnant-transaction
     result.rtype = 'DATASET';
     result.mime = 'HTML';
+    result.unitid = match[1];
     result.title_id = match[1];
 
   } else if ((match = /^\/asset-server\/articles-attachments\/([a-z]{3})\/data\/([0-z]+)\/([0-z_]+)\.pdf$/i.exec(path)) !== null) {
@@ -76,6 +77,21 @@ module.exports = new Parser(function analyseEC(parsedUrl, ec) {
     result.rtype = 'DATASET';
     result.mime = 'PDF';
     result.unitid = match[1];
+
+  } else if (/^\/full_issue.php/i.test(path)) {
+    // https://www.aeaweb.org:443/full_issue.php?doi=10.1257/jep.33.3
+    result.rtype = 'ARTICLES_BUNDLE';
+    result.mime = 'PDF';
+    result.unitid = param.doi;
+    result.title_id = param.doi;
+    result.doi = param.doi;
+
+  } else if ((match = /^\/resources\/([a-z]+)\/([a-z]+)\/video\/([a-z-]+)$/i.exec(path)) !== null) {
+    // https://www.aeaweb.org:443/resources/students/careers/video/career-in-economics
+    result.rtype = 'VIDEO';
+    result.mime = 'HTML';
+    result.unitid = match[3];
+    result.title_id = match[3];
 
   }
 
