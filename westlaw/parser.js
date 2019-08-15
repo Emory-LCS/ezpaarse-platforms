@@ -41,6 +41,20 @@ module.exports = new Parser(function analyseEC(parsedUrl, ec) {
     result.mime     = 'HTML';
     result.unitid   = match[1];
 
+  } else if ((match = /^\/Browse\/Home\/([a-zA-Z0-9_/-]+)?/i.exec(path)) !== null) {
+    // https://1.next.westlaw.com:443/Browse/Home/Regulations?transitionType=Default&contextData=(sc.Default)
+    // https://1.next.westlaw.com:443/Browse/Home/AdministrativeDecisionsGuidance/EqualEmploymentOpportunityCommission/EEOCComplianceManual?transitionType=Default&contextData=(sc.Default)
+    result.rtype    = 'TOC';
+    result.mime     = 'HTML';
+    result.unitid   = match[1];
+
+  } else if (/^\/Link\/Document\/FullText/i.test(path)) {
+    // https://1.next.westlaw.com:443/Link/Document/FullText?findType=L&pubNum=1000546&cite=28USCAS959&originatingDoc=Ia4b36d45991911e18b7b0000837bc6dd&refType=LQ&originationContext=document&transitionType=DocumentItem&contextData=(sc.Keycite)
+    // https://1.next.westlaw.com:443/Link/Document/FullText?findType=Y&serNum=1976019476&pubNum=0000108&originatingDoc=If77be74330fa11d98057925bad68b741&refType=RP&originationContext=document&transitionType=DocumentItem&contextData=(sc.RelatedInfo)
+    result.rtype    = 'ARTICLE';
+    result.mime     = 'HTML';
+    result.unitid   = param.originatingDoc;
+
   }
 
   return result;
