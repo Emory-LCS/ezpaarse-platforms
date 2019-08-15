@@ -57,6 +57,26 @@ module.exports = new Parser(function analyseEC(parsedUrl, ec) {
     result.title_id = '10.3366' + '/' + match[1];
     result.doi = '10.3366' + '/' + match[1];
 
+  } else if ((match = /^\/doi\/full\/10\.3366\/([0-z.]+)/i.exec(path)) !== null) {
+    // https://www.euppublishing.com:443/doi/full/10.3366/anh.2018.0485
+    // https://www.euppublishing.com:443/doi/full/10.3366/vic.2015.0194
+    // https://www.euppublishing.com:443/doi/full/10.3366/drs.2018.0218
+    result.rtype = 'ARTICLE';
+    result.mime = 'HTML';
+    result.unitid = '10.3366' + '/' + match[1];
+    result.title_id = '10.3366' + '/' + match[1];
+    result.doi = '10.3366' + '/' + match[1];
+
+  } else if ((match = /^\/doi\/pdfplus\/10\.3366\/([0-z.]+)/i.exec(path)) !== null) {
+    // https://www.euppublishing.com:443/doi/pdfplus/10.3366/jshs.2005.25.1.73
+    // https://www.euppublishing.com:443/doi/pdfplus/10.3366/anh.2018.0477
+    result.rtype = 'ARTICLE';
+    result.mime = 'PDF';
+    result.unitid = '10.3366' + '/' + match[1];
+    result.title_id = '10.3366' + '/' + match[1];
+    result.doi = '10.3366' + '/' + match[1];
+
   }
+
   return result;
 });
