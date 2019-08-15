@@ -21,27 +21,42 @@ module.exports = new Parser(function analyseEC(parsedUrl, ec) {
 
   let match;
 
-  if ((match = /^\/platform\/path\/to\/(document-([0-9]+)-test\.pdf)$/i.exec(path)) !== null) {
-    // http://parser.skeleton.js/platform/path/to/document-123456-test.pdf?sequence=1
-    result.rtype    = 'ARTICLE';
-    result.mime     = 'PDF';
-    result.title_id = match[1];
+  if (/^\/action\/doSearch/i.test(path)) {
+    // https://www.euppublishing.com:443/action/doSearch?startPage=0&field1=AllField&text1=barton&Ppub=&Ppub=&AfterMonth=&AfterYear=&BeforeMonth=&BeforeYear=&earlycite=on
+    // https://www.euppublishing.com:443/action/doSearch?AllField=puffins&ConceptID=
+    // https://www.euppublishing.com:443/action/doSearch?AllField=10.3366%2Fanh.2018.0477&ConceptID=
+    result.rtype = 'SEARCH';
+    result.mime = 'HTML';
 
-    /**
-     * unitid is a crucial information needed to filter double-clicks phenomenon, like described by COUNTER
-     * it described the most fine-grained of what's being accessed by the user
-     * it can be a DOI, an internal identifier or a part of the accessed URL
-     * more at http://ezpaarse.readthedocs.io/en/master/essential/ec-attributes.html#unitid
-     */
-    result.unitid = match[2];
+  } else if ((match = /^\/toc\/([a-z]{3})\/(current|([0-9/]+))$/i.exec(path)) !== null) {
+    // https://www.euppublishing.com:443/toc/anh/45/1
+    // https://www.euppublishing.com:443/toc/afg/current
+    // https://www.euppublishing.com:443/toc/drs/36/1
+    result.rtype = 'TOC';
+    result.mime = 'HTML';
+    result.unitid = match[1] + '/' + match[2];
+    result.title_id = match[1] + '/' + match[2];
 
-  } else if ((match = /^\/platform\/path\/to\/(document-([0-9]+)-test\.html)$/i.exec(path)) !== null) {
-    // http://parser.skeleton.js/platform/path/to/document-123456-test.html?sequence=1
-    result.rtype    = 'ARTICLE';
-    result.mime     = 'HTML';
-    result.title_id = match[1];
-    result.unitid   = match[2];
+  } else if ((match = /^\/doi\/ref\/10\.3366\/([0-z.]+)$/i.exec(path)) !== null) {
+    // https://www.euppublishing.com:443/doi/ref/10.3366/anh.2018.0485
+    // https://www.euppublishing.com:443/doi/ref/10.3366/drs.2018.0218
+    result.rtype = 'REF';
+    result.mime = 'HTML';
+    result.unitid = '10.3366' + '/' + match[1];
+    result.title_id = '10.3366' + '/' + match[1];
+    result.doi = '10.3366' + '/' + match[1];
+
+  } else if ((match = /^\/doi\/abs\/10\.3366\/([0-z.]+)/i.exec(path)) !== null) {
+    // https://www.euppublishing.com:443/doi/abs/10.3366/jshs.2005.25.1.73
+    // https://www.euppublishing.com:443/doi/abs/10.3366/anh.2018.0477
+    // https://www.euppublishing.com:443/doi/abs/10.3366/E1471576708000211
+    // https://www.euppublishing.com:443/doi/abs/10.3366/anh.2014.0206?journalCode=anh
+    result.rtype = 'ABS';
+    result.mime = 'HTML';
+    result.unitid = '10.3366' + '/' + match[1];
+    result.title_id = '10.3366' + '/' + match[1];
+    result.doi = '10.3366' + '/' + match[1];
+
   }
-
   return result;
 });
