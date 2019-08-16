@@ -22,7 +22,7 @@ module.exports = new Parser(function analyseEC(parsedUrl, ec) {
     result.rtype    = 'SEARCH';
     result.mime     = 'HTML';
 
- } else if ((match = /^\/(world|World|jazz|Jazz)\/([a-zA-Z0-9_-]+).asp$/i.exec(path)) !== null) {
+  } else if ((match = /^\/(world|World|jazz|Jazz)\/([a-zA-Z0-9_-]+).asp$/i.exec(path)) !== null) {
     if (match[2] == 'artist_pro_new') {
       // https://emory.naxosmusiclibrary.com:443/World/artist_pro_new.asp?personid=32318
       result.rtype  = 'TOC';
@@ -87,7 +87,7 @@ module.exports = new Parser(function analyseEC(parsedUrl, ec) {
     result.rtype    = 'TOC';
     result.mime     = 'HTML';
     result.unitid   = param.region;
-    
+
   } else if ((match = /^\/label\/([a-zA-Z0-9_-]+)\/([a-zA-Z0-9_-]+)\/([a-zA-Z0-9_-]+)$/i.exec(path)) !== null) {
     // https://emory.nml3.naxosmusiclibrary.com:443/label/BLI/-1/1?_pjax=%23main
     result.rtype    = 'TOC';
@@ -208,7 +208,7 @@ module.exports = new Parser(function analyseEC(parsedUrl, ec) {
     result.rtype    = 'BOOK_SECTION';
     result.mime     = 'HTML';
     result.unitid   = match[1] + '/' + match[2];
- 
+
   } else if ((match = /^\/resources\/studyarea\/([a-zA-Z0-9_-]+)\/([a-zA-Z0-9_-]+)$/i.exec(path)) !== null) {
     // https://emory.nml3.naxosmusiclibrary.com:443/resources/studyarea/ireland/chapter02?_pjax=%23main
     result.rtype    = 'BOOK_SECTION';
