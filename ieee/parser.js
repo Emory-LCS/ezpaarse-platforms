@@ -14,9 +14,48 @@ module.exports = new Parser(function analyseEC(parsedUrl, ec) {
   const result = {};
   const path   = parsedUrl.pathname;
   const param  = parsedUrl.query || {};
+  console.error(parsedUrl);
   let match;
 
-  if ((match = /^\/document\/([0-9]+)\/?$/i.exec(path)) !== null) {
+  if (/^\/search\/searchresult\.jsp/i.test(path)) {
+  // https://ieeexplore.ieee.org:443/search/searchresult.jsp?newsearch=true&queryText=flower
+  // https://ieeexplore.ieee.org:443/search/searchresult.jsp?contentType=books&queryText=water&highlight=true&returnType=SEARCH&returnFacets=ALL
+    result.rtype = 'SEARCH';
+    result.mime  = 'HTML';
+
+  } else if (/^\/searchresults\/index\.html/i.test(path)) {
+  // https://www.ieee.org:443/searchresults/index.html?q=barton
+    result.rtype = 'SEARCH';
+    result.mime  = 'HTML';
+
+  } else if (/^\/xpl\/dwnldReferences/i.test(path)) {
+    // https://ieeexplore.ieee.org:443/xpl/dwnldReferences?arnumber=8475993
+    result.rtype    = 'REF';
+    result.mime     = 'HTML';
+    result.unitid   = param.arnumber;
+    result.title_id = param.arnumber;
+
+  } else if ((match = /^\/rest\/document\/([0-9]+)\/figures/i.exec(path)) !== null) {
+    // https://ieeexplore.ieee.org:443/rest/document/8475993/figures
+    result.rtype = 'IMAGE';
+    result.mime  = 'MISC';
+    result.unitid = match[1];
+    result.title_id = match[1];
+
+  } else if ((match = /^\/book\/([0-9]+)$/i.exec(path)) !== null) {
+    // https://ieeexplore.ieee.org:443/book/8040335
+    result.rtype  = 'BOOK';
+    result.mime   = 'HTML';
+    result.unitid = match[1];
+
+  } else if (/^\/rest\/publication\/home\/metadata/i.exec(path)) {
+    // https://ieeexplore.ieee.org:443/rest/publication/home/metadata?pubid=3533
+    result.rtype = 'TOC';
+    result.mime  = 'HTML';
+    result.unitid = param.pubid;
+    result.title_id = param.pubid;
+
+  } else if ((match = /^\/document\/([0-9]+)\/?$/i.exec(path)) !== null) {
     // /document/8122856
     result.rtype  = 'ARTICLE';
     result.mime   = 'HTML';
@@ -52,10 +91,10 @@ module.exports = new Parser(function analyseEC(parsedUrl, ec) {
     // http://ieeexplore.ieee.org.rproxy.insa-rennes.fr/xpls/icp.jsp?arnumber=6899296
     result.rtype = 'ARTICLE';
     result.mime  = 'HTML';
-
     if (param.arnumber) {
       result.unitid   = param.arnumber;
     }
+
   } else if (/^\/stamp\/(([a-z]+)\.jsp)/.test(path)) {
     // http://ieeexplore.ieee.org.rproxy.insa-rennes.fr/stamp/stamp.jsp?tp=&arnumber=6648418
     // http://ieeexplore.ieee.org.rproxy.insa-rennes.fr/stamp/stamp.jsp?arnumber=6899296
@@ -96,7 +135,7 @@ module.exports = new Parser(function analyseEC(parsedUrl, ec) {
     result.rtype  = 'ISSUE';
     result.mime   = 'PDF';
     result.unitid = `${match[2]}/${match[3]}/issue/${match[4]}`;
-  }
 
+  }
   return result;
 });
