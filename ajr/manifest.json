@@ -1,0 +1,14 @@
+{
+  "longname": "American Journal of Roentgenology",
+  "name": "ajr",
+  "describe": "Recognizes the accesses to the platform American Journal of Roentgenology",
+  "contact": "acoope5@emory.edu",
+  "pkb": false,
+  "docurl": "http://ang.couperin.org/platforms/573b35a6da1293796946c5ad",
+  "domains": [
+    "www.ajronline.org",
+    "ajronline.org"
+  ],
+  "version": "2019-08-16",
+  "status": "beta"
+}
