@@ -52,7 +52,7 @@ module.exports = new Parser(function analyseEC(parsedUrl, ec) {
     // https://pubs.aeaweb.org:443/doi/pdfplus/10.1257/aer.20170973
     // https://pubs.aeaweb.org:443/doi/pdfplus/10.1257/jep.33.3.3
     result.rtype = 'ARTICLE';
-    result.mime = 'PDF';
+    result.mime = 'PDFPLUS';
     result.unitid = match[1] + '/' + match[2];
     result.title_id = match[1] + '/' + match[2];
     result.doi = match[1] + '/' + match[2];
