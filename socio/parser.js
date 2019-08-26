@@ -23,7 +23,7 @@ module.exports = new Parser(function analyseEC(parsedUrl, ec) {
     result.rtype    = 'SEARCH';
     result.mime     = 'HTML';
 
-  } else if ((match = /^\/products\/([a-zA-Z0-9-]+)$/i.exec(path)) !== null) {
+  } else if ((match = /^\/products\/([a-zA-Z0-9_-]+)$/i.exec(path)) !== null) {
     // https://www.socio.com:443/products/data
     if (match[1] == 'data') {
       result.rtype  = 'SEARCH';
@@ -46,6 +46,12 @@ module.exports = new Parser(function analyseEC(parsedUrl, ec) {
     result.rtype    = 'SUPPL';
     result.mime     = 'MISC';
     result.unitid   = match[1] + '/contents/' + match[2];
+
+  } else if ((match = /^\/pdf_uploads\/file\/([a-zA-Z0-9_-]+)\/([a-zA-Z0-9_-]+).pdf$/i.exec(path)) !== null) {
+    // https://www.socio.com:443/pdf_uploads/file/27/Clinic-Based_AIDS_Education_Program_Abstract.pdf?1509557833
+    result.rtype    = 'ABS';
+    result.mime     = 'PDF';
+    result.unitid   = match[1] + '/' + match[2];
 
   }
 
