@@ -21,10 +21,12 @@ module.exports = new Parser(function analyseEC(parsedUrl, ec) {
 
   let match;
 
-  if (/^\/action\/doSearch/i.test(path)) {
+  if (/^\/action\/(doSearch|showPublications)/i.test(path)) {
     // https://www.euppublishing.com:443/action/doSearch?startPage=0&field1=AllField&text1=barton&Ppub=&Ppub=&AfterMonth=&AfterYear=&BeforeMonth=&BeforeYear=&earlycite=on
     // https://www.euppublishing.com:443/action/doSearch?AllField=puffins&ConceptID=
     // https://www.euppublishing.com:443/action/doSearch?AllField=10.3366%2Fanh.2018.0477&ConceptID=
+    // https://www.euppublishing.com:443/action/showPublications
+    // https://www.euppublishing.com:443/action/showPublications?category=10.1555%2Fcategory.40036333
     result.rtype = 'SEARCH';
     result.mime = 'HTML';
 
@@ -71,7 +73,7 @@ module.exports = new Parser(function analyseEC(parsedUrl, ec) {
     // https://www.euppublishing.com:443/doi/pdfplus/10.3366/jshs.2005.25.1.73
     // https://www.euppublishing.com:443/doi/pdfplus/10.3366/anh.2018.0477
     result.rtype = 'ARTICLE';
-    result.mime = 'PDF';
+    result.mime = 'PDFPLUS';
     result.unitid = '10.3366' + '/' + match[1];
     result.title_id = '10.3366' + '/' + match[1];
     result.doi = '10.3366' + '/' + match[1];
