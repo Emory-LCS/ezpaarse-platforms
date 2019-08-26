@@ -100,14 +100,30 @@ module.exports = new Parser(function analyseEC(parsedUrl, ec) {
     result.unitid   = param.doi;
     result.doi      = param.doi;
 
-  } else if ((match = /^\/na101\/home\/literatum\/publisher\/arrs\/journals\/content\/ajr\/([0-9]+)\/([a-zA-Z0-9._-]+)\/([a-zA-Z0-9.]+)\/production\/images\/([a-z]+)\/([a-zA-Z0-9_]+).jpeg$/i.exec(path)) !== null) {
+  } else if ((match = /^\/na101\/home\/literatum\/publisher\/arrs\/journals\/content\/ajr\/([0-9]+)\/([a-zA-Z0-9._-]+)\/([a-zA-Z0-9.]+)\/([a-zA-Z0-9_]+)\/images\/([a-z]+)\/([a-zA-Z0-9_]+).jpeg$/i.exec(path)) !== null) {
     // https://www.ajronline.org:443/na101/home/literatum/publisher/arrs/journals/content/ajr/2007/ajr.2007.189.issue-1/ajr.07.2073/production/images/medium/07_2073_01a.jpeg
     // https://www.ajronline.org:443/na101/home/literatum/publisher/arrs/journals/content/ajr/2007/ajr.2007.189.issue-1/ajr.07.2073/production/images/large/07_2073_01a.jpeg
+    // https://www.ajronline.org:443/na101/home/literatum/publisher/arrs/journals/content/ajr/2016/ajr.2016.207.issue-5/ajr.16.16477/20161021/images/large/11_16_16477_01b.jpeg
     result.rtype    = 'IMAGE';
     result.mime     = 'MISC';
     result.title_id = '10.2214/' + match[3];
-    result.unitid   = '10.2214/' + match[3] + '/production/images/' + match[4] + '/' + match[5];
+    result.unitid   = '10.2214/' + match[3] + '/' + match[4] + '/images/' + match[5] + '/' + match[6];
     result.doi      = '10.2214/' + match[3];
+
+  } else if ((match = /^\/doi\/suppl\/([a-zA-Z0-9.]+)\/([a-zA-Z0-9.]+)\/doi\/suppl\/([a-zA-Z0-9.]+)\/([a-zA-Z0-9.]+)\/([a-zA-Z0-9_]+)\/([a-zA-Z0-9_]+).jpg$/i.exec(path)) !== null) {
+    // https://www.ajronline.org:443/doi/suppl/10.2214/AJR.18.19548/doi/suppl/10.2214/AJR.18.19548/suppl_file/07_18_19548_suppdata_s04e.jpg
+    result.rtype    = 'IMAGE';
+    result.mime     = 'MISC';
+    result.title_id = match[1] + '/' + match[2];
+    result.unitid   = match[3] + '/' + match[4] + '/' + match[5] + '/' + match[6];
+    result.doi      = match[1] + '/' + match[2];
+
+  } else if (/^\/action\/showLargeCover$/i.test(path)) {
+    result.rtype    = 'IMAGE';
+    result.mime     = 'MISC';
+    result.title_id = param.doi;
+    result.unitid   = param.doi;
+    result.doi      = param.doi;
 
   }
 
