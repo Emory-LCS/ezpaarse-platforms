@@ -14,7 +14,7 @@ module.exports = new Parser(function analyseEC(parsedUrl, ec) {
   const result = {};
   const path   = parsedUrl.pathname;
   const param  = parsedUrl.query || {};
-  console.error(parsedUrl);
+  // console.error(parsedUrl);
   let match;
 
   if (/^\/search\/searchresult\.jsp/i.test(path)) {
