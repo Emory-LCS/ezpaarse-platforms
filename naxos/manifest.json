@@ -4,7 +4,7 @@
   "describe": "Recognizes the accesses to the platform Naxos",
   "contact": "acoope5@emory.edu",
   "pkb": false,
-  "docurl": "http://ang.couperin.org/platforms/to_be_completed/",
+  "docurl": "http://ang.couperin.org/platforms/5d6ec392ec94b21b07a71bd5",
   "domains": [
     "audiostream.naxosmusiclibrary.com",
     "emory.naxosmusiclibrary.com",
@@ -20,5 +20,5 @@
     "www.naxosmusiclibrary.com"
   ],
   "version": "2019-08-15",
-  "status": "beta"
+  "status": "stable"
 }
