@@ -1,0 +1,14 @@
+{
+  "longname": "Africa Knowledge Project ",
+  "name": "africaknowledgeproject",
+  "describe": "Recognizes the accesses to the platform Africa Knowledge Project ",
+  "contact": "acoope5@emory.edu",
+  "pkb": false,
+  "docurl": "http://ang.couperin.org/platforms/to_be_completed/",
+  "domains": [
+    "www.africaknowledgeproject.org",
+    "africaknowledgeproject.org"
+  ],
+  "version": "2019-09-06",
+  "status": "beta"
+}
