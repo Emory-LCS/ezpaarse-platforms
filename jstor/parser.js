@@ -83,9 +83,17 @@ module.exports = new Parser(function analyseEC(parsedUrl) {
       result.rtype = 'ARTICLE_SECTION';
       result.mime  = 'GIF';
       break;
-    case 'pdf':
-      result.rtype = 'ARTICLE';
-      result.mime  = 'PDF';
+    case ('pdf'):
+      switch (match[2]) {
+      case (match[2].match(/^j.ctt*/) || {}).input:
+        result.rtype = 'BOOK_SECTION';
+        result.mime  = 'PDF';
+        break;
+      default:
+        result.rtype = 'ARTICLE';
+        result.mime  = 'PDF';
+        break;
+      }
       break;
     case 'pdfplus':
       result.rtype = 'ARTICLE';
