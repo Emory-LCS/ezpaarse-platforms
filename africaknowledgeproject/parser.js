@@ -101,7 +101,53 @@ module.exports = new Parser(function analyseEC(parsedUrl, ec) {
       result.publication_title = 'West Africa Review';
     }
 
-  } else if ((match = /^\/index.php\/([a-z]+)\/article\/(view|download)\/([0-9]+)\/([0-9]+)$/i.exec(path)) !== null) {
+  } else if ((match = /^\/index.php\/([a-z]+)\/article\/(view)\/([0-9]+)\/([0-9]+)$/i.exec(path)) !== null) {
+    // https://www.africaknowledgeproject.org:443/index.php/amd/article/view/3437
+    result.title_id = match[3] + '/' + match[4];
+    result.unitid   = match[3] + '/' + match[4];
+    if (match[1] == 'amd') {
+      result.publication_title = 'African Music Database';
+      result.rtype    = 'AUDIO';
+      result.mime     = 'MISC';
+    } else if (match[1] == 'bwd') {
+      result.publication_title = 'Biafran War Database';
+      result.rtype    = 'ARTICLE';
+      result.mime     = 'HTML';
+    } else if (match[1] == 'erald') {
+      result.publication_title = 'Enriching Resource Document & Language Archive';
+      result.rtype    = 'ARTICLE';
+      result.mime     = 'HTML';
+    } else if (match[1] == 'ijele') {
+      result.publication_title = 'Ijele: Art eJournal of the African World';
+      result.rtype    = 'ARTICLE';
+      result.mime     = 'HTML';
+    } else if (match[1] == 'index') {
+      result.publication_title = 'Africa Knowledge Project';
+      result.rtype    = 'ARTICLE';
+      result.mime     = 'HTML';
+    } else if (match[1] == 'jap') {
+      result.publication_title = 'Journal on African Philosophy';
+      result.rtype    = 'ARTICLE';
+      result.mime     = 'HTML';
+    } else if (match[1] == 'jenda') {
+      result.publication_title = 'JENdA: A Journal of Culture and African Women Studies';
+      result.rtype    = 'ARTICLE';
+      result.mime     = 'HTML';
+    } else if (match[1] == 'ksd') {
+      result.publication_title = 'Kiswahili Story Database';
+      result.rtype    = 'ARTICLE';
+      result.mime     = 'HTML';
+    } else if (match[1] == 'proudflesh') {
+      result.publication_title = 'ProudFlesh: New Afrikan Journal of Culture, Politics and Consciousness';
+      result.rtype    = 'ARTICLE';
+      result.mime     = 'HTML';
+    } else if (match[1] == 'war') {
+      result.publication_title = 'West Africa Review';
+      result.rtype    = 'ARTICLE';
+      result.mime     = 'HTML';
+    }
+
+  } else if ((match = /^\/index.php\/([a-z]+)\/article\/(download)\/([0-9]+)\/([0-9]+)$/i.exec(path)) !== null) {
     // https://www.africaknowledgeproject.org:443/index.php/amd/article/view/3437
     result.title_id = match[3] + '/' + match[4];
     result.unitid   = match[3] + '/' + match[4];
