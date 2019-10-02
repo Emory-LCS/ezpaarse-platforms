@@ -4,7 +4,7 @@
   "describe": "Recognizes the accesses to the platform International Monetary Fund",
   "contact": "acoope5@emory.edu",
   "pkb": false,
-  "docurl": "http://ang.couperin.org/platforms/to_be_completed/",
+  "docurl": "http://ang.couperin.org/platforms/5d94f28c422a6530125edc67",
   "domains": [
     "www.imf.org",
     "imf.org",
@@ -13,5 +13,5 @@
     "blogs.imf.org"
   ],
   "version": "2019-09-30",
-  "status": "beta"
+  "status": "stable"
 }
