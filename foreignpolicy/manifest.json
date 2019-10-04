@@ -6,7 +6,8 @@
   "pkb": false,
   "docurl": "http://ang.couperin.org/platforms/to_be_completed/",
   "domains": [
-    "foreignpolicy.com"
+    "foreignpolicy.com",
+    "www.foreignpolicy.com"
   ],
   "version": "2019-10-01",
   "status": "beta"
