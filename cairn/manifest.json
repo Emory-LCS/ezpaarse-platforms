@@ -11,7 +11,9 @@
   "pkb": true,
 	"domains": [
     "www.cairn.info",
-    "www.cairn-int.info"
+    "www.cairn-int.info",
+    "cairn.info",
+    "cairn-int.info"
 	],
   "bacon": {
     "provider": "CAIRN"
