@@ -2,7 +2,9 @@
   "version": "2015-04-15",
   "status": "beta",
   "domains": [
-    "ieeexplore.ieee.org"
+    "ieeexplore.ieee.org",
+    "www.ieee.org",
+    "ieee.org"
   ],
   "recognize": {
     "rid": [
