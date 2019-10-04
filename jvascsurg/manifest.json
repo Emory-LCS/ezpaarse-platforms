@@ -6,7 +6,8 @@
   "pkb": false,
   "docurl": "http://ang.couperin.org/platforms/to_be_completed/",
   "domains": [
-    "jvascsurg.org"
+    "jvascsurg.org",
+    "www.jvascsurg.org"
   ],
   "version": "2019-07-08",
   "status": "beta"
