@@ -6,7 +6,9 @@
     "utilities.factiva.com",
     "viewer.factiva.com",
     "www.wsj.com",
-    "global.factiva.com"
+    "global.factiva.com",
+    "www.factiva.com",
+    "factiva.com"
   ],
   "recognize": {
     "rid": []
