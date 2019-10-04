@@ -2,7 +2,9 @@
   "version": "2017-01-31",
   "status": "beta",
   "domains": [
-    "dlib.eastview.com"
+    "dlib.eastview.com",
+    "www.eastview.com",
+    "eastview.com"
   ],
   "recognize": {
     "rid": [
