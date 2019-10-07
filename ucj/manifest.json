@@ -2,7 +2,12 @@
   "version": "2018-01-02",
   "status": "beta",
   "domains": [
-    "www.journals.uchicago.edu"
+    "www.journals.uchicago.edu",
+    "journals.uchicago.edu",
+    "www.press.uchicago.edu",
+    "press.uchicago.edu",
+    "www.uchicago.edu",
+    "uchicago.edu"
   ],
   "recognize": {
     "rid": [
