@@ -6,7 +6,9 @@
   "pkb": false,
   "docurl": "http://ang.couperin.org/platforms/to_be_completed/",
   "domains": [
-    "emory.on.worldcat.org"
+    "emory.on.worldcat.org",
+    "www.worldcat.org",
+    "worldcat.org"
   ],
   "version": "2019-04-26",
   "status": "beta"
