@@ -10,7 +10,8 @@
     "elibrary.worldbank.org",
     "openknowledge.worldbank.org",
     "pubdocs.worldbank.org",
-    "worldbank.org"
+    "worldbank.org",
+    "www.worldbank.org"
   ],
   "version": "2019-05-16",
   "status": "beta"
