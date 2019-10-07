@@ -2,7 +2,10 @@
   "version": "2017-04-25",
   "status": "beta",
   "domains": [
-    "www.osapublishing.org"
+    "www.osapublishing.org",
+    "www.osa.org",
+    "osa.org",
+    "osapublishing.org"
   ],
   "recognize": {
     "rid": [
