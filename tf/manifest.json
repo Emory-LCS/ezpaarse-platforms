@@ -3,9 +3,16 @@
   "status": "beta",
   "trello": "https://trello.com/c/az0rvaBM",
   "domains": [
-    "www.tandfonline.com",
     "amstat.tandfonline.com",
-    "explore.tandfonline.com"
+    "explore.tandfonline.com",
+    "tandfonline.com",
+    "www.tandfonline.com",
+    "tandf.com",
+    "www.tandf.com"
+    "www.tandf.co.uk",
+    "tandf.co.uk",
+    "www.taylorfrancis.com",
+    "taylorfrancis.com"
   ],
   "recognize": {
     "rid": [
