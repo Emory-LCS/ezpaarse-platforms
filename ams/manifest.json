@@ -2,7 +2,9 @@
   "version": "2015-12-11",
   "status": "beta",
   "domains": [
-    "journals.ametsoc.org"
+    "journals.ametsoc.org",
+    "www.ametsoc.org",
+    "ametsoc.org"
   ],
   "recognize": {
     "rid": [
