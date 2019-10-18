@@ -19,7 +19,7 @@ module.exports = new Parser(function analyseEC(parsedUrl, ec) {
   let host  = parsedUrl.hostname;
 
   // use console.error for debuging
-  console.error(parsedUrl);
+  // console.error(parsedUrl);
 
   if (/^\/kcms\/detail\/search.aspx$/i.test(path)) {
     // http://oversea.cnki.net:80/kcms/detail/search.aspx?dbcode=CJFD&sfield=kw&skey=large+jellyfish
