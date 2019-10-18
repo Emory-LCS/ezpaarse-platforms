@@ -2,7 +2,9 @@
   "version": "2018-02-20",
   "status": "active",
   "domains": [
-    "http://library.cqpress.com/"
+    "library.cqpress.com",
+    "www.cqpress.com",
+    "cqpress.com"
   ],
   "recognize": {
     "rid": []
