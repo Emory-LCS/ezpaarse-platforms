@@ -6,7 +6,8 @@
   "pkb": false,
   "docurl": "http://ang.couperin.org/platforms/573b33a3778504780f6f07ba",
   "domains": [
-    "aeaweb.org"
+    "aeaweb.org",
+    "www.aeaweb.org"
   ],
   "version": "2019-08-06",
   "status": "beta"
