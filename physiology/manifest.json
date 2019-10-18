@@ -6,7 +6,10 @@
   "pkb": false,
   "docurl": "http://analogist.couperin.org/platforms/559694a112120d440d1ec726 ",
   "domains": [
-    "physiology.org"
+    "physiology.org",
+    "www.the-aps.org",
+    "the-aps.org",
+    "www.physiology.org"
   ],
   "version": "2019-05-16",
   "status": "beta"
