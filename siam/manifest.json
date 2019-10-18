@@ -2,7 +2,9 @@
   "version": "2017-05-09",
   "status": "beta",
   "domains": [
-    "epubs.siam.org"
+    "epubs.siam.org",
+    "www.siam.org",
+    "siam.org"
   ],
   "recognize": {
     "rid": [
