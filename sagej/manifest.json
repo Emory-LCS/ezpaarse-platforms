@@ -2,7 +2,9 @@
   "version": "2016-12-05",
   "status": "beta",
   "domains": [
-    "journals.sagepub.com"
+    "journals.sagepub.com",
+    "www.sagepub.com",
+    "sagepub.com"
   ],
   "recognize": {
     "rid": [
