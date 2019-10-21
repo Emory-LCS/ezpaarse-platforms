@@ -2,7 +2,8 @@
   "version": "2017-12-14",
   "status": "beta",
   "domains": [
-    "https://www.embase.com"
+    "www.embase.com",
+    "embase.com"
   ],
   "recognize": {
     "rid": [
