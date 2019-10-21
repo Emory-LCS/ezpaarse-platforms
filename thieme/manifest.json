@@ -4,7 +4,9 @@
   "domains": [
     "www.thieme-connect.com",
     "www.thieme-connect.de",
-    "medone-education.thieme.com"
+    "medone-education.thieme.com",
+    "www.thieme.com",
+    "thieme.com"
   ],
   "recognize": {
     "rid": [
