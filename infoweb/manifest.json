@@ -6,7 +6,10 @@
   "pkb": false,
   "docurl": "http://ang.couperin.org/platforms/to_be_completed/",
   "domains": [
-    "newsbank.com"
+    "newsbank.com",
+    "www.infoweb.newsbank.com",
+    "infoweb.newsbank.com",
+    "www.newsbank.com"
   ],
   "version": "2019-04-29",
   "status": "beta"
