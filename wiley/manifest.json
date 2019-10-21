@@ -10,7 +10,6 @@
   "contact": "thierry.fournier at univ-rennes1 point fr",
   "pkb": true,
 	"domains": [
-    "onlinelibrary.wiley.com",
     "agupubs.onlinelibrary.wiley.com",
     "aasldpubs.onlinelibrary.wiley.com",
     "anthrosource.onlinelibrary.wiley.com",
@@ -18,7 +17,16 @@
     "aslopubs.onlinelibrary.wiley.com",
     "accp1.onlinelibrary.wiley.com",
     "aapm.onlinelibrary.wiley.com",
-    "www.wiley.com"
+    "www.interscience.wiley.com",
+    "interscience.wiley.com",
+    "www.onlinelibrary.wiley.com",
+    "onlinelibrary.wiley.com",
+    "www.wiley.com",
+    "wiley.com",
+    "www.wileyhealthlearning.com",
+    "wileyhealthlearning.com",
+    "www.wileyopenaccess.com",
+    "wileyopenaccess.com"
 	],
   "bacon": {
     "provider": "WILEY"
