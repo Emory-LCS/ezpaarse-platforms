@@ -3,14 +3,27 @@
   "status": "beta",
   "domains": [
     "galegroup.com",
+    "www.galegroup.com",
     "find.galegroup.com",
-    "go.galegroup.com",
-    "rs.go.galegroup.com",
     "gdc.galegroup.com",
+    "go.galegroup.com",
+    "infotrack.galegroup.com",
     "natgeo.galegroup.com",
+    "ncco.galegroup.com",
+    "rs.go.galegroup.com",
+    "shakespeare.galegroup.com",
+    "titlelist.galegroup.com",
+    "worldscholar.galegroup.com",
     "gale.com",
     "www.gale.com",
-    "www.galegroup.com"
+    "find.gale.com",
+    "infotrack.gale.com",
+    "go.gale.com",
+    "natgeo.gale.com",
+    "ncco.gale.com",
+    "shakespeare.gale.com",
+    "titlelist.gale.com",
+    "worldscholar.gale.com"
   ],
   "recognize": {
     "rid": [
