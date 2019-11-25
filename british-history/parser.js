@@ -62,6 +62,13 @@ module.exports = new Parser(function analyseEC(parsedUrl, ec) {
       result.unitid   = match[1] + '/vol' + match[2] + '/pp' + match[3];
     }
 
+  } else if ((match = /^\/([a-zA-Z0-9-]+)\/([a-zA-Z-]+)$/i.exec(path)) !== null) {
+    // https://www.british-history.ac.uk:443/os-1-to-10560/buckinghamshire
+    result.rtype    = 'UNKNOWN';
+    result.mime     = 'UNKNOWN';
+    result.title_id = match[1];
+    result.unitid   = match[1] + '/' + match[2];
+
   } else if ((match = /^\/([a-zA-Z0-9-]+)\/([a-zA-Z-]+)\/([0-9]+)$/i.exec(path)) !== null) {
     // https://www.british-history.ac.uk:443/os-1-to-10560/buckinghamshire/001
     result.rtype    = 'IMAGE';
