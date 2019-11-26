@@ -64,8 +64,8 @@ module.exports = new Parser(function analyseEC(parsedUrl, ec) {
 
   } else if ((match = /^\/([a-zA-Z0-9-]+)\/([a-zA-Z-]+)$/i.exec(path)) !== null) {
     // https://www.british-history.ac.uk:443/os-1-to-10560/buckinghamshire
-    result.rtype    = 'UNKNOWN';
-    result.mime     = 'UNKNOWN';
+    result.rtype    = 'TOC';
+    result.mime     = 'HTML';
     result.title_id = match[1];
     result.unitid   = match[1] + '/' + match[2];
 
