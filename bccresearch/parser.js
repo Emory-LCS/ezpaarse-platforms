@@ -13,34 +13,47 @@ const Parser = require('../.lib/parser.js');
 module.exports = new Parser(function analyseEC(parsedUrl, ec) {
   let result = {};
   let path   = parsedUrl.pathname;
-  // uncomment this line if you need parameters
-  // let param = parsedUrl.query || {};
-
-  // use console.error for debuging
+  // let param  = parsedUrl.query || {};
+  let host   = parsedUrl.hostname;
   // console.error(parsedUrl);
 
   let match;
 
-  if ((match = /^\/platform\/path\/to\/(document-([0-9]+)-test\.pdf)$/i.exec(path)) !== null) {
-    // http://parser.skeleton.js/platform/path/to/document-123456-test.pdf?sequence=1
-    result.rtype    = 'ARTICLE';
-    result.mime     = 'PDF';
-    result.title_id = match[1];
+  if (/blog.bccresearch.com/i.test(host)) {
+    if ((match = /^\/author\/([a-zA-Z0-9-]+)$/i.exec(path)) !==null) {
+      // http://blog.bccresearch.com:80/author/clara-mouawad
+      result.rtype    = 'BIO';
+      result.mime     = 'HTML';
+      result.unitid   = match[1];
+    } else if ((match = /^\/([a-zA-Z0-9-]+)$/i.exec(path)) !==null) {
+      // http://blog.bccresearch.com:80/food-and-beverage-market-2019
+      // http://blog.bccresearch.com:80/the-beginners-guide-to-video-for-academic-librarians
+      result.rtype    = 'ARTICLE';
+      result.mime     = 'HTML';
+      result.unitid   = match[1];
+    }
 
-    /**
-     * unitid is a crucial information needed to filter double-clicks phenomenon, like described by COUNTER
-     * it described the most fine-grained of what's being accessed by the user
-     * it can be a DOI, an internal identifier or a part of the accessed URL
-     * more at http://ezpaarse.readthedocs.io/en/master/essential/ec-attributes.html#unitid
-     */
-    result.unitid = match[2];
 
-  } else if ((match = /^\/platform\/path\/to\/(document-([0-9]+)-test\.html)$/i.exec(path)) !== null) {
-    // http://parser.skeleton.js/platform/path/to/document-123456-test.html?sequence=1
-    result.rtype    = 'ARTICLE';
-    result.mime     = 'HTML';
-    result.title_id = match[1];
-    result.unitid   = match[2];
+  } else if (/www.bccresearch.com/i.test(host)) {
+    if (((match = /^\/([a-zA-Z0-9-]+)\/([a-zA-Z0-9-]+).html$/i.exec(path)) !==null) || ((match = /^\/([a-zA-Z0-9-]+)\/([a-zA-Z0-9-]+)\/([a-zA-Z0-9-]+).html$/i.exec(path)) !==null) || ((match = /^\/([a-zA-Z0-9-]+)\/([a-zA-Z0-9-]+)\/([a-zA-Z0-9-]+)\/([a-zA-Z0-9-]+).html$/i.exec(path)) !==null)) {
+      // https://www.bccresearch.com:443/partners/persistence-market-research/global-market-study-on-potato-starch.html
+      // https://www.bccresearch.com:443/market-research/chemicals/biopesticides-chm029e.html
+      // https://www.bccresearch.com:443/market-research/information-technology/geospatial-analytics-market-report.html
+      // https://www.bccresearch.com:443/partners/verified-market-research/industrial-hearable-market-size-and-forecast.html
+      result.rtype    = 'ABSTRACT';
+      result.mime     = 'HTML';
+      result.unitid   = match[4] || match[3] || match[2];
+    } else if (/^\/([a-zA-Z0-9/-]+)$/i.test(path)) {
+      // https://www.bccresearch.com:443/index/reportlookupsuggestsolr?q=potato
+      // https://www.bccresearch.com:443/partners
+      // https://www.bccresearch.com:443/collections/materials
+      // https://www.bccresearch.com:443/collections/materials/page2
+      // https://www.bccresearch.com:443/market-research/chemicals
+      // https://www.bccresearch.com:443/partners/verified-market-research
+      result.rtype    = 'SEARCH';
+      result.mime     = 'MISC';
+    }
+
   }
 
   return result;
