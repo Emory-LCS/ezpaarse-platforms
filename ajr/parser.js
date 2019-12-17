@@ -14,6 +14,7 @@ module.exports = new Parser(function analyseEC(parsedUrl, ec) {
   let result = {};
   let path   = parsedUrl.pathname;
   let param = parsedUrl.query || {};
+  console.error(parsedUrl);
 
   let match;
 

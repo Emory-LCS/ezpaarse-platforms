@@ -29,7 +29,7 @@ module.exports = new Parser(function analyseEC(parsedUrl, ec) {
 
   } else if ((match = /^\/historical-data\/([a-sA-Z0-9-]+)$/i.exec(path)) !== null) {
     // https://uniworldonline.com:443/historical-data/june-2019-american-companies-global-operations
-    result.rtype    = 'ABSTRACT';
+    result.rtype    = 'ABS';
     result.mime     = 'HTML';
     result.title_id = match[1];
     result.unitid   = match[1];
