@@ -43,6 +43,11 @@ module.exports = new Parser(function analyseEC(parsedUrl, ec) {
       result.rtype    = 'ABSTRACT';
       result.mime     = 'HTML';
       result.unitid   = match[4] || match[3] || match[2];
+    } else if ((match = /^\/pressroom\/([a-zA-Z0-9-]+)\/([a-zA-Z0-9-]+)$/i.exec(path)) !==null) {
+      // https://www.bccresearch.com:443/pressroom/hlc/bionics-market-to-see-111-annual-growth-through-2024
+      result.rtype    = 'ARTICLE';
+      result.mime     = 'HTML';
+      result.unitid   = match[1] + '/' + match[2];
     } else if (/^\/([a-zA-Z0-9/-]+)$/i.test(path)) {
       // https://www.bccresearch.com:443/index/reportlookupsuggestsolr?q=potato
       // https://www.bccresearch.com:443/partners
