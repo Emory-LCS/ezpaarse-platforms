@@ -40,7 +40,7 @@ module.exports = new Parser(function analyseEC(parsedUrl, ec) {
       // https://www.bccresearch.com:443/market-research/chemicals/biopesticides-chm029e.html
       // https://www.bccresearch.com:443/market-research/information-technology/geospatial-analytics-market-report.html
       // https://www.bccresearch.com:443/partners/verified-market-research/industrial-hearable-market-size-and-forecast.html
-      result.rtype    = 'ABSTRACT';
+      result.rtype    = 'ABS';
       result.mime     = 'HTML';
       result.unitid   = match[4] || match[3] || match[2];
     } else if ((match = /^\/pressroom\/([a-zA-Z0-9-]+)\/([a-zA-Z0-9-]+)$/i.exec(path)) !==null) {
