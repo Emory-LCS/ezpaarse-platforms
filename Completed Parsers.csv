@@ -1,4 +1,4 @@
-ï»¿Short Name,Long Name,Created (if after 1/1/18),Last Updated  (if after 1/1/18)
+Short Name,Long Name,Created (if after 1/1/18),Last Updated  (if after 1/1/18)
 aaf,allAfrica,4/26/18,4/26/18
 acland,Acland's Video Atlas of Human Anatomy,-,-
 acm,Association for Computing Machinery,-,-
@@ -9,6 +9,7 @@ aea,American Economic Association,9/3/19,10/25/19
 africaknowledgeproject,Africa Knowledge Project,10/1/19,10/1/19
 aip,American Institute of Physics,-,-
 AJPH,American Journal of Public Health,-,-
+ajr,American Journal of Roentgenology,12/18/19,12/18/19
 amamanual,AMA Manual of Style,11/22/19,11/22/19
 amdigital,Archives Direct - Adam Matthew Digital,-,10/25/19
 amjmed,American Journal of Medicine,5/23/18,5/23/18
@@ -25,11 +26,12 @@ asco,American Society of Clinical Oncology,-,10/25/19
 asp,Alexander Street Press,1/8/18,6/14/19
 assimil,ASSIMIL,-,-
 atml,Atomic Learning,-,-
+bccresearch,BCC Research,12/19/19,12/19/19
 bioone,BioOne,-,4/16/19
 biotech,BioTechniques,8/20/18,8/20/18
 bmc,Biomed Central,-,-
 brepols,Brepols,-,10/25/19
-brgm,BUREAU DE RECHERCHES GÃ‰OLOGIQUES ET MINIÃˆRES,-,-
+brgm,BUREAU DE RECHERCHES GÉOLOGIQUES ET MINIÈRES,-,-
 brill,Brill,-,10/25/19
 britannica,Britannica,-,-
 britannica-iq,Britannica Image Quest,-,-
@@ -38,9 +40,10 @@ browzine,BrowZine,-,-
 bvg,Bates Visual Guide To Physical Examination,4/18/18,4/18/18
 cabi,CAB eBooks,-,6/3/19
 cairn,CAIRN,-,10/25/19
+capitaliq,Standard and Poor’s Net Advantage (Capital IQ),12/11/19,12/11/19
 cas,SciFinder / Chemical Abstracts,-,-
 cbo,Cambridge Books Online,-,-
-cedram,Centre de diffusion de revues AcadÃ©miques MathÃ©matiques,-,-
+cedram,Centre de diffusion de revues Académiques Mathématiques,-,-
 cellpress,Cell Press,-,-
 cepr,Center for economic policy research,-,-
 chadwyck,Chadwyck-Healey Literature Collections,6/14/18,8/9/19
@@ -78,14 +81,14 @@ eebo,Early English Books Online,-,-
 efl,Editions Francis Lefebvre,-,-
 eiu,Economist Intelligence Unit,6/3/19,6/3/19
 elgar,Elgaronline,6/3/19,6/14/19
-elnet,Ã‰ditions LÃ©gislatives,-,-
+elnet,Éditions Législatives,-,-
 elsevier,Elsevier Journals (Elsevier Domain),8/13/19,10/25/19
 emb,Embase,-,10/25/19
 emc,EM Premium EMC,-,-
 emerald,Emerald management ejournals archives et Business,-,-
 ems,European Mathematical Society,-,-
 engv,Engineering Village,-,-
-eni,BibliothÃ¨que NumÃ©rique ENI,-,-
+eni,Bibliothèque Numérique ENI,-,-
 erudit,Erudit,-,-
 es,Endocrine Society,-,-
 esa,Ecological Society of America,-,-
@@ -103,13 +106,13 @@ ft,Financial Times,-,-
 futuremedicine,Future Medicine,-,-
 galileo,GALILEO,6/4/19,10/25/19
 gallup,Gallup Analytics,6/6/19,10/25/19
-gc,Gale Cengage,11/26/19,11/26/19
+gc,Gale Cengage,-,11/26/19
 geofacets,Geofacets,-,-
-gn,Garnier NumÃ©rique,-,4/12/19
+gn,Garnier Numérique,-,4/12/19
 grevisse,Bon Usage Grevisse,-,-
 guidestar,GuideStar,6/3/19,6/3/19
 hal,HAL - Archives Ouvertes,-,-
-harmatheque,HarmathÃ¨que,-,-
+harmatheque,Harmathèque,-,-
 heb,Humanities E-Books,4/12/19,4/12/19
 heinonline,HeinOnline,-,10/25/19
 hraf,eHRAF,8/9/19,8/9/19
@@ -178,7 +181,7 @@ npa,Newspaper Archive,2/23/19,2/23/19
 npg,Nature Publishing Group,-,6/4/18
 nrc,New Research Press,-,-
 numerique-premium,Numerique Premium,-,-
-numir,Monographies NumÃ©risÃ©es des bibliothÃ¨ques MathÃ©matiques Informatique Recherche des UniversitÃ©s Paris Diderot et Pierre et Marie Curie,-,-
+numir,Monographies Numérisées des bibliothèques Mathématiques Informatique Recherche des Universités Paris Diderot et Pierre et Marie Curie,-,-
 nurimedia,Nurimedia (DBpia & KRpia),10/2/19,10/2/19
 oao,Oxford Art Online,-,-
 oeb,OpenEdition Books,-,-
@@ -189,14 +192,14 @@ openaire,OpenAIRE - Archives Ouvertes,-,-
 osa,OpticsInfoBase,-,10/25/19
 oso,Oxford Scholarship Online,-,-
 oup,Oxford University Press,8/13/19,10/25/19
-ovid,Ovid,11/26/19,11/26/19
+ovid,Ovid,-,11/26/19
 ovsi,Oxford Very Short Introductions,-,-
 oxoeb,"Online Egyptological Bibliography, University of Oxford",-,-
 palgrave-connect,Palgrave Connect,-,-
 palgrave-journals,Palgrave Journals,-,-
 palgrave-macmillan,Palgrave Macmillan,9/19/18,4/22/19
 pe,Project Euclid,-,-
-persee,PersÃ©e,-,-
+persee,Persée,-,-
 physiology,American Physiological Society,6/6/19,10/25/19
 pm,PolicyMap,-,-
 PO,PsychiatryOnline,-,-
@@ -205,13 +208,14 @@ proquest,Proquest,6/14/19,6/14/19
 publienet,Publie.net,-,-
 reaxys,Reaxys,-,4/11/19
 rho,Routledge Handbooks Online,-,4/24/19
+ripmjazz,RIPM Jazz Periodicals,12/17/19,12/17/19
 rn,Retronews,-,-
 rosend,Rosen Digital,-,-
 rsc,Royal Society of Chemistry,-,10/25/19
 rta,Religion and Theology Abstracts,6/25/18,6/25/18
 sagaweb,Sagaweb,-,-
 sagej,Sage Journals,-,10/25/19
-sam,Sciences Arts et MÃ©tiers ParisTech : Archive Ouverte,-,-
+sam,Sciences Arts et Métiers ParisTech : Archive Ouverte,-,-
 scf,Societe Chimique de France,-,-
 sciam,Scientific American,-,-
 scientific,Scientific,-,-
@@ -222,7 +226,7 @@ seg,Society of Exploration Geophysicists,-,-
 siam,SIAM,-,10/25/19
 silverchair,Silverchair,-,6/14/19
 sk,SAGE Knowledge,9/3/19,9/3/19
-smf,SociÃ©tÃ© MathÃ©matique de France,-,-
+smf,Société Mathématique de France,-,-
 socio,Sociometrics,9/3/19,9/3/19
 springer,Springer,-,-
 springer-materials,SpringerMaterials,-,-
@@ -236,16 +240,17 @@ tair,The Arabidopsis Information Resource,-,-
 tf,Taylor & Francis,-,10/25/19
 tfe,Taylor & Francis eBooks,-,-
 thieme,Thieme,4/12/18,10/25/19
-ti,Techniques de l'IngÃ©nieur,-,-
+ti,Techniques de l'Ingénieur,-,-
 tlg,Thesaurus Linguae Graecae,6/29/18,6/29/18
 tp,Transplantation Proceedings,5/23/18,5/23/18
 ucj,University of Chicago Journals,-,10/25/19
 uic,Underground and Independant Comics,-,-
 unbound,Unbound Medicine,5/20/18,5/20/18
-universalis,EncyclopÃ¦dia Universalis,-,-
+universalis,Encyclopædia Universalis,-,-
+uniworld,UniWorld,12/17/19,12/17/19
 upso,University Press Scholarship Online,-,10/1/19
 vault,Vault Campus Edition,5/20/18,5/20/18
-vn,Vocable NumÃ©rique,-,-
+vn,Vocable Numérique,-,-
 westlaw,Thomson Reuters Westlaw,9/4/19,9/4/19
 wf,Wetfeet,2/5/18,2/5/18
 wiley,Wiley,-,10/25/19
