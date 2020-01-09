@@ -1,0 +1,14 @@
+{
+  "longname": "Journal of Food Protection",
+  "name": "jfoodprotection",
+  "describe": "Recognizes the accesses to the platform Journal of Food Protection",
+  "contact": "acoope5@emory.edu",
+  "pkb": false,
+  "docurl": "http://ang.couperin.org/platforms/to_be_completed/",
+  "domains": [
+    "jfoodprotection.org",
+    "www.jfoodprotection.org"
+  ],
+  "version": "2020-01-09",
+  "status": "beta"
+}
