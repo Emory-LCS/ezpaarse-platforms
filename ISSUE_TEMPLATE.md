@@ -8,6 +8,4 @@
 
 
 ### ezPAARSE
-Analysis:
-
-Trello:
+Analysis: http://ang.couperin.org/platforms/to_be_completed/
