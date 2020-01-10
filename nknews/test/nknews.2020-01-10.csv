@@ -1,0 +1,13 @@
+out-unitid;out-rtype;out-mime;in-url
+books;SEARCH;MISC;https://www.nknews.org:443/?s=books&sort=date&start=01-01-2010&end=10-01-2020
+category/news;TOC;HTML;https://www.nknews.org:443/category/news/
+category/news/page/2;TOC;HTML;https://www.nknews.org:443/category/news/page/2/
+category/featured-content/interview;TOC;HTML;https://www.nknews.org:443/category/featured-content/interview/
+category/featured-content/interview/page/2;TOC;HTML;https://www.nknews.org:443/category/featured-content/interview/page/2/
+category/nk-voices/defector-survey-2014;TOC;HTML;https://www.nknews.org:443/category/nk-voices/defector-survey-2014/
+tag/culture;TOC;HTML;https://www.nknews.org:443/tag/culture/
+tag/culture/page/2;TOC;HTML;https://www.nknews.org:443/tag/culture/page/2/
+gallery/page/2;TOC;HTML;https://www.nknews.org:443/gallery/page/2/
+2020/01/kim-jong-un-turns-36-but-north-korea-is-conspicuously-silent-about-the-big-day;ARTICLE;HTML;https://www.nknews.org:443/2020/01/kim-jong-un-turns-36-but-north-korea-is-conspicuously-silent-about-the-big-day/
+oliver-hotham;BIO;HTML;https://www.nknews.org:443/content_author/oliver-hotham/
+north-korea-company-database;DATASET;MISC;https://www.nknews.org:443/pro/north-korea-company-database/
