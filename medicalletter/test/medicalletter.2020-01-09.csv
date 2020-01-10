@@ -1,0 +1,10 @@
+out-unitid;out-rtype;out-mime;in-url
+;SEARCH;MISC;https://secure.medicalletter.org:443/solrsearch?query=brain&x=21&y=8
+;SEARCH;MISC;https://secure.medicalletter.org:443/most-read
+2014;TOC;HTML;https://secure.medicalletter.org:443/archives-tml?y=2014
+2014;TOC;HTML;https://secure.medicalletter.org:443/archives-tgl?y=2014
+TML2020FR;TOC;HTML;https://secure.medicalletter.org:443/TML2020FR
+TML-issue-1589;ARTICLE;HTML;https://secure.medicalletter.org:443/TML-issue-1589
+TML-article-1542b;ARTICLE;HTML;https://secure.medicalletter.org:443/TML-article-1542b
+TG-article-138a;ARTICLE;HTML;https://secure.medicalletter.org:443/TG-article-138a
+TML-issue-1589;ARTICLE;PDF;https://secure.medicalletter.org:443/system/files/private/TML-issue-1589.pdf
