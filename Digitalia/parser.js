@@ -21,27 +21,14 @@ module.exports = new Parser(function analyseEC(parsedUrl, ec) {
 
   let match;
 
-  if (/^\/fulltext\/filter/i.test(path)) {
+  if (/^\/fulltext\/filter/i.test(path) || /^\/co|ejournals|s\/([0-9]+)/i.test(path)) {
     //http://www.digitaliapublishing.com:80/fulltext/filter/tipo/0
     result.rtype = 'SEARCH';
     result.mime = 'HTML';
   }
 
-  else if (/^\/co|ejournals|s\/([0-9]+)/i.test(path)) {
-    //www.digitaliapublishing.com:80/co/721
-    //www.digitaliapublishing.com:80/ejournals/119/art
-    //www.digitaliapublishing.com:80/s/98/language-and-linguistics
-    //www.digitaliapublishing.com:80/s/100
-    result.rtype = 'SEARCH*';
-    result.mime = 'HTML';
-  }
-
   else if ((match = /^\/a\/([0-9]+)\/([0-z-.]+)$/i.exec(path)) !=null) {
     // http://www.digitaliapublishing.com:80/a/34355/12-arquitectos-contemporaneos (book)
-    // http://www.digitaliapublishing.com:80/a/39177/gestion-de-grandes-proyectos-urbanos-en-espacios-metropolizados---los-sistemas-integrados-de-transporte-masivo-en-colombia
-    // http://www.digitaliapublishing.com:80/a/19774/ajoblanco-segunda-etapa-n.-116 (journal)
-    // http://www.digitaliapublishing.com:80/a/3986/secuencias-no.-25 (journal)
-    // http://www.digitaliapublishing.com:80/a/21321/anuario-musical-numero-66
     // http://www.digitaliapublishing.com:80/a/3762/metaliteratura-y-metaficcion--balance-critico-y-perspectivas-comparadas (journal)
     result.rtype = 'TOC';
     result.mime = 'HTML';
