@@ -25,7 +25,7 @@ module.exports = new Parser(function analyseEC(parsedUrl, ec) {
 
   } else if (/^\/goPngRead.jsp$/i.test(path)) {
     // http://www.chinamaxx.net:80/goPngRead.jsp?d=8EA41D886B7150931D74A51D840CD7C5&ssid=10005014&pagetype=1&sp=1&ep=-1
-    result.rtype    = 'BOOK_SECTION';
+    result.rtype    = 'BOOK';
     result.mime     = 'HTML';
     result.unitid   = param.ssid;
 
