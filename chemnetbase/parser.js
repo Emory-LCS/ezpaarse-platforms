@@ -24,11 +24,18 @@ module.exports = new Parser(function analyseEC(parsedUrl, ec) {
     result.rtype    = 'SEARCH';
     result.mime     = 'MISC';
 
-  } else if ((match = /^\/faces\/documents\/([a-zA-Z0-9_/)]+).xhtml$/i.exec(path)) !== null) {
+  } else if ((match = /^\/faces\/documents\/([a-zA-Z0-9-_/)]+).xhtml$/i.exec(path)) !== null) {
     // http://hbcponline.com:80/faces/documents/04_02/04_02_0137.xhtml
     result.rtype    = 'BOOK_SECTION';
     result.mime     = 'HTML';
     result.unitid   = match[1];
+
+  } else if ((match = /^\/PDFarchive\/([a-zA-Z0-9-_/)]+).pdf$/i.exec(path)) !== null) {
+    // http://hbcponline.com:80/PDFarchive/099/HCP-99-06-13.pdf?pfdrid_c=true
+    result.rtype    = 'ARTICLE';
+    result.mime     = 'PDF';
+    result.unitid   = match[1];
+
   }
 
   return result;
