@@ -1,0 +1,16 @@
+{
+  "longname": "Eight Centuries",
+  "name": "eightcenturies",
+  "describe": "Recognizes the accesses to the platform Eight Centuries",
+  "contact": "acoope5@emory.edu",
+  "pkb": false,
+  "docurl": "http://ang.couperin.org/platforms/to_be_completed/",
+  "domains": [
+    "history.paratext.com",
+    "public.paratext.com",
+    "reference.paratext.com",
+    "paratext.com"
+  ],
+  "version": "2020-01-09",
+  "status": "beta"
+}
