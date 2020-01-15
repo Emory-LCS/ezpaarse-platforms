@@ -32,8 +32,8 @@ module.exports = new Parser(function analyseEC(parsedUrl, ec) {
     // http://www.digitaliapublishing.com:80/a/3762/metaliteratura-y-metaficcion--balance-critico-y-perspectivas-comparadas (journal)
     result.rtype = 'TOC';
     result.mime = 'HTML';
-    result.unitid = match[1];
-    result.title_id = match[2];
+    result.unitid = match[1] + '/' + match[2];
+    result.title_id = match[1] + '/' + match[2];
   }
 
   else if ((match = /^\/(visor|visorswf|visorepub)\/([0-9]+)$/i.exec(path)) !=null) {
@@ -56,7 +56,7 @@ module.exports = new Parser(function analyseEC(parsedUrl, ec) {
     // http://www.digitaliapublishing.com:80/index.jsp?o=501&id=19774&page=2
     result.rtype = 'BOOK_SECTION';
     result.mime = 'PDF';
-    result.unitid = param.id;
+    result.unitid = param.id+ '_' + param.page;
     result.title_id = param.id + '_' + param.page;
   }
 
@@ -65,7 +65,7 @@ module.exports = new Parser(function analyseEC(parsedUrl, ec) {
     // http://www.digitaliapublishing.com:80/visorpagehtml/41628_101.page
     result.rtype = 'BOOK_SECTION';
     result.mime = 'HTML';
-    result.unitid = match[1];
+    result.unitid = match[1] + '_' + match[2];
     result.title_id = match[1] + '_' + match[2];
   }
 
