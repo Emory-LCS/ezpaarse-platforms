@@ -1,0 +1,14 @@
+{
+  "longname": "Digitalia",
+  "name": "digitalia",
+  "describe": "Recognizes the accesses to the platform Digitalia",
+  "contact": "acoope5@emory.edu",
+  "pkb": false,
+  "docurl": "http://ang.couperin.org/platforms/to_be_completed/",
+  "domains": [
+    "www.digitaliapublishing.com",
+    "digitaliapublishing.com"
+  ],
+  "version": "2020-01-09",
+  "status": "beta"
+}
