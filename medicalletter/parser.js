@@ -39,6 +39,12 @@ module.exports = new Parser(function analyseEC(parsedUrl, ec) {
     result.mime     = 'HTML';
     result.unitid   = match[1] + '-' + match[2] + '-' + match[3];
 
+  } else if ((match = /^\/downloads\/([a-zA-Z0-9_]+).pdf$/i.exec(path)) !== null) {
+    // https://secure.medicalletter.org:443/downloads/1546b_table.pdf
+    result.rtype    = 'SUPPL';
+    result.mime     = 'PDF';
+    result.unitid   = match[1];
+
   } else if ((match = /^\/system\/files\/private\/([A-Z]+)-([a-z]+)-([a-zA-Z0-9]+).pdf$/i.exec(path)) !== null) {
     // https://secure.medicalletter.org:443/system/files/private/TML-issue-1589.pdf
     result.rtype    = 'ARTICLE';
