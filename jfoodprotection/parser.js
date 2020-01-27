@@ -33,8 +33,8 @@ module.exports = new Parser(function analyseEC(parsedUrl, ec) {
     result.mime     = 'HTML';
     result.unitid   = match[2];
 
-  } else if ((match = /^\/doi\/(abs|full|pdf)\/([a-zA-Z0-9.-]+)\/([a-zA-Z0-9.-]+)$/i.exec(path)) !== null) {
-    // https://jfoodprotection.org:443/doi/(abs|full|pdf)/10.4315/0362-028X.JFP-19-318
+  } else if ((match = /^\/doi\/(abs|full|pdf|pdfplus|suppl)\/([a-zA-Z0-9.-]+)\/([a-zA-Z0-9.-]+)$/i.exec(path)) !== null) {
+    // https://jfoodprotection.org:443/doi/(abs|full|pdf|pdfplus|suppl)/10.4315/0362-028X.JFP-19-318
     result.doi      = match[2] + '/' + match[3];
     result.unitid   = match[2] + '/' + match[3];
     if (match[1] == 'abs') {
@@ -46,7 +46,20 @@ module.exports = new Parser(function analyseEC(parsedUrl, ec) {
     } else if (match[1] == 'pdf') {
       result.rtype    = 'ARTICLE';
       result.mime     = 'PDF';
+    } else if (match[1] == 'pdfplus') {
+      result.rtype    = 'ARTICLE';
+      result.mime     = 'PDFPLUS';
+    } else if (match[1] == 'suppl') {
+      result.rtype    = 'SUPPL';
+      result.mime     = 'HTML';
     }
+
+  } else if (/^\/action\/showFullPopup$/i.test(path)) {
+    // https://jfoodprotection.org:443/action/showFullPopup?id=i0362-028X-82-12-2016-t02&doi=10.4315%2F0362-028X.JFP-19-217
+    result.rtype    = 'IMAGE';
+    result.mime     = 'MISC';
+    result.doi      = param.doi;
+    result.unitid   = param.doi;
 
   } else if (/^\/action\/showCitFormats$/i.test(path)) {
     // https://jfoodprotection.org:443/action/showCitFormats?doi=10.4315%2F0362-028X.JFP-19-318
