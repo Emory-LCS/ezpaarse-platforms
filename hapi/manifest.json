@@ -1,0 +1,13 @@
+{
+  "longname": "Hispanic American Periodicals Index",
+  "name": "hapi",
+  "describe": "Recognizes the accesses to the platform Hispanic American Periodicals Index",
+  "contact": "acoope5@emory.edu",
+  "pkb": false,
+  "docurl": "http://ang.couperin.org/platforms/to_be_completed/",
+  "domains": [
+    "hapi.ucla.edu"
+  ],
+  "version": "2020-01-09",
+  "status": "beta"
+}
