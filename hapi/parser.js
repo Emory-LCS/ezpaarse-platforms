@@ -23,6 +23,18 @@ module.exports = new Parser(function analyseEC(parsedUrl, ec) {
     result.rtype    = 'SEARCH';
     result.mime     = 'MISC';
 
+  } else if ((match = /^\/name\/([0-9]+)$/i.exec(path)) !== null) {
+    // http://hapi.ucla.edu:80/name/160670
+    result.rtype    = 'TOC';
+    result.mime     = 'HTML';
+    result.unitid   = match[1];
+
+  } else if ((match = /^\/news\/([a-zA-Z0-9_]+)$/i.exec(path)) !== null) {
+    // http://hapi.ucla.edu:80/news/mexicanstudies_profile
+    result.rtype    = 'ARTICLE';
+    result.mime     = 'HTML';
+    result.unitid   = match[1];
+
   } else if ((match = /^\/article\/citation\/([0-9]+)$/i.exec(path)) !== null) {
     // http://hapi.ucla.edu:80/article/citation/348313
     result.rtype    = 'CITATION';

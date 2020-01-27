@@ -2,3 +2,5 @@ out-unitid;out-rtype;out-mime;in-url
 ;SEARCH;MISC;http://hapi.ucla.edu:80/search/
 ;SEARCH;MISC;http://hapi.ucla.edu:80/search/advanced
 348313;CITATION;HTML;http://hapi.ucla.edu:80/article/citation/348313
+mexicanstudies_profile;ARTICLE;HTML;http://hapi.ucla.edu:80/news/mexicanstudies_profile
+160670;TOC;HTML;http://hapi.ucla.edu:80/name/160670
