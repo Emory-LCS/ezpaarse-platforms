@@ -23,6 +23,12 @@ module.exports = new Parser(function analyseEC(parsedUrl, ec) {
     result.mime     = 'MISC';
     result.unitid   = param.s;
 
+  } else if ((match = /^\/(category|tag|gallery)\/([a-zA-Z0-9-/]+)podcast([a-zA-Z0-9-/]+)\/$/i.exec(path)) !== null) {
+    // https://www.nknews.org:443/category/north-korea-news-podcast/older-podcasts/the-rocky-road-to-normalizing-north-korea-u-s-relations-nknews-podcast-ep-112/879237/
+    result.rtype    = 'AUDIO';
+    result.mime     = 'MISC';
+    result.unitid   = match[1] + '/' + match[2] + 'podcast' + match[3];
+
   } else if ((match = /^\/(category|tag|gallery)\/([a-zA-Z0-9-/]+)\/$/i.exec(path)) !== null) {
     // https://www.nknews.org:443/category/news/
     // https://www.nknews.org:443/category/news/page/2/
@@ -53,6 +59,12 @@ module.exports = new Parser(function analyseEC(parsedUrl, ec) {
     result.rtype    = 'DATASET';
     result.mime     = 'MISC';
     result.unitid   = match[1];
+
+  } else if ((match = /^\/wp-content\/uploads\/([0-9]+)\/([0-9]+)\/([a-zA-Z0-9-]+).jpeg$/i.exec(path)) !== null) {
+    // https://www.nknews.org:443/wp-content/uploads/2019/04/sinuiju-2019-group-pic-1-300x200.jpeg
+    result.rtype     = 'IMAGE';
+    result.mime     = 'MISC';
+    result.unitid   = match[1] + '/' + match[2] + '/' + match[3];
 
   }
 
