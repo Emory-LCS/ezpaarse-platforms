@@ -1,0 +1,15 @@
+{
+  "longname": "The Medical Letter",
+  "name": "medicalletter",
+  "describe": "Recognizes the accesses to the platform The Medical Letter",
+  "contact": "acoope5@emory.edu",
+  "pkb": false,
+  "docurl": "http://ang.couperin.org/platforms/to_be_completed/",
+  "domains": [
+    "m.medicalletter.org",
+    "secure.medicalletter.org",
+    "medicalletter.org"
+  ],
+  "version": "2020-01-09",
+  "status": "beta"
+}
