@@ -1,0 +1,14 @@
+{
+  "longname": "NK News",
+  "name": "nknews",
+  "describe": "Recognizes the accesses to the platform NK News",
+  "contact": "acoope5@emory.edu",
+  "pkb": false,
+  "docurl": "http://ang.couperin.org/platforms/to_be_completed/",
+  "domains": [
+    "www.nknews.org",
+    "nknews.org"
+  ],
+  "version": "2020-01-10",
+  "status": "beta"
+}
