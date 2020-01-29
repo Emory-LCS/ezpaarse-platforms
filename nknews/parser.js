@@ -23,13 +23,13 @@ module.exports = new Parser(function analyseEC(parsedUrl, ec) {
     result.mime     = 'MISC';
     result.unitid   = param.s;
 
-  } else if ((match = /^\/(category|tag|gallery)\/([a-zA-Z0-9-/]+)podcast([a-zA-Z0-9-/]+)\/$/i.exec(path)) !== null) {
+  } else if ((match = /^\/(category|tag)\/([a-zA-Z0-9-/]+)podcast([a-zA-Z0-9-/]+)\/$/i.exec(path)) !== null) {
     // https://www.nknews.org:443/category/north-korea-news-podcast/older-podcasts/the-rocky-road-to-normalizing-north-korea-u-s-relations-nknews-podcast-ep-112/879237/
     result.rtype    = 'AUDIO';
     result.mime     = 'MISC';
     result.unitid   = match[1] + '/' + match[2] + 'podcast' + match[3];
 
-  } else if ((match = /^\/(category|tag|gallery)\/([a-zA-Z0-9-/]+)\/$/i.exec(path)) !== null) {
+  } else if ((match = /^\/(category|tag)\/([a-zA-Z0-9-/]+)\/$/i.exec(path)) !== null) {
     // https://www.nknews.org:443/category/news/
     // https://www.nknews.org:443/category/news/page/2/
     // https://www.nknews.org:443/category/featured-content/interview/
@@ -37,8 +37,13 @@ module.exports = new Parser(function analyseEC(parsedUrl, ec) {
     // https://www.nknews.org:443/category/nk-voices/defector-survey-2014/
     // https://www.nknews.org:443/tag/culture/
     // https://www.nknews.org:443/tag/culture/page/2/
-    // https://www.nknews.org:443/gallery/page/2/
     result.rtype    = 'TOC';
+    result.mime     = 'HTML';
+    result.unitid   = match[1] + '/' + match[2];
+
+  } else if ((match = /^\/(gallery)\/([a-zA-Z0-9-/]+)\/$/i.exec(path)) !== null) {
+    // https://www.nknews.org:443/gallery/page/2/
+    result.rtype    = 'ARTICLE';
     result.mime     = 'HTML';
     result.unitid   = match[1] + '/' + match[2];
 
