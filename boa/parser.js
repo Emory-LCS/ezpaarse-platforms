@@ -28,21 +28,13 @@ module.exports = new Parser(function analyseEC(parsedUrl, ec) {
     result.rtype = 'SEARCH';
     result.mime = 'HTML';
 
-  } else if ((match = /^\/boa\/(collections|series)\/([0-9]+)\/(volumes)\/([0-9]+)\/([0-z-]+)/i.exec(path)) !== null) {
-    // https://microform.digital:443/boa/collections/40/volumes/241/resolutions-etc-of-the-organisation-of-african-unity-and-other-documents-since-1963
+  } else if ((match = /^\/boa\/(collections|series)\/([0-9]+)\/(((volumes)\/([0-9]+)\/([0-z-]+))|([0-z-]+))($|(\/key-data)?)/i.exec(path)) !== null) {
     result.rtype = 'TOC';
     result.mime = 'HTML';
-    if (match[3] === 'volumes') {
-      result.unitid = match[4] + '/' + match[5];
-      result.title_id = match[4] + '/' + match[5];
-    }
-
-  } else if ((match=/^\/boa\/(collections|series)\/([0-9]+)\/([0-z-]+)/i.exec(path)) !== null) {
-    // https://microform.digital:443/boa/collections/14/slavery-in-jamaica-records-from-a-family-of-slave-owners-1686-1860/key-data << this could be a TOC for this collection; it loads a lot of other urls with similar paths but only this top page ends with "key-data"
-    // https://microform.digital:443/boa/series/13/representing-britain-international-relations-and-diplomacy
-    result.rtype = 'TOC';
-    result.mime = 'HTML';
-    if (match[3] !== 'volumes') {
+    if (match[5] === 'volumes') {
+      result.unitid = match[6] + '/' + match[7];
+      result.title_id = match[6] + '/' + match[7];
+    } else {
       result.unitid = match[2] + '/' + match[3];
       result.title_id = match[2] + '/' + match[3];
     }
