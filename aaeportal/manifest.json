@@ -1,0 +1,13 @@
+{
+  "longname": "Art & Architecture ePortal",
+  "name": "aaeportal",
+  "describe": "Recognizes the accesses to the platform Art & Architecture ePortal",
+  "contact": "acoope5@emory.edu",
+  "pkb": false,
+  "docurl": "http://ang.couperin.org/platforms/to_be_completed/",
+  "domains": [
+    "aaeportal.com"
+  ],
+  "version": "2020-02-12",
+  "status": "beta"
+}
