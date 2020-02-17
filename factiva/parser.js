@@ -30,10 +30,11 @@ module.exports = new Parser(function analyseEC(parsedUrl, ec) {
     result.rtype    = 'AUDIO';
     result.mime     = 'MISC';
     result.unitid   = match[1];
-  } else if (/^\/controls\/search\/SearchBuilder/i.test(path)) {
-    // https://global.factiva.com:443/controls/search/SearchBuilder0190400ui4sr.ashx
-    result.rtype    = 'SEARCH';
-    result.mime     = 'HTML';
+    //  Commenting out searches because they return 3 results for each search and there's nothing else in the log to idenfity searches.
+    //  } else if (/^\/controls\/search\/SearchBuilder/i.test(path)) {
+    //    // https://global.factiva.com:443/controls/search/SearchBuilder0190400ui4sr.ashx
+    //    result.rtype    = 'SEARCH';
+    //    result.mime     = 'HTML';
   }
 
   return result;
