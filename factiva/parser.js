@@ -13,8 +13,7 @@ const Parser = require('../.lib/parser.js');
 module.exports = new Parser(function analyseEC(parsedUrl, ec) {
   let result = {};
   let path   = parsedUrl.pathname;
-  // uncomment this line if you need parameters
-  // let param = parsedUrl.query || {};
+  let param = parsedUrl.query || {};
 
   // use console.error for debuging
   // console.error(parsedUrl);
@@ -30,6 +29,11 @@ module.exports = new Parser(function analyseEC(parsedUrl, ec) {
     result.rtype    = 'AUDIO';
     result.mime     = 'MISC';
     result.unitid   = match[1];
+  } else if ((match = /^\/SpeachContentHandler.ashx$/i.exec(path)) !== null) {
+    // https://global.factiva.com/SpeachContentHandler.ashx?accessionID=ASZOOG0020200213eg2t0001a&attach=true
+    result.rtype    = 'AUDIO';
+    result.mime     = 'MISC';
+    result.unitid   = param.accessionID;
     //  Commenting out searches because they return 3 results for each search and there's nothing else in the log to idenfity searches.
     //  } else if (/^\/controls\/search\/SearchBuilder/i.test(path)) {
     //    // https://global.factiva.com:443/controls/search/SearchBuilder0190400ui4sr.ashx
