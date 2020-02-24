@@ -1,0 +1,16 @@
+{
+  "longname": "Brill Databases (World Christian & World Religion)",
+  "name": "brilldb",
+  "describe": "Recognizes the accesses to the platform Brill Databases (World Christian & World Religion)",
+  "contact": "acoope5@emory.edu",
+  "pkb": false,
+  "docurl": "http://ang.couperin.org/platforms/to_be_completed/",
+  "domains": [
+    "www.worldchristiandatabase.org",
+    "worldchristiandatabase.org",
+    "www.worldreligiondatabase.org",
+    "worldreligiondatabase.org"
+  ],
+  "version": "2020-02-24",
+  "status": "beta"
+}
