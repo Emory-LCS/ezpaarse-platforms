@@ -1,0 +1,16 @@
+{
+  "longname": "Medici.tv",
+  "name": "medicitv",
+  "describe": "Recognizes the accesses to the platform Medici.tv",
+  "contact": "acoope5@emory.edu",
+  "pkb": false,
+  "docurl": "http://ang.couperin.org/platforms/to_be_completed/",
+  "domains": [
+    "edu.medici.tv",
+    "musicwithvision.medici.tv",
+    "www.medici.tv",
+    "medici.tv"
+  ],
+  "version": "2020-02-25",
+  "status": "beta"
+}
