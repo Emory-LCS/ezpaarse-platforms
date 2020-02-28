@@ -1,1 +1,17 @@
-out-rtype;out-mime;in-url
+out-rtype;out-mime;out-unitid;out-title_id;in-url
+SEARCH;HTML;;;http://www.wanfangdata.com.cn:80/search/searchList.do?searchType=all&searchWord=NZFO
+SEARCH;HTML;;;http://www.wanfangdata.com.cn:80/search/searchList.do?searchType=all&showType=&pageSize=&searchWord=unicorn&isTriggerTag=
+SEARCH;HTML;;;http://www.wanfangdata.com.cn:80/search/searchList.do?searchType=tech&showType=&pageSize=&searchWord=oxygen&isTriggerTag=
+SEARCH;HTML;;;http://www.wanfangdata.com.cn:80/search/searchList.do?searchType=patent&showType=detail&pageSize=20&searchWord=%E7%94%B3%E8%AF%B7%E4%BA%BA%2F%E4%B8%93%E5%88%A9%E6%9D%83%E4%BA%BA%3A
+SEARCH;HTML;;;http://video.wanfangdata.com.cn:80/s/search/?conditionString=CWX12-0-0-0-0-0-0-0-1-0-0/&
+SEARCH;HTML;;;http://www.wanfangdata.com.cn:80/search/searchList.do?searchType=standards&searchWord=%E6%A0%87%E5%87%86%E5%88%86%E7%B1%BB:
+REF;HTML;10.1111/nous.12161;;http://www.wanfangdata.com.cn:80/details/detail.do?_type=perio&id=10.1111%252Fnous.12161
+REF;HTML;MBD2\\MBD\\MBD2\\S1755267209001183h.xml;;http://www.wanfangdata.com.cn:80/details/detail.do?_type=perio&id=MBD2%255C%255CMBD%255C%255CMBD2%255C%255CS1755267209001183h.xml
+REF;HTML;D01099412;;http://www.wanfangdata.com.cn:80/details/detail.do?_type=degree&id=D01099412
+REF;HTML;Jl0kLKWlc2lzN0Viqj4JSDM3U6XQBlvgZEbZJjOGkFY=;;http://www.wanfangdata.com.cn:80/details/detail.do?_type=tech&id=Jl0kLKWlc2lzN0Viqj4JSDM3U6XQBlvgZEbZJjOGkFY%253D
+REF;HTML;zgxxws201609006;;http://www.wanfangdata.com.cn:80/details/detail.do?_type=perio&id=zgxxws201609006
+DATA;HTML;United states;United states;http://miner.wanfangdata.com.cn:80/themeBootPage/explainAndstatistics.do?themeWord=United%20states
+DATA;HTML;Female;Female;http://miner.wanfangdata.com.cn:80/themeBootPage/explainAndstatistics.do?themeWord=Female
+VIDEO;MISC;SI160419149;;http://video.wanfangdata.com.cn:80/v/play/SI160419149.html
+VIDEO;MISC;SL160727690;;http://video.wanfangdata.com.cn:80/v/play/SL160727690.html
+VIDEO;MISC;SD140110274;;http://video.wanfangdata.com.cn:80/v/play/SD140110274.html
