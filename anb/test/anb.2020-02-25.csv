@@ -1,0 +1,9 @@
+out-unitid;out-doi;out-rtype;out-mime;in-url
+;;SEARCH;HTML;https://www.anb.org:443/search?q=mark+twain&searchBtn=Search&isQuickSearch=true
+;;SEARCH;HTML;https://www.anb.org:443/search?submittedFilterId=by-format&q=mark+twain&isQuickSearch=true&btog=chap&pageSize=20&sort=titlesort&type_5=subjectreference
+news;;TOC;HTML;https://www.anb.org:443/page/news
+tools-and-resources;;TOC;HTML;https://www.anb.org:443/page/tools-and-resources
+10.1093/anb/9780198606697.article.1600745;10.1093/anb/9780198606697.article.1600745;ARTICLE;HTML;https://www.anb.org:443/view/10.1093/anb/9780198606697.001.0001/anb-9780198606697-e-1600745
+10.1093/anb/9780198606697.article.1600745;10.1093/anb/9780198606697.article.1600745;ARTICLE;PDF;https://www.anb.org:443/view/10.1093/anb/9780198606697.001.0001/anb-9780198606697-e-1600745?print=pdf
+10.1093/anb/9780198606697.article.1600745;10.1093/anb/9780198606697.article.1600745;IMAGE;MISC;https://www.anb.org:443/view/10.1093/anb/9780198606697.001.0001/anb-9780198606697-e-1600745?mediaType=Image
+337/whats-new-january-2020;;ARTICLE;HTML;https://www.anb.org:443/newsitem/337/whats-new-january-2020
