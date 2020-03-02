@@ -18,9 +18,11 @@ module.exports = new Parser(function analyseEC(parsedUrl, ec) {
 
   let match;
 
-  if ((match = /^\/(wcd|wrd)$/i.exec(path)) !== null) {
+  if (((match = /^\/(wcd|wrd)$/i.exec(path)) !== null) || ((match = /^\/(wcd|wrd)\/$/i.exec(path)) !== null)) {
     // https://worldreligiondatabase.org:443/wcd
     // https://worldreligiondatabase.org:443/wrd
+    // https://worldreligiondatabase.org:443/wcd/
+    // https://worldreligiondatabase.org:443/wrd/
     result.rtype    = 'CONNECTION';
     result.mime     = 'MISC';
     if (match[1] == 'wcd') {
