@@ -1,0 +1,11 @@
+out-publication_title;out-unitid;out-rtype;out-mime;in-url
+World Religion Database;World Religion Database;CONNECTION;MISC;https://worldreligiondatabase.org:443/wrd
+World Christian Database;World Christian Database;CONNECTION;MISC;https://worldchristiandatabase.org:443/wcd
+World Religion Database;;SEARCH;HTML;https://worldreligiondatabase.org:443/wrd/launcher/wcd_search.json?term=cows
+World Christian Database;;SEARCH;HTML;https://worldchristiandatabase.org:443/wcd/value_list/gkc:2066
+World Christian Database;;SEARCH;HTML;https://worldchristiandatabase.org:443/wcd/launcher/wcd_search.json?term=catholic
+World Religion Database;country-9;ENCYCLOPAEDIA_ENTRY;HTML;https://worldreligiondatabase.org:443/wrd/detail/country/data/9.json
+World Religion Database;city-133;ENCYCLOPAEDIA_ENTRY;HTML;https://worldreligiondatabase.org:443/wrd/detail/city/data/133.json
+World Religion Database;province-2966;ENCYCLOPAEDIA_ENTRY;HTML;https://worldreligiondatabase.org:443/wrd/detail/province/data/2966.json
+World Religion Database;city-2010-archive-14;ENCYCLOPAEDIA_ENTRY;HTML;https://worldreligiondatabase.org:443/wrd/detail/city-2010-archive/data/14.json
+World Christian Database;denomination-1577;ENCYCLOPAEDIA_ENTRY;HTML;https://worldchristiandatabase.org:443/wcd/detail/denomination/data/1577.json
