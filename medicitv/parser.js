@@ -62,6 +62,13 @@ module.exports = new Parser(function analyseEC(parsedUrl, ec) {
       result.unitid   = match[3];
     }
 
+  } else if ((match = /^\/(playlists)\/([a-zA-Z0-9-]+)\/$/i.exec(path)) !== null)  {
+    // https://musicwithvision.medici.tv:443/playlists/and-all-that-jazz/
+    result.rtype    = 'ARTICLE';
+    result.mime     = 'HTML';
+    result.title_id = match[1];
+    result.unitid   = match[2];
+
   }
 
   return result;
