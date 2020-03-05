@@ -1,0 +1,14 @@
+{
+  "longname": "Bloomsbury Drama Online",
+  "name": "dramaonlinelibrary",
+  "describe": "Recognizes the accesses to the platform Bloomsbury Drama Online",
+  "contact": "acoope5@emory.edu",
+  "pkb": false,
+  "docurl": "http://ang.couperin.org/platforms/to_be_completed/",
+  "domains": [
+    "dramaonlinelibrary.com",
+    "www.dramaonlinelibrary.com"
+  ],
+  "version": "2020-03-05",
+  "status": "beta"
+}
