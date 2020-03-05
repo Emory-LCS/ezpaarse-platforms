@@ -1,0 +1,15 @@
+out-unitid;out-title_id;out-rtype;out-mime;in-url
+;;SEARCH;HTML;http://www.pdcnet.org:80/pdc/bvdb.nsf/journalbrowser?openform&type=journals&sort=category&category=Philosophy%20and%20Religion
+;;SEARCH;HTML;https://www.pdcnet.org:443/pdc/bvdb.nsf/journalbrowser?openform&sort=alpha
+;;SEARCH;HTML;https://www.pdcnet.org:443/pdc/bvdb.nsf/digital_media?openform
+;;SEARCH;HTML;https://www.pdcnet.org:443/pdc/bvdb.nsf/publications?openform
+;;SEARCH;HTML;https://www.pdcnet.org:443/collection-anonymous/search?q=review
+journalindex;pdc;TOC;HTML;https://www.pdcnet.org:443/pdc/bvdb.nsf/journalindex?readform
+Binghamton-Journal-of-Philosophy;binghamton;REF;HTML;https://www.pdcnet.org:443/binghamton/Binghamton-Journal-of-Philosophy
+Actes-du-IIIe-Congrès-des-Sociétés-de-Philosophie-de-Langue-Française;asplf3;REF;HTML;https://www.pdcnet.org:443/asplf3/Actes-du-IIIe-Congr%C3%A8s-des-Soci%C3%A9t%C3%A9s-de-Philosophie-de-Langue-Fran%C3%A7aise
+pdc_asplf3;pdc;REF;HTML;https://www.pdcnet.org:443/pdc/bvdb.nsf/journaldetail?openform&journal=pdc_asplf3&cat=rights
+ruffindarden-4;pdc;REF;HTML;https://www.pdcnet.org:443/pdc/bvdb.nsf/item?openform&product=publications&item=ruffindarden-4
+binghamton_2014_0002_0001_0037_0052;binghamton;ARTICLE;HTML;https://www.pdcnet.org:443/binghamton/content/binghamton_2014_0002_0001_0037_0052
+asplf3_1947_R005_R005_b;asplf3;ARTICLE;HTML;https://www.pdcnet.org:443/asplf3/content/asplf3_1947_R005_R005_b
+asplf3_1947_R004_R004;pdc;CITATION;HTML;https://www.pdcnet.org:443/pdc/bvdb.nsf/citations?openform&fp=asplf3&id=asplf3_1947_R004_R004
+acpaproc_2017_0091_0000_con_toc;pdc;TOC;PDF;https://www.pdcnet.org:443/projekte/pdc/workflow/ACPA_Proc.nsf/966D8321F2EC57C7852584A60052EEF7/$file/acpaproc_2017_0091_0000_con_toc.pdf
