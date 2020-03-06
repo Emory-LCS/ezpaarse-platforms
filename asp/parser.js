@@ -105,6 +105,16 @@ module.exports = new Parser(function analyseEC(parsedUrl, ec) {
     } else if (match[1] === 'sali') {
       result.publication_title = 'South and Southeast Asian Literature';
     }
+  } else if ((match = /^\/channel\/(.*)$/i.exec(path)) !== null) {
+    // https://video.alexanderstreet.com:443/channel/documentary-educational-resources-der
+    result.rtype    = 'TOC';
+    result.mime     = 'HTML';
+    result.unitid   = match[1];
+  } else if ((match = /^\/watch\/(.*)$/i.exec(path)) !== null) {
+    // https://video-alexanderstreet-com.proxy.library.emory.edu/watch/interview-with-c-l-r-james-by-lancelot-layne
+    result.rtype    = 'VIDEO';
+    result.mime     = 'MISC';
+    result.unitid   = match[1];
   }
 
   if (hostname === 'aadr.alexanderstreet.com') {
