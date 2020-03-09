@@ -1,0 +1,15 @@
+{
+  "longname": "Roper Center for Public ",
+  "name": "ropercenter",
+  "describe": "Recognizes the accesses to the platform Roper Center for Public Opinion Research",
+  "contact": "acoope5@emory.edu",
+  "pkb": false,
+  "docurl": "http://ang.couperin.org/platforms/to_be_completed/",
+  "domains": [
+    "ropercenter.cornell.edu",
+    "roperweb.ropercenter.cornell.edu",
+    "www.ropercenter.cornell.edu"
+  ],
+  "version": "2020-03-09",
+  "status": "beta"
+}
