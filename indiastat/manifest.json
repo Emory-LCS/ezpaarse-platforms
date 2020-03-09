@@ -1,0 +1,14 @@
+{
+  "longname": "IndiaStat",
+  "name": "indiastat",
+  "describe": "Recognizes the accesses to the platform IndiaStat",
+  "contact": "acoope5@emory.edu",
+  "pkb": false,
+  "docurl": "http://ang.couperin.org/platforms/to_be_completed/",
+  "domains": [
+    "indiastat.com",
+    "www.indiastat.com"
+  ],
+  "version": "2020-03-09",
+  "status": "beta"
+}
