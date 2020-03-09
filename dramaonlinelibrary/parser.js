@@ -36,6 +36,11 @@ module.exports = new Parser(function analyseEC(parsedUrl, ec) {
       result.rtype   = 'ABS';
       result.mime    = 'HTML';
       result.unitid  = match[2];
+    } else if (match[1] == 'pages') {
+      // https://www.dramaonlinelibrary.com/pages/drama-online-in-the-classroom
+      result.rtype   = 'ARTICLE';
+      result.mime    = 'HTML';
+      result.unitid  = match[2];
     } else {
       // https://www.dramaonlinelibrary.com:443/series/playwrights-canada-press-iid-162957
       // https://www.dramaonlinelibrary.com:443/genres/irish-drama-iid-2530
@@ -44,13 +49,23 @@ module.exports = new Parser(function analyseEC(parsedUrl, ec) {
       result.unitid  = match[2];
     }
 
-  } else if ((match = /^\/(books|plays)\/([a-zA-Z0-9_-]+)\/do-([a-zA-Z0-9]+)-div-([0-zA-Z-9]+)$/i.exec(path)) !== null) {
+  } else if ((match = /^\/([a-zA-Z0-9_-]+)\/([a-zA-Z0-9_-]+)\/do-([a-zA-Z0-9]+)-div-([0-zA-Z-9]+)$/i.exec(path)) !== null) {
     // https://www.dramaonlinelibrary.com:443/books/macbeth-iid-115609/do-9781408160244-div-00000002
     // https://www.dramaonlinelibrary.com:443/plays/afterplay-iid-19186/do-9780571339853-div-00000018
     result.rtype            = 'BOOK_SECTION';
     result.mime             = 'HTML';
     result.print_identifier = match[3];
     result.unitid           = match[2] + '/do-' + match[3] + '-div-' + match[4];
+
+  } else if ((match = /^\/([a-zA-Z0-9_-]+)\/([a-zA-Z0-9_-]+)\/ba-([a-zA-Z0-9]+)-([0-zA-Z-9-]+)$/i.exec(path)) !== null) {
+    // https://www.dramaonlinelibrary.com:443/context-and-criticism/john-osbornes-look-back-in-anger-iid-115073/ba-9781623566210-chapter-2
+    // https://www.dramaonlinelibrary.com:443/theatre-crafts/the-outstanding-actor-iid-156151/ba-9781472573018-chapter-002
+    // https://www.dramaonlinelibrary.com:443/context-and-criticism/at-the-bottom-of-shakespeares-ocean-iid-115101/ba-9781472554833-ch03
+    result.rtype            = 'BOOK_SECTION';
+    result.mime             = 'HTML';
+    result.print_identifier = match[3];
+    result.unitid           = match[2] + '/ba-' + match[3] + '-' + match[4];
+
 
   }
 
