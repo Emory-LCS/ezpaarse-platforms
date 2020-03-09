@@ -1,0 +1,14 @@
+{
+  "longname": "On the Boards",
+  "name": "ontheboards",
+  "describe": "Recognizes the accesses to the platform On the Boards",
+  "contact": "acoope5@emory.edu",
+  "pkb": false,
+  "docurl": "http://ang.couperin.org/platforms/to_be_completed/",
+  "domains": [
+    "www.ontheboards.tv",
+    "ontheboards.tv"
+  ],
+  "version": "2020-03-09",
+  "status": "beta"
+}
