@@ -1,0 +1,14 @@
+{
+  "longname": "Morgan and Claypool Publishers",
+  "name": "morganclaypool",
+  "describe": "Recognizes the accesses to the platform Morgan and Claypool Publishers",
+  "contact": "acoope5@emory.edu",
+  "pkb": false,
+  "docurl": "http://ang.couperin.org/platforms/to_be_completed/",
+  "domains": [
+    "morganclaypool.com",
+    "www.morganclaypool.com"
+  ],
+  "version": "2020-03-09",
+  "status": "beta"
+}
