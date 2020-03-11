@@ -1,0 +1,14 @@
+{
+  "longname": "Heterocycles",
+  "name": "heterocycles",
+  "describe": "Recognizes the accesses to the platform Heterocycles",
+  "contact": "acoope5@emory.edu",
+  "pkb": false,
+  "docurl": "http://ang.couperin.org/platforms/to_be_completed/",
+  "domains": [
+    "www.heterocycles.jp",
+    "heterocycles.jp"
+  ],
+  "version": "2020-03-11",
+  "status": "beta"
+}
