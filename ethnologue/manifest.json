@@ -1,0 +1,14 @@
+{
+  "longname": "Ethnologue",
+  "name": "ethnologue",
+  "describe": "Recognizes the accesses to the platform Ethnologue",
+  "contact": "acoope5@emory.edu",
+  "pkb": false,
+  "docurl": "http://ang.couperin.org/platforms/to_be_completed/",
+  "domains": [
+    "ethnologue.com",
+    "www.ethnologue.com"
+  ],
+  "version": "2020-03-11",
+  "status": "beta"
+}
