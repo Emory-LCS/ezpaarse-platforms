@@ -2,5 +2,5 @@ out-unitid;out-rtype;out-mime;in-url
 ;SEARCH;HTML;https://www.indiastat.com:443/Searchresult.aspx
 cooperatives-data/104592;TOC;HTML;https://www.indiastat.com:443/cooperatives-data/104592/stats.aspx
 transport-data/30/roads/246;TOC;HTML;https://www.indiastat.com:443/transport-data/30/roads/246/stats.aspx
-agriculture-data/2/retail-prices-of-food-commodities-2019/1209287/1236466;DATASET;MISC;https://www.indiastat.com:443/table/agriculture-data/2/retail-prices-of-food-commodities-2019/1209287/1236466/data.aspx
-transport-data/30/roads/246/106281;DATASET;MISC;https://www.indiastat.com:443/table/transport-data/30/roads/246/106281/data.aspx
+agriculture-data/2/retail-prices-of-food-commodities-2019/1209287/1236466;DATASET;HTML;https://www.indiastat.com:443/table/agriculture-data/2/retail-prices-of-food-commodities-2019/1209287/1236466/data.aspx
+transport-data/30/roads/246/106281;DATASET;HTML;https://www.indiastat.com:443/table/transport-data/30/roads/246/106281/data.aspx

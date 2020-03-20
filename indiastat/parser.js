@@ -29,12 +29,13 @@ module.exports = new Parser(function analyseEC(parsedUrl, ec) {
     result.mime     = 'HTML';
     result.unitid   = match[1];
 
-  } else if ((match = /^\/table\/([a-zA-Z0-9-/]+)\/data.aspx$/i.exec(path)) !== null) {
+  } else if ((match = /^\/(table|Cooperatives)\/([a-zA-Z0-9-/]+)\/(data|specimen).aspx$/i.exec(path)) !== null) {
     // https://www.indiastat.com:443/table/agriculture-data/2/retail-prices-of-food-commodities-2019/1209287/1236466/data.aspx
     // https://www.indiastat.com:443/table/transport-data/30/roads/246/106281/data.aspx
+    // https://www.indiastat.com/Cooperatives/104592/specimen.aspx
     result.rtype    = 'DATASET';
-    result.mime     = 'MISC';
-    result.unitid   = match[1];
+    result.mime     = 'HTML';
+    result.unitid   = match[2];
 
   }
 
