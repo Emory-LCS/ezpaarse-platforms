@@ -15,6 +15,8 @@ module.exports = new Parser(function analyseEC(parsedUrl, ec) {
   let path   = parsedUrl.pathname;
   let param = parsedUrl.query || {};
 
+  // console.error(parsedUrl);
+
   let match;
 
   if ((match = /^\/([a-zA-Z0-9_-]+)\/(search|browse)$/i.exec(path)) !== null) {
@@ -34,6 +36,12 @@ module.exports = new Parser(function analyseEC(parsedUrl, ec) {
       result.mime     = 'HTML';
       result.title_id = 'pdc';
       result.unitid   = param.id || param.item || param.journal || match[1];
+    } else if (match[1] == 'journal') {
+      // https://www.pdcnet.org:443/pdc/bvdb.nsf/journal?openform&product=publications&journal=zeta-apparition
+      result.rtype    = 'ABS';
+      result.mime     = 'HTML';
+      result.title_id = 'pdc';
+      result.unitid   = param.id || param.item || param.journal || match[1];
     } else if ((match[1] == 'journaldetail') || (match[1] == 'item')) {
       // /pdc/bvdb.nsf/journaldetail?openform&journal=pdc_asplf3&cat=rights
       // /pdc/bvdb.nsf/item?openform&product=publications&item=ruffindarden-4
@@ -48,8 +56,9 @@ module.exports = new Parser(function analyseEC(parsedUrl, ec) {
       result.title_id = 'pdc';
       result.unitid   = param.id || param.item || param.journal || match[1];
     }
-  } else if ((match = /^\/projekte\/([a-zA-Z0-9_-]+)\/workflow\/([a-zA-Z0-9_-]+).nsf\/([a-zA-Z0-9_-]+)\/\$file\/([a-zA-Z0-9_-]+)toc.pdf$/i.exec(path)) !== null) {
+  } else if ((match = /^\/projekte\/([a-zA-Z0-9_-]+)\/workflow\/([a-zA-Z0-9_-]+).nsf\/([a-zA-Z0-9_-]+)\/\/([a-zA-Z0-9_-]+)toc.pdf$/i.exec(path)) !== null) {
     // /projekte/pdc/workflow/ACPA_Proc.nsf/966D8321F2EC57C7852584A60052EEF7/$file/acpaproc_2017_0091_0000_con_toc.pdf
+    // /projekte/pdc/workflow/apapa.nsf/252F70C36DC64948852583AF00699D05/$file/apapa_2013_0003_0000_con_toc.pdf
     result.rtype    = 'TOC';
     result.mime     = 'PDF';
     result.title_id = match[1];
@@ -60,13 +69,25 @@ module.exports = new Parser(function analyseEC(parsedUrl, ec) {
     result.mime     = 'HTML';
     result.title_id = match[1];
     result.unitid   = match[2];
+  } else if ((match = /^\/collection\/([a-zA-ZÀ-ž0-9_-]+).pdf$/i.exec(path)) !== null) {
+    // https://www.pdcnet.org:443/collection/apapa_2015_R007_R014_1.pdf
+    result.rtype    = 'ARTICLE';
+    result.mime     = 'PDF';
+    result.title_id = match[1];
+    result.unitid   = match[1];
   } else if ((match = /^\/([a-zA-Z0-9_-]+)\/([a-zA-ZÀ-ž0-9_-]+)$/i.exec(path)) !== null) {
     // /asplf3/Actes-du-IIIe-Congr%C3%A8s-des-Soci%C3%A9t%C3%A9s-de-Philosophie-de-Langue-Fran%C3%A7aise
     result.rtype    = 'REF';
     result.mime     = 'HTML';
     result.title_id = match[1];
     result.unitid   = match[2];
+  } else if ((match = /^\/([a-zA-Z0-9_-]+)\/file\/([a-zA-Z0-9_-]+)\/\/([a-zA-Z0-9_-]+).pdf$/i.exec(path)) !== null) {
+    // http://www.pdcnet.org:80/8525771F00516836/file/4773F7D17C797D518525771F0069D177/$FILE/spiritgds_2001_0001_0000_R009_R010.pdf
+    // /8525771F00516836/file/4773F7D17C797D518525771F0069D177//spiritgds_2001_0001_0000_R009_R010.pdf
+    result.rtype    = 'ARTICLE';
+    result.mime     = 'PDF';
+    result.title_id = match[1] + '/' + match[2];
+    result.unitid   = match[1] + '/' + match[2] + '/' + match[3];
   }
-
   return result;
 });
