@@ -1,0 +1,15 @@
+{
+  "longname": "Philosophy Documentation Center",
+  "name": "pdcnet",
+  "describe": "Recognizes the accesses to the platform Philosophy Documentation Center",
+  "contact": "acoope5@emory.edu",
+  "pkb": false,
+  "docurl": "http://ang.couperin.org/platforms/to_be_completed/",
+  "domains": [
+    "hub.pdcnet.org",
+    "www.pdcnet.org",
+    "pdcnet.org"
+  ],
+  "version": "2020-03-05",
+  "status": "beta"
+}
