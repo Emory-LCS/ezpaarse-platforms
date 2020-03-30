@@ -22,13 +22,13 @@ module.exports = new Parser(function analyseEC(parsedUrl, ec) {
     result.rtype    = 'SEARCH';
     result.mime     = 'HTML';
 
-  } else if ((match = /^\/(artists|performances|words)\/(.*)$/i.exec(path)) !== null) {
+  } else if ((match = /^\/(artist|artists|performances|performance|dance|words)\/(.*)$/i.exec(path)) !== null) {
     result.unitid   = match[2];
     if (match[1] == 'artists') {
       // https://www.ontheboards.tv:443/artists/ralph-lemon
       result.rtype    = 'TOC';
       result.mime     = 'HTML';
-    } else if (match[1] == 'performances') {
+    } else if ((match[1] == 'performances') || (match[1] == 'performance') || (match[1] == 'dance')) {
       // https://www.ontheboards.tv:443/performances/its-not-too-late
       result.rtype    = 'VIDEO';
       result.mime     = 'MISC';
