@@ -23,7 +23,7 @@ module.exports = new Parser(function analyseEC(parsedUrl, ec) {
     result.mime     = 'HTML';
     result.unitid = match[1];
 
-  } else if ((match = /^\/(language|cloud|country|map)\/(.*)$/i.exec(path)) !== null) {
+  } else if ((match = /^\/(language|cloud|country|map|language-of-the-day|profile)\/(.*)$/i.exec(path)) !== null) {
     // https://www.ethnologue.com:443/language/nds
     // https://www.ethnologue.com:443/language/nds/map
     // https://www.ethnologue.com:443/cloud/nds
@@ -32,6 +32,8 @@ module.exports = new Parser(function analyseEC(parsedUrl, ec) {
     // https://www.ethnologue.com:443/country/JM/status
     // https://www.ethnologue.com:443/country/JM/maps
     // https://www.ethnologue.com:443/map/CRB_n
+    // https://www.ethnologue.com:443/language-of-the-day/2020-03-25
+    // https://www.ethnologue.com:443/profile/CO
     result.rtype    = 'ENCYCLOPAEDIA_ENTRY';
     result.mime     = 'HTML';
     result.unitid = match[1] + '/' + match[2];
