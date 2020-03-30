@@ -49,6 +49,19 @@ module.exports = new Parser(function analyseEC(parsedUrl, ec) {
     result.unitid   = match[1] + '/' + match[2];
     result.doi      = match[1] + '/' + match[2];
 
+  } else if ((match = /^\/(tag|author)\/([a-zA-Z0-9_-]+)\/$/i.exec(path)) !== null) {
+    // https://blogs.openbookpublishers.com:443/tag/online-conferences-2/
+    // https://blogs.openbookpublishers.com:443/author/dorottya-fabian/
+    result.rtype    = 'TOC';
+    result.mime     = 'HTML';
+    result.unitid   = match[1] + '/' + match[2];
+
+  } else if (((match = /^\/([a-zA-Z0-9_-]+)\/$/i.exec(path)) !== null) && (parsedUrl.hostname == 'blogs.openbookpublishers.com')) {
+    // https://blogs.openbookpublishers.com:443/time-management-and-continuous-partial-attention/
+    result.rtype    = 'ARTICLE';
+    result.mime     = 'HTML';
+    result.unitid   = match[1];
+
   }
 
   return result;
