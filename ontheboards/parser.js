@@ -24,7 +24,7 @@ module.exports = new Parser(function analyseEC(parsedUrl, ec) {
 
   } else if ((match = /^\/(artist|artists|performances|performance|dance|words)\/(.*)$/i.exec(path)) !== null) {
     result.unitid   = match[2];
-    if (match[1] == 'artists') {
+    if ((match[1] == 'artists') || (match[1] == 'artist')) {
       // https://www.ontheboards.tv:443/artists/ralph-lemon
       result.rtype    = 'TOC';
       result.mime     = 'HTML';
