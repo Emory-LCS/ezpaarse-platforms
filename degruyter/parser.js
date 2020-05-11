@@ -68,12 +68,79 @@ module.exports = new Parser(function analyseEC(parsedUrl, ec) {
     // /printpdf/view/AKL/_40431827T3?rskey=tIhc8o&result=1&dbq_0=Gaugeron&dbf_0=akl-fulltext&dbt_0=fulltext&o_0=AND
     // /view/AKL/_40431827T3?rskey=tIhc8o&result=1&dbq_0=Gaugeron&dbf_0=akl-fulltext&dbt_0=fulltext&o_0=AND
 
-    result.rtype    = 'BIO';
+    result.rtype    = 'ABS';
     result.mime     = match[1] ? 'PDF' : 'HTML';
     result.title_id = match[2].toLowerCase();
     result.unitid   = match[3];
-  }
 
+  } else if (/^\/(search|browse|databasecontent)$/i.test(path)) {
+    // /search?q=brain&source=%2Fjournals%2Fselt%2Fselt-overview.xml
+    // /browse?pageSize=10&sort=first-page-sort-option&type_7=chapter
+    // /databasecontent?dbid=spark&dbsource=%2Fdb%2Fspark&pageSize=50&sort=spark-book&spark-taxonomy=SPARK_L01_02_L02_02
+
+    result.rtype    = 'SEARCH';
+    result.mime     = 'HTML';
+
+  } else if ((match = /^\/subject\/([a-zA-Z0-9]+)$/i.exec(path)) !== null) {
+    // /subject/CH
+
+    result.rtype    = 'TOC';
+    result.mime     = 'HTML';
+    result.title_id = 'subjects';
+    result.unitid   = match[1];
+
+  } else if ((match = /^\/view\/journals\/([a-z]+)\/([a-z]+)-overview.xml$/i.exec(path)) !== null) {
+    // /view/journals/cti/cti-overview.xml
+
+    result.rtype    = 'ABS';
+    result.mime     = 'HTML';
+    result.title_id = match[1];
+    result.unitid   = match[2];
+
+  } else if ((match = /^\/view\/journals\/([a-z]+)\/([0-9]+)\/([0-9]+)\/article-([a-zA-Z0-9]+).xml$/i.exec(path)) !== null) {
+    // /view/journals/cclm/58/6/article-p914.xml?rskey=cNfhbh&result=1
+
+    result.rtype    = 'ARTICLE';
+    result.mime     = 'HTML';
+    result.title_id = match[1];
+    result.unitid   = match[4];
+
+  } else if ((match = /^\/downloadpdf\/title\/([a-zA-Z0-9]+).pdf$/i.exec(path)) !== null) {
+    // /downloadpdf/title/513088.pdf
+
+    result.mime     = 'PDF';
+    result.rtype    = 'BOOK';
+    result.title_id = match[1];
+    result.unitid   = match[1];
+
+  } else if ((match = /^\/downloadepub\/title\/([a-zA-Z0-9]+)$/i.exec(path)) !== null) {
+    // /downloadepub/title/506296
+
+    result.mime     = 'MISC';
+    result.rtype    = 'BOOK';
+    result.title_id = match[1];
+    result.unitid   = match[1];
+
+  } else if ((match = /^\/downloadpdf\/book\/([a-zA-Z0-9]+)\/([a-zA-Z0-9.]+)\/([a-zA-Z0-9.]+).pdf$/i.exec(path)) !== null) {
+    // /downloadpdf/book/9783110412628/10.2478/9783110412628.1.pdf
+
+    result.mime             = 'PDF';
+    result.rtype            = 'BOOK_SECTION';
+    result.print_identifier = match[1];
+    result.title_id         = match[1];
+    result.unitid           = match[3];
+    result.doi              = `${doiPrefix}/${match[3]}`;
+
+  } else if ((match = /^\/downloadpdf\/journals\/([a-z]+)\/([0-9]+)\/([0-9]+)\/article-([a-z]+)\.([0-9]+).([a-z0-9.-]+).pdf.pdf$/i.exec(path)) !== null) {
+    // /downloadpdf/journals/selt/4/3/article-selt.2011.4.3.1141.pdf.pdf
+
+    result.mime             = 'PDF';
+    result.rtype            = 'ARTICLE';
+    result.title_id         = match[1];
+    result.publication_date = match[5];
+    result.unitid           = match[5] + '.' + match[6];
+
+  }
 
   return result;
 });
