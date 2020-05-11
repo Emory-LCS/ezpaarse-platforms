@@ -3,7 +3,8 @@
   "status": "beta",
   "domains": [
      "www.degruyter.com",
-     "degruyter.com"
+     "degruyter.com",
+     "db.degruyter.com"
   ],
   "bacon": {
     "provider": "DEGRUYTER"
