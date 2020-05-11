@@ -1,17 +1,20 @@
 {
   "name": "iopscience",
-  "version": "2014-04-22",
+  "version": "2020-05-11",
   "status": "stable",
   "trello": "https://trello.com/c/t7LbPskr",
   "longname": "IOP Science",
   "publisher_name": "IOP Publishing",
   "describe": "Identifie les consultations Institute of Physics (IOP)",
-  "docurl": "http://analogist.couperin.org/platforms/iopscience/",
-  "contact": "celia.lentretien at univ-lorraine point fr",
+  "docurl": "http://analyses.ezpaarse.org/platforms/5409b8713a7169362617e4d0",
+  "contact": "celia.lentretien at univ-lorraine point fr, acoope5@emory.edu",
   "pkb": true,
-	"domains": [
+  "domains": [
     "iopscience.iop.org",
-    "www.iop.org"
+    "www.iop.org",
+    "iop.org",
+    "auth.myiopscience.iop.org",
+    "cms.iopscience.iop.org"
 	],
   "recognize": {
     "rid": [
@@ -30,3 +33,4 @@
     ]
   }
 }
+
