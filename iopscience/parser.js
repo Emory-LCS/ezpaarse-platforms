@@ -82,6 +82,7 @@ module.exports = new Parser(function analyseEC(parsedUrl) {
     result.mime             = match[3] === 'pdf' ? 'PDF': 'HTML';
     result.doi              = `${match[1]}/${match[2]}`;
     result.unitid           = match[2];
+
   } else if ((match = /^\/issue\/(([0-9]{4}-[0-9x]{4})\/([0-9]+)\/([0-9]+))$/i.exec(path)) !== null) {
     // /issue/0004-637X/831/2
     result.rtype            = 'TOC';
@@ -90,6 +91,63 @@ module.exports = new Parser(function analyseEC(parsedUrl) {
     result.print_identifier = match[2];
     result.vol              = match[3];
     result.issue            = match[4];
+
+  } else if ((match = /^\/volume\/(([0-9]{4}-[0-9x]{4})\/([0-9]+))$/i.exec(path)) !== null) {
+    // /volume/1742-6596/633
+    result.rtype            = 'TOC';
+    result.mime             = 'HTML';
+    result.unitid           = match[1];
+    result.print_identifier = match[2];
+    result.vol              = match[3];
+    result.issue            = match[4];
+
+  } else if (/^\/nsearch$/i.test(path)) {
+    // /nsearch
+    result.rtype            = 'SEARCH';
+    result.mime             = 'HTML';
+
+  } else if ((match = /^\/chapter\/([0-9-]+)\/bk(([0-9-]+)-[0-9]{1})([a-zA-Z0-9]+).(pdf|epub|mobi)$/i.exec(path)) !== null) {
+    result.rtype            = 'BOOK_SECTION';
+    result.unitid           = match[1] + match[4];
+    result.print_identifier = match[1];
+    result.vol              = match[4];
+    if (match[5] == 'pdf') {
+      // https://iopscience.iop.org:443/chapter/978-0-7503-1732-0/bk978-0-7503-1732-0ch3.pdf
+      result.mime           = 'PDF';
+    } else {
+      result.mime           = 'MISC';
+      // https://iopscience.iop.org:443/chapter/978-0-7503-1732-0/bk978-0-7503-1732-0ch3.epub
+      // https://iopscience.iop.org:443/chapter/978-0-7503-1732-0/bk978-0-7503-1732-0ch3.mobi
+    }
+
+  } else if ((match = /^\/book\/([0-9-]+)\/chapter\/bk(([0-9-]+)-[0-9]{1})([a-zA-Z0-9]+)$/i.exec(path)) !== null) {
+    // https://iopscience.iop.org:443/book/978-0-7503-1732-0/chapter/bk978-0-7503-1732-0ch3
+    result.rtype            = 'BOOK_SECTION';
+    result.mime             = 'HTML';
+    result.unitid           = match[2] + match[4];
+    result.print_identifier = match[1];
+    result.vol              = match[4];
+
+  } else if ((match = /^\/book\/([0-9-]+)$/i.exec(path)) !== null) {
+    // https://iopscience.iop.org:443/book/978-0-7503-1732-0
+    result.rtype            = 'ABS';
+    result.mime             = 'HTML';
+    result.unitid           = match[1];
+    result.print_identifier = match[1];
+
+  } else if ((match = /^\/book\/([0-9-]+).(pdf|epub|mobi)$/i.exec(path)) !== null) {
+    result.rtype            = 'BOOK';
+    result.unitid           = match[1];
+    result.print_identifier = match[1];
+    if (match[2] == 'pdf') {
+    // https://iopscience.iop.org:443/book/978-0-7503-1732-0.pdf
+      result.mime           = 'PDF';
+    } else {
+      // https://iopscience.iop.org:443/book/978-0-7503-1732-0.epub
+      // https://iopscience.iop.org:443/book/978-0-7503-1732-0.mobi
+      result.mime           = 'MISC';
+    }
+
   }
 
   return result;

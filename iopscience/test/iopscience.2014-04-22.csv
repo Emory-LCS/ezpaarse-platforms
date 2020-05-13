@@ -14,3 +14,13 @@ out-publication_date;out-title_id;out-unitid;out-doi;out-vol;out-issue;out-print
 ;;2040-8986/aa6097;10.1088/2040-8986/aa6097;;;2040-8986;ARTICLE;PDF;http://iopscience.iop.org/article/10.1088/2040-8986/aa6097/pdf
 ;;0295-5075/116/17006;10.1209/0295-5075/116/17006;116;;0295-5075;ARTICLE;PDF;http://iopscience.iop.org:80/article/10.1209/0295-5075/116/17006/pdf
 ;;JJAP.16.2165;10.1143/JJAP.16.2165;;;;ARTICLE;PDF;https://iopscience.iop.org:443/article/10.1143/JJAP.16.2165/pdf
+;;1742-6596/633;;633;;1742-6596;TOC;HTML;https://iopscience.iop.org:443/volume/1742-6596/633
+;;;;;;;SEARCH;HTML;https://iopscience.iop.org:443/nsearch?terms=Pipelined+Analog+to+Digital+Converter+and+Fault+Diagnosis
+;;978-0-7503-1732-0ch3;;ch3;;978-0-7503-1732-0;BOOK_SECTION;PDF;https://iopscience.iop.org:443/chapter/978-0-7503-1732-0/bk978-0-7503-1732-0ch3.pdf
+;;978-0-7503-1732-0ch3;;ch3;;978-0-7503-1732-0;BOOK_SECTION;MISC;https://iopscience.iop.org:443/chapter/978-0-7503-1732-0/bk978-0-7503-1732-0ch3.epub
+;;978-0-7503-1732-0ch3;;ch3;;978-0-7503-1732-0;BOOK_SECTION;MISC;https://iopscience.iop.org:443/chapter/978-0-7503-1732-0/bk978-0-7503-1732-0ch3.mobi
+;;978-0-7503-1732-0ch3;;ch3;;978-0-7503-1732-0;BOOK_SECTION;HTML;https://iopscience.iop.org:443/book/978-0-7503-1732-0/chapter/bk978-0-7503-1732-0ch3
+;;978-0-7503-1732-0;;;;978-0-7503-1732-0;ABS;HTML;https://iopscience.iop.org:443/book/978-0-7503-1732-0
+;;978-0-7503-1732-0;;;;978-0-7503-1732-0;BOOK;PDF;https://iopscience.iop.org:443/book/978-0-7503-1732-0.pdf
+;;978-0-7503-1732-0;;;;978-0-7503-1732-0;BOOK;MISC;https://iopscience.iop.org:443/book/978-0-7503-1732-0.epub
+;;978-0-7503-1732-0;;;;978-0-7503-1732-0;BOOK;MISC;https://iopscience.iop.org:443/book/978-0-7503-1732-0.mobi
