@@ -2,7 +2,9 @@
   "version": "2015-11-09",
   "status": "beta",
   "domains": [
-     "www.degruyter.com"
+     "www.degruyter.com",
+     "degruyter.com",
+     "db.degruyter.com"
   ],
   "bacon": {
     "provider": "DEGRUYTER"
@@ -10,7 +12,7 @@
   "name": "degruyter",
   "longname": "De Gruyter",
   "describe": "Identifie les consultations de la plateforme De Gruyter",
-  "docurl": "http://analogist.couperin.org/platforms/degruyter/",
-  "contact": "abderrazzak.loukili@inist.fr",
+  "docurl": "http://analyses.ezpaarse.org/platforms/5551b1f9866558c739ad0434",
+  "contact": "abderrazzak.loukili@inist.fr,acoope5@emory.edu",
   "pkb": false
 }
