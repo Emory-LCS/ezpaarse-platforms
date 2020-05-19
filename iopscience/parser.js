@@ -101,8 +101,16 @@ module.exports = new Parser(function analyseEC(parsedUrl) {
     result.vol              = match[3];
     result.issue            = match[4];
 
-  } else if (/^\/nsearch$/i.test(path)) {
+  } else if ((match = /^\/journal\/([0-9]{4}-[0-9x]{4})$/i.exec(path)) !== null) {
+    // /journal/0295-5075
+    result.rtype            = 'TOC';
+    result.mime             = 'HTML';
+    result.unitid           = match[1];
+    result.print_identifier = match[1];
+
+  } else if ((/^\/nsearch$/i.test(path)) || (/^\/booklist/i.test(path))) {
     // /nsearch
+    // /bookList/10/1
     result.rtype            = 'SEARCH';
     result.mime             = 'HTML';
 
