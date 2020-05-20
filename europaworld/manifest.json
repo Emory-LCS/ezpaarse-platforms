@@ -1,0 +1,14 @@
+{
+  "longname": "Europa World Online",
+  "name": "europaworld",
+  "describe": "Recognizes the accesses to the platform Europa World Online",
+  "contact": "acoope5@emory.edu",
+  "pkb": false,
+  "docurl": "http://ang.couperin.org/platforms/to_be_completed/",
+  "domains": [
+    "www.europaworld.com",
+    "europaworld.com"
+  ],
+  "version": "2020-05-19",
+  "status": "beta"
+}
