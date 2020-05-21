@@ -1,0 +1,20 @@
+{
+  "longname": "The History Makers",
+  "name": "thehistorymakers",
+  "describe": "Recognizes the accesses to the platform The History Makers",
+  "contact": "acoope5@emory.edu",
+  "pkb": false,
+  "docurl": "http://ang.couperin.org/platforms/to_be_completed/",
+  "domains": [
+    "da.thehistorymakers.org",
+    "devwww.thehistorymakers.org",
+    "emory.thehistorymakers.org",
+    "marc.thehistorymakers.org",
+    "smdigital.thehistorymakers.org",
+    "thmdigital.thehistorymakers.org",
+    "www.thehistorymakers.org",
+    "thehistorymakers.org"
+  ],
+  "version": "2020-05-21",
+  "status": "beta"
+}
