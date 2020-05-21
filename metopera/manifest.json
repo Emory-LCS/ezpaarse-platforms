@@ -1,0 +1,14 @@
+{
+  "longname": "Metropolitan Opera",
+  "name": "metopera",
+  "describe": "Recognizes the accesses to the platform Metropolitan Opera",
+  "contact": "acoope5@emory.edu",
+  "pkb": false,
+  "docurl": "http://ang.couperin.org/platforms/to_be_completed/",
+  "domains": [
+    "metopera.org",
+    "www.metopera.org"
+  ],
+  "version": "2020-05-21",
+  "status": "beta"
+}
