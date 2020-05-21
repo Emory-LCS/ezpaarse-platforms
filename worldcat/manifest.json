@@ -8,8 +8,26 @@
   "domains": [
     "emory.on.worldcat.org",
     "www.worldcat.org",
-    "worldcat.org"
+    "worldcat.org",
+    "cdmresolver.worldcat.org",
+    "static2.worldcat.org",
+    "emory.authn.worldcat.org",
+    "auctr.on.worldcat.org",
+    "berry.on.worldcat.org",
+    "bris.on.worldcat.org",
+    "elonuniversity.on.worldcat.org",
+    "huc.on.worldcat.org",
+    "lpts.on.worldcat.org",
+    "maastrichtuniversity.on.worldcat.org",
+    "mcgill.on.worldcat.org",
+    "melvyl.on.worldcat.org",
+    "pritzkermilitarylibrary.on.worldcat.org",
+    "rhodescollege.on.worldcat.org",
+    "ts259.on.worldcat.org",
+    "uncg.on.worldcat.org",
+    "uofl.on.worldcat.org",
+    "authn.sd00.worldcat.org"
   ],
-  "version": "2019-04-26",
+  "version": "2020-05-21",
   "status": "beta"
 }
