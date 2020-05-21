@@ -2,7 +2,17 @@
   "version": "2018-04-13",
   "status": "beta",
   "domains": [
-    "allafrica.com"
+    "allafrica.com",
+    "cdn01.allafrica.com",
+    "cdn02.allafrica.com",
+    "cdn03.allafrica.com",
+    "cdn04.allafrica.com",
+    "cdn05.allafrica.com",
+    "cdn06.allafrica.com",
+    "cdn07.allafrica.com",
+    "cdn08.allafrica.com",
+    "cdn09.allafrica.com",
+    "fr.allafrica.com"
   ],
   "recognize": {
     "rid": [
