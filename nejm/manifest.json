@@ -2,7 +2,24 @@
   "version": "2015-06-08",
   "status": "beta",
   "domains": [
-    "www.nejm.org"
+    "www.nejm.org",
+    "nejm.org",
+    "catalyst.nejm.org",
+    "cdf.nejm.org",
+    "cdn.nejm.org",
+    "csvc.nejm.org",
+    "files.nejm.org",
+    "illustrated-glossary.nejm.org",
+    "interactive.nejm.org",
+    "interactives.nejm.org",
+    "knowledgeplus.nejm.org",
+    "libraryhub.nejm.org",
+    "myaccount.nejm.org",
+    "resident360.nejm.org",
+    "resident360files.nejm.org",
+    "search.nejm.org",
+    "secureknowledgeplus.nejm.org",
+    "store.nejm.org"
   ],
   "recognize": {
     "rid": [
