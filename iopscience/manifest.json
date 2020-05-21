@@ -14,7 +14,9 @@
     "www.iop.org",
     "iop.org",
     "auth.myiopscience.iop.org",
-    "cms.iopscience.iop.org"
+    "cms.iopscience.iop.org",
+    "myiopscience.iop.org",
+    "ticket.iop.org"
 	],
   "recognize": {
     "rid": [
