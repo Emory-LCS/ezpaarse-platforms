@@ -21,7 +21,19 @@
     "ejournals.ebscohost.com",
     "ebsco-content.com",
     "web.ebscohost.com",
-    "search.ebscohost.com"
+    "search.ebscohost.com",
+    "app.rs.ebscohost.com",
+    "connection.ebscohost.com",
+    "ecm.ebscohost.com",
+    "pdc-evs.ebscohost.com",
+    "pdc-rpsimages.ebscohost.com",
+    "rss.ebscohost.com",
+    "sdc-evs.ebscohost.com",
+    "sdc-rpsimages.ebscohost.com",
+    "support.ebscohost.com",
+    "video.ebscohost.com",
+    "vttts.rs.ebscohost.com",
+    "widgets.ebscohost.com"
   ],
   "recognize": {
     "rid": [
