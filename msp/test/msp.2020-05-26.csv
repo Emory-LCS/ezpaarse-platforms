@@ -1,0 +1,14 @@
+out-unitid;out-title_id;out-rtype;out-mime;in-url
+;;SEARCH;HTML;https://msp.org:443/publications/journals/
+;;SEARCH;HTML;https://msp.org:443/publications/books/
+;;SEARCH;HTML;https://msp-org:443/publications/websites/
+;;SEARCH;HTML;https://msp.org:443/pjm/about/journal/specialissues.html
+;;SEARCH;HTML;https://msp.org:443/index/ai.php?jpath=pjm
+involve;involve;TOC;HTML;https://msp.org:443/involve/
+2020/13-2;involve;TOC;HTML;https://msp.org:443/involve/2020/13-2/
+2020/2-2;paa;TOC;HTML;https://msp.org:443/paa/2020/2-2/
+2019/1-4;paa;TOC;HTML;https://msp.org:443/paa/2019/1-4/index.xhtml
+2019/1-4/p02;paa;ABS;HTML;https://msp.org:443/paa/2019/1-4/p02.xhtml
+2019/2/p26;obs;ABS;HTML;https://msp.org:443/obs/2019/2/p26.xhtml
+2015/8-3/involve-v8-n3-p01-s;involve;ARTICLE;PDF;https://msp.org:443/involve/2015/8-3/involve-v8-n3-p01-s.pdf
+2019/1-4/paa-v1-n4-p02-p;paa;ARTICLE;PDF;https://msp.org:443/paa/2019/1-4/paa-v1-n4-p02-p.pdf
