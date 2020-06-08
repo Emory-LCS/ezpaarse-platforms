@@ -35,6 +35,8 @@ module.exports = new Parser(function analyseEC(parsedUrl, ec) {
     result.mime     = 'MISC';
     result.unitid   = match[2];
 
+  // Searches and online data analysis are unparseable.
+
   }
 
   return result;
