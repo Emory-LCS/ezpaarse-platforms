@@ -1,0 +1,14 @@
+{
+  "longname": "Latinobarometro Database",
+  "name": "latinobarometro",
+  "describe": "Recognizes the accesses to the platform Latinobarometro Database",
+  "contact": "acoope5@emory.edu",
+  "pkb": false,
+  "docurl": "http://ang.couperin.org/platforms/to_be_completed/",
+  "domains": [
+    "latinobarometro.com",
+    "www.latinobarometro.com"
+  ],
+  "version": "2020-06-08",
+  "status": "beta"
+}
