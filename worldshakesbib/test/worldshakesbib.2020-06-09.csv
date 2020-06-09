@@ -1,0 +1,9 @@
+out-unitid;out-rtype;out-mime;in-url
+;SEARCH;HTML;https://www.worldshakesbib.org:443/basic-search/results?
+;SEARCH;HTML;https://www.worldshakesbib.org:443/advanced-search/results?
+;SEARCH;HTML;https://www.worldshakesbib.org:443/browse
+;SEARCH;HTML;https://www.worldshakesbib.org:443/bibliography/biographical-studies
+;SEARCH;HTML;https://www.worldshakesbib.org:443/bibliography/comedies
+aw31;ENCYCLOPAEDIA_ENTRY;HTML;https://www.worldshakesbib.org:443/entry/aw31?back=/basic-search/results%3Fkeywords%3Dmacbeth%26sort_by%3Dsearch_api_relevance
+601998;ENCYCLOPAEDIA_ENTRY;HTML;https://www.worldshakesbib.org:443/entry/export/text/601998
+601998;ENCYCLOPAEDIA_ENTRY;HTML;https://www.worldshakesbib.org:443/entry/export/ris/601998

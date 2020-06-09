@@ -1,0 +1,14 @@
+{
+  "longname": "World Shakespeare Bibliographys",
+  "name": "worldshakesbib",
+  "describe": "Recognizes the accesses to the platform World Shakespeare Bibliographys",
+  "contact": "acoope5@emory.edu",
+  "pkb": false,
+  "docurl": "http://ang.couperin.org/platforms/to_be_completed/",
+  "domains": [
+    "worldshakesbib.org",
+    "www.worldshakesbib.org"
+  ],
+  "version": "2020-06-09",
+  "status": "beta"
+}
