@@ -1,0 +1,22 @@
+{
+  "longname": "Inter-university Consortium for Political and Social Research",
+  "name": "ICPSR",
+  "describe": "Recognizes the accesses to the platform Inter-university Consortium for Political and Social Research",
+  "contact": "acoope5@emory.edu",
+  "pkb": false,
+  "docurl": "http://ang.couperin.org/platforms/to_be_completed/",
+  "domains": [
+    "www.icpsr.umich.edu",
+    "icpsr.umich.edu",
+    "census.icpsr.umich.edu",
+    "deposit.icpsr.umich.edu",
+    "linkagelibrary.icpsr.umich.edu",
+    "pcms.icpsr.umich.edu",
+    "radius.icpsr.umich.edu",
+    "search.icpsr.umich.edu",
+    "openicpsr.org",
+    "www.openicpsr.org"
+  ],
+  "version": "2020-05-19",
+  "status": "beta"
+}
