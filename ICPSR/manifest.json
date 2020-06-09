@@ -13,7 +13,9 @@
     "linkagelibrary.icpsr.umich.edu",
     "pcms.icpsr.umich.edu",
     "radius.icpsr.umich.edu",
-    "search.icpsr.umich.edu"
+    "search.icpsr.umich.edu",
+    "openicpsr.org",
+    "www.openicpsr.org"
   ],
   "version": "2020-05-19",
   "status": "beta"
