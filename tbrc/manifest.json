@@ -1,0 +1,14 @@
+{
+  "longname": "Tibetan Buddhist Resource Center",
+  "name": "tbrc",
+  "describe": "Recognizes the accesses to the platform Tibetan Buddhist Resource Center",
+  "contact": "acoope5@emory.edu",
+  "pkb": false,
+  "docurl": "http://ang.couperin.org/platforms/to_be_completed/",
+  "domains": [
+    "www.tbrc.org",
+    "tbrc.org"
+  ],
+  "version": "2020-05-19",
+  "status": "beta"
+}
