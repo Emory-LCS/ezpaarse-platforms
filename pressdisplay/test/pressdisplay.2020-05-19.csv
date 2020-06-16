@@ -1,0 +1,13 @@
+out-unitid;out-rtype;out-mime;in-url
+;SEARCH;HTML;http://library.pressdisplay.com:80/pressdisplay/AdvancedSearch.aspx
+;SEARCH;HTML;http://library.pressdisplay.com:80/pressdisplay/AdvancedSimilarSearch.aspx
+Germany [country];TOC;HTML;http://library.pressdisplay.com:80/pressdisplay/pageview.aspx?cid=34c2&category=Germany%20[country]
+Croatian [language];TOC;HTML;http://library.pressdisplay.com:80/pressdisplay/PageViewManager.aspx?cid=0962&category=Croatian%20[language]
+T [letter];TOC;HTML;http://library.pressdisplay.com:80/pressdisplay/PageViewManager.aspx?cid=9f58&category=T%20[letter]
+ad9b89fd-4649-49ba-927d-dbd2125f5fbc;ARTICLE;HTML;http://library.pressdisplay.com:80/pressdisplay/showarticle.aspx?article=ad9b89fd-4649-49ba-927d-dbd2125f5fbc&key=LAcKN4vvFxV9C7aknxiDsg%3d%3d&issue=84222020051600000000001001
+f00708e1-8f15-4c19-bfb6-c48a98941ed0;ARTICLE;HTML;http://library.pressdisplay.com:80/pressdisplay/showarticle.aspx?article=f00708e1-8f15-4c19-bfb6-c48a98941ed0&key=XIpmFsJBCLDyW%2fU9BBGn0A%3d%3d&issue=84222020051600000000001001
+34c22020051300000000001001;ARTICLE;HTML;http://library.pressdisplay.com:80/pressdisplay/pageview.aspx?issue=34c22020051300000000001001
+09622020051500000000001001;ARTICLE;HTML;http://library.pressdisplay.com:80/pressdisplay/PageViewManager.aspx?issue=09622020051500000000001001
+9f582020042200000000001001;ARTICLE;HTML;http://library.pressdisplay.com:80/pressdisplay/PageViewManager.aspx?issue=9f582020042200000000001001
+9f582020042200000000001001;ARTICLE;HTML;http://library.pressdisplay.com:80/pressdisplay/PageViewManager.aspx?action=showpages&issue=9f582020042200000000001001&page=2&page2=3&cpage=1&cpage2=1
+9f582020042200000000001001;ARTICLE;HTML;http://library.pressdisplay.com:80/pressdisplay/Services/ImgGalleryHandler.ashx?type=0&page=1&issue=9f582020042200000000001001
