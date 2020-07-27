@@ -1,0 +1,14 @@
+{
+  "longname": "Mathematical Sciences Publishers",
+  "name": "msp",
+  "describe": "Recognizes the accesses to the platform Mathematical Sciences Publishers",
+  "contact": "acoope5@emory.edu",
+  "pkb": false,
+  "docurl": "http://ang.couperin.org/platforms/54364f73cb35340a3a7b0c30",
+  "domains": [
+    "msp.org",
+    "www.msp.org"
+  ],
+  "version": "2020-05-26",
+  "status": "beta"
+}
