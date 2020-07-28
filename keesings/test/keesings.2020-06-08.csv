@@ -1,0 +1,5 @@
+out-unitid;out-rtype;out-mime;in-url
+;SEARCH;HTML;http://www.keesings.com:80/index_new.php?page=advanced-search&search_for=potatoes
+5289cee0;ARTICLE;HTML;http://www.keesings.com:80/index_new.php?page=article&article=5289cee0&search=%22germany%22
+5289cee0;ARTICLE;PDF;http://www.keesings.com:80/index_new.php?page=download-article&article=5289cee0
+5289cee0;ARTICLE;PDF;http://www.keesings.com:80/index_new.php?page=print-article&article=5289cee0

@@ -1,0 +1,14 @@
+{
+  "longname": "Keesing's World News Archive",
+  "name": "keesings",
+  "describe": "Recognizes the accesses to the platform Keesing's World News Archive",
+  "contact": "acoope5@emory.edu",
+  "pkb": false,
+  "docurl": "http://ang.couperin.org/platforms/to_be_completed/",
+  "domains": [
+    "keesings.com",
+    "www.keesings.com"
+  ],
+  "version": "2020-06-08",
+  "status": "beta"
+}
