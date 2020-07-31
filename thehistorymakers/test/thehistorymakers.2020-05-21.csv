@@ -1,0 +1,12 @@
+out-unitid;out-title_id;out-rtype;out-mime;in-url
+;;SEARCH;HTML;https://www.thehistorymakers.org:443/search?search_api_fulltext=martin+luther+king
+;;SEARCH;HTML;https://www.thehistorymakers.org:443/advanced-search?search_api_fulltext=atlanta
+media;media;REF;HTML;https://www.thehistorymakers.org:443/media
+special-collections;special-collections;REF;HTML;https://www.thehistorymakers.org:443/special-collections
+pioneers-struggle;pioneers-struggle;ABS;HTML;https://www-thehistorymakers-org:443/special-collections/details/pioneers-struggle
+114863;114863;ABS;HTML;https://www-thehistorymakers-org:443/node/114863
+luther-williams-41;luther-williams-41;BIO;HTML;https://www.thehistorymakers.org:443/biography/luther-williams-41
+judy-richardson-41;judy-richardson-41;BIO;HTML;https://www.thehistorymakers.org:443/biography/judy-richardson-41
+2019-01/PITS%20Curriculum_0;2019-01/PITS%20Curriculum_0;REF;PDF;https://devwww.thehistorymakers.org:443/sites/default/files/2019-01/PITS%20Curriculum_0.pdf
+S2001_014_PITS_EAD_WEB;S2001_014_PITS_EAD_WEB;REF;PDF;http://www.thehistorymakers.org:80/sites/production/files/S2001_014_PITS_EAD_WEB.pdf
+stylemakers;stylemakers;TOC;HTML;https://www.thehistorymakers.org:443/biographies/stylemakers
