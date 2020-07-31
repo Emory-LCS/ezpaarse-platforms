@@ -66,6 +66,12 @@ module.exports = new Parser(function analyseEC(parsedUrl, ec) {
       result.mime     = 'HTML';
       result.title_id = param.AAWhere;
       result.unitid   = param.AAWhere;
+    } else if (param.AANextPage == '/printBrowseBuiltPage.jsp') {
+      // https://www.accessible.com:443/accessible/docButton?AAWhat=builtPage&AAWhere=B00117942.ESSAYONWOMANWHIPPING.xml&AABeanName=toc3&AANextPage=/printBrowseBuiltPage.jsp
+      result.rtype    = 'ARTICLE';
+      result.mime     = 'HTML';
+      result.title_id = param.AAWhere;
+      result.unitid   = param.AAWhere;
     }
 
   }
