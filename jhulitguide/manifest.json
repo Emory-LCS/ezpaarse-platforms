@@ -1,0 +1,13 @@
+{
+  "longname": "Johns Hopkins Guide to Library Theory and Criticism",
+  "name": "jhulitguide",
+  "describe": "Recognizes the accesses to the platform Johns Hopkins Guide to Library Theory and Criticism",
+  "contact": "acoope5@emory.edu",
+  "pkb": false,
+  "docurl": "http://ang.couperin.org/platforms/to_be_completed/",
+  "domains": [
+    "litguide.press.jhu.edu"
+  ],
+  "version": "2020-07-31",
+  "status": "beta"
+}
