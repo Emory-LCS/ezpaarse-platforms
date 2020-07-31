@@ -29,6 +29,12 @@ module.exports = new Parser(function analyseEC(parsedUrl, ec) {
     result.mime     = 'PDF';
     result.unitid = match[2];
 
+  } else if ((match =/^\/LATDocs\/([a-zA-Z0-9_-]+).doc$/i.exec(path)) !== null) {
+    // https://www.latinobarometro.org:443/LATDocs/F00006544-LATBD_TRef_Licitacion_2018.doc
+    result.rtype    = 'ARTICLE';
+    result.mime     = 'MISC';
+    result.unitid = match[1];
+
   } else if ((match = /^\/LATDC\/([a-zA-Z0-9_-]+)\/([a-zA-Z0-9_-]+).zip$/i.exec(path)) !== null) {
     // http://www.latinobarometro.org:80/LATDC/DC00638/F00008543-Latinobarometro_2018_Eng_Stata_v20190303.zip
     result.rtype    = 'DATASET';
