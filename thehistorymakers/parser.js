@@ -46,6 +46,13 @@ module.exports = new Parser(function analyseEC(parsedUrl, ec) {
     result.title_id = match[1];
     result.unitid   = match[1];
 
+  } else if ((match = /^\/biographies\/([a-zA-Z0-9-]+)$/i.exec(path)) !== null) {
+    // https://www.thehistorymakers.org:443/biographies/stylemakers
+    result.rtype    = 'TOC';
+    result.mime     = 'HTML';
+    result.title_id = match[1];
+    result.unitid   = match[1];
+
   } else if ((match = /^\/sites\/([a-zA-Z0-9-]+)\/files\/(.*).pdf$/i.exec(path)) !== null) {
     // https://devwww.thehistorymakers.org:443/sites/default/files/2019-01/PITS%20Curriculum_0.pdf
     // http://www.thehistorymakers.org:80/sites/production/files/S2001_014_PITS_EAD_WEB.pdf
