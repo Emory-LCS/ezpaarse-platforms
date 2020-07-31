@@ -1,0 +1,16 @@
+{
+  "longname": "Accessible Archives Complete",
+  "name": "accessible",
+  "describe": "Recognizes the accesses to the platform Accessible Archives Complete",
+  "contact": "acoope5@emory.edu",
+  "pkb": false,
+  "docurl": "http://ang.couperin.org/platforms/to_be_completed/",
+  "domains": [
+    "accessible.com",
+    "www.accessible.com",
+    "accessible-archives.com",
+    "www.accessible-archives.com"
+  ],
+  "version": "2020-05-26",
+  "status": "beta"
+}
