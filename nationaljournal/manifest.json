@@ -1,0 +1,14 @@
+{
+  "longname": "National Journal",
+  "name": "nationaljournal",
+  "describe": "Recognizes the accesses to the platform National Journal",
+  "contact": "acoope5@emory.edu",
+  "pkb": false,
+  "docurl": "http://ang.couperin.org/platforms/to_be_completed/",
+  "domains": [
+    "www.nationaljournal.com",
+    "nationaljournal.com"
+  ],
+  "version": "2020-08-04",
+  "status": "beta"
+}
