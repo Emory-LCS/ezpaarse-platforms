@@ -1,0 +1,15 @@
+out-unitid;out-rtype;out-mime;in-url
+;SEARCH;HTML;https://www.bioscience.org:443/search-article/index.php?keywords=spine&author_names=&year=&volume=&pages=&pubmed_no=&abstract=&submit=1
+open-access;TOC;HTML;https://www.bioscience.org:443/open-access
+fast-track;TOC;HTML;https://www.bioscience.org:443/fast-track
+express-open-access;TOC;HTML;https://www-bioscience-org:443/express-open-access
+metrics/3616;DATASET;MISC;https://www.bioscience.org:443/metrics?id=3616
+year-metrics/fasttrack;DATASET;MISC;https://www.bioscience.org:443/year-metrics?type=fasttrack
+/2002/v7/d/storz/storz.pdf;ARTICLE;PDF;https://www.bioscience.org:443/fbs/getfile.php?FileName=/2002/v7/d/storz/storz.pdf
+/2009/v14/af/3585/3585.pdf;ARTICLE;PDF;https://www.bioscience.org:443/fbs/getfile.php?FileName=/2009/v14/af/3585/3585.pdf
+2002/v7/d/storz;ABS;HTML;https://www.bioscience.org:443/2002/v7/d/storz/list.htm
+2009/v14/af/3585;ABS;HTML;http://www.bioscience.org:80/2009/v14/af/3585/list.htm
+2002/v7/d/storz;ARTICLE;HTML;https://www.bioscience.org:443/2002/v7/d/storz/fulltext.htm
+2009/v14/af/3585;ARTICLE;HTML;http://www.bioscience.org:80/2009/v14/af/3585/fulltext.htm
+1998/v3/d/palmada;BIO;HTML;https://www.bioscience.org:443/1998/v3/d/palmada/address.htm
+1998/v3/a/xiao;BIO;HTML;https://www.bioscience.org:443/1998/v3/a/xiao/address.htm

@@ -1,0 +1,14 @@
+{
+  "longname": "Frontiers in Bioscience",
+  "name": "bioscience",
+  "describe": "Recognizes the accesses to the platform Frontiers in Bioscience",
+  "contact": "acoope5@emory.edu",
+  "pkb": false,
+  "docurl": "http://ang.couperin.org/platforms/to_be_completed/",
+  "domains": [
+    "bioscience.org",
+    "www.bioscience.org"
+  ],
+  "version": "2020-08-04",
+  "status": "beta"
+}
