@@ -33,6 +33,12 @@ module.exports = new Parser(function analyseEC(parsedUrl, ec) {
       result.mime   = 'MISC';
     }
 
+  } else if ((match = /^\/booklists\/([0-9]+)\/([a-zA-Z0-9]+).pdf$/i.exec(path)) !== null) {
+    // http://www.otzar.org:80/booklists/18/fullpack.pdf
+    result.rtype    = 'TOC';
+    result.mime     = 'PDF';
+    result.unitid   = match[1] + '/' + match[2];
+
   } else if ((match = /^\/internetsite\/([0-9]+)\/([a-zA-Z0-9]+).pdf$/i.exec(path)) !== null) {
     // http://www.otzar.org:80/internetsite/18/booklist.pdf
     result.rtype    = 'TOC';
