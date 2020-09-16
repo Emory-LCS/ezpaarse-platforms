@@ -22,7 +22,7 @@ module.exports = new Parser(function analyseEC(parsedUrl, ec) {
     result.rtype    = 'SEARCH';
     result.mime     = 'HTML';
 
-  } else if ((match = /^\/cart\/([a-zA-Z0-9_]+)$/i.exec(path)) !== null) {
+  } else if (((match = /^\/cart\/([a-zA-Z0-9_]+)$/i.exec(path)) !== null) || ((match = /^\/cart\/product\/([a-zA-Z0-9_]+)$/i.exec(path)) !== null)) {
     // http://docuseek2.com:80/cart/newreleases_2018
     result.rtype    = 'TOC';
     result.mime     = 'HTML';
