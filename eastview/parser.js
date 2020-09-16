@@ -13,6 +13,7 @@ const Parser = require('../.lib/parser.js');
 module.exports = new Parser(function analyseEC(parsedUrl, ec) {
   let result = {};
   let path   = parsedUrl.pathname;
+  let param  = parsedUrl.query || {};
   let match;
 
   if ((match = /^\/browse\/book\/reader\/(([0-9]+)\/book.+)$/i.exec(path)) !== null) {
@@ -30,6 +31,28 @@ module.exports = new Parser(function analyseEC(parsedUrl, ec) {
     result.mime     = 'JPEG';
     result.title_id = match[1];
     result.unitid   = match[2];
+
+  } else if (/^\/wnc\/news$/i.test(path)) {
+    // https://wnc.eastview.com:443/wnc/news
+    result.rtype    = 'SEARCH';
+    result.mime     = 'HTML';
+
+  } else if (/^\/wnc\/article$/i.test(path)) {
+    // https://wnc.eastview.com:443/wnc/article?id=38220718&backlink=/wnc/news
+    result.rtype    = 'ARTICLE';
+    result.mime     = 'HTML';
+    result.title_id = param.id;
+    result.unitid   = param.id;
+
+  } else if ((match = /^\/wnc\/simple\/(doc|articles)$/i.exec(path)) !== null) {
+    // https://wnc.eastview.com:443/wnc/simple/doc?art=0&id=32464222
+    // https://wnc.eastview.com:443/wnc/simple/doc?pager.offset=1
+    // https://wnc.eastview.com:443/wnc/simple/articles?pager.offset=0
+    result.rtype    = 'ARTICLE';
+    result.mime     = 'HTML';
+    result.title_id = param.id;
+    result.unitid   = param.id;
+
   }
 
   return result;

@@ -1,3 +1,8 @@
 out-rtype;out-mime;out-title_id;out-unitid;in-url
 BOOK_SECTION;MISC;64626;64626/book11_.swf?time=1483267719013;https://dlib.eastview.com/browse/book/reader/64626/book11_.swf?time=1483267719013
 IMAGE;JPEG;RUSEB2162959BO/1996/coverbig.jpg;RUSEB2162959BO;https://dlib.eastview.com/issue_images/RUSEB2162959BO/1996/coverbig.jpg
+SEARCH;HTML;;;https://wnc.eastview.com:443/wnc/news
+ARTICLE;HTML;32464222;32464222;https://wnc.eastview.com:443/wnc/simple/doc?art=0&id=32464222
+ARTICLE;HTML;;;https://wnc.eastview.com:443/wnc/simple/doc?pager.offset=1
+ARTICLE;HTML;;;https://wnc.eastview.com:443/wnc/simple/articles?pager.offset=0
+ARTICLE;HTML;38220718;38220718;https://wnc.eastview.com:443/wnc/article?id=38220718&backlink=/wnc/news
