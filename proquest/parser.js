@@ -20,18 +20,24 @@ module.exports = new Parser(function analyseEC(parsedUrl, ec) {
 
   let match;
 
-  if ((/^\/search/i.test(path)) || (/^\/([a-z]+)\/search/i.test(path)) || (/^\/results/i.test(path)) || (/^\/([a-z]+)\/results/i.test(path))) {
+  if ((match = /^\/(search|results)/i.exec(path)) !== null) {
     // https://www.proquest.com:443/search?searchKeyword=bananas
-    // https://congressional.proquest.com:443/congressional/search/advanced/advanced?selectedcheckboxes=crsr
     // https://search.proquest.com:443/results/5BD7F010FA5D477FPQ/1?accountid=10747
-    // https://search.proquest.com:443/wma/results/8EEE29C22B274D13PQ/1?accountid=10747
     result.rtype    = 'SEARCH';
     result.mime     = 'HTML';
 
-  } else if (/^\/([a-z]+)\/result\/pqpresultpage$/i.test(path)) {
+  } else if ((match = /^\/([a-z]+)\/(search|results)/i.exec(path)) !== null) {
+    // https://congressional.proquest.com:443/congressional/search/advanced/advanced?selectedcheckboxes=crsr
+    // https://search.proquest.com:443/wma/results/8EEE29C22B274D13PQ/1?accountid=10747
+    result.rtype    = 'SEARCH';
+    result.mime     = 'HTML';
+    result.title_id = match[1];
+
+  } else if ((match = /^\/([a-z]+)\/result\/pqpresultpage$/i.exec(path)) !== null) {
     // https://congressional.proquest.com:443/congressional/result/pqpresultpage?accountid=10747&groupid=105260&pgId=f4014d99-5acd-40c8-8f09-24debb8646b2&rsId=16AA84BADF6
     result.rtype    = 'SEARCH';
     result.mime     = 'HTML';
+    result.title_id = match[1];
 
   } else if ((match = /^\/blog\/([a-z]+)$/i.exec(path)) !== null) {
     // https://www.proquest.com:443/blog/mfl?showBlogArchive=November+2012
@@ -39,6 +45,14 @@ module.exports = new Parser(function analyseEC(parsedUrl, ec) {
     result.mime     = 'HTML';
     result.title_id = match[1] + '/' + param.showBlogArchive;
     result.unitid   = match[1] + '/' + param.showBlogArchive;
+
+  } else if ((match = /^\/([a-z]+)\/(index|fromDatabasesLayer)$/i.exec(path)) !== null) {
+    // https://search.proquest.com:443/fiaf/index
+    // https://search.proquest.com:443/pais/fromDatabasesLayer?accountid=10747
+    result.rtype    = 'TOC';
+    result.mime     = 'HTML';
+    result.title_id = match[1];
+    result.unitid   = match[1];
 
   } else if (((match = /^\/docview\/([0-9]+)\/fulltextPDF/i.exec(path)) !== null) || ((match = /^\/docview\/([0-9]+)\/pageviewPDF/i.exec(path)) !== null)) {
     // https://search.proquest.com:443/docview/92029608/fulltextPDF/5BD7F010FA5D477FPQ/1?accountid=10747
@@ -51,23 +65,21 @@ module.exports = new Parser(function analyseEC(parsedUrl, ec) {
     // https://search.proquest.com:443/nppma/docview/1797173663/fulltextPDF
     result.rtype    = 'ARTICLE';
     result.mime     = 'PDF';
-    result.title_id = match[2];
+    result.title_id = match[1];
     result.unitid   = match[2];
 
   } else if ((match = /^\/docview\/([0-9]+)\/fulltext/i.exec(path)) !== null) {
     // https://search.proquest.com:443/docview/431636831/fulltext/5BD7F010FA5D477FPQ/1?accountid=10747
-    // https://search.proquest.com:443/nppma/docview/1797173663/fulltext
     result.rtype    = 'ARTICLE';
     result.mime     = 'HTML';
     result.title_id = match[1];
     result.unitid   = match[1];
 
   } else if ((match = /^\/([a-z]+)\/docview\/([0-9]+)\/fulltext/i.exec(path)) !== null) {
-    // https://search.proquest.com:443/docview/431636831/fulltext/5BD7F010FA5D477FPQ/1?accountid=10747
     // https://search.proquest.com:443/nppma/docview/1797173663/fulltext
     result.rtype    = 'ARTICLE';
     result.mime     = 'HTML';
-    result.title_id = match[2];
+    result.title_id = match[1];
     result.unitid   = match[2];
 
   } else if ((match = /^\/blog\/([a-z]+)\/([0-9]+)\/([a-zA-Z0-9-]+).html/i.exec(path)) !== null) {
@@ -124,7 +136,7 @@ module.exports = new Parser(function analyseEC(parsedUrl, ec) {
     // https://dialog.proquest.com:443/professional/docview/1510396083/16AA846887F54FF1474/1?accountid=10747
     result.rtype    = 'ABS';
     result.mime     = 'HTML';
-    result.title_id = match[2];
+    result.title_id = match[1];
     result.unitid   = match[2];
 
   } else if (/^\/historyvault\/docview.jsp/i.test(path)) {
@@ -152,10 +164,10 @@ module.exports = new Parser(function analyseEC(parsedUrl, ec) {
     // https://search.proquest.com:443/nppma/docview/1797173663/abstract/123139341104369PQ/2?accountid=10747
     result.rtype    = 'ABS';
     result.mime     = 'PDF';
-    result.title_id = match[2];
+    result.title_id = match[1];
     result.unitid   = match[2];
 
-  } else if (/^\/sa\/docview.html/i.test(path)) {
+  } else if ((match = /^\/sa\/docview.html/i.exec(path)) !== null) {
     // https://statabs.proquest.com:443/sa/docview.html?table-no=335&acc-no=C7095-1.5&year=2019&z=39FF8192582E4BE07D882FA68B06B53839029680&rc=1&seq=2&y=current&q=murder
     result.rtype    = 'DATASET';
     result.mime     = 'HTML';
