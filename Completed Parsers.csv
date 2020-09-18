@@ -1,13 +1,14 @@
 Short Name,Long Name,Created (if after 1/1/18),Last Updated  (if after 1/1/18)
 aaeportal,A&AePortal,3/2/20,3/2/20
+accessible,Accesssible Archives Complete,9/18/20,9/18/20
 acland,Acland's Video Atlas of Human Anatomy,-,-
 arc,Aerospace Research Central,-,-
 africaknowledgeproject,Africa Knowledge Project,10/1/19,10/1/19
 asp,Alexander Street Press,1/8/18,4/6/20
-aaf,allAfrica,4/26/18,4/26/18
+aaf,allAfrica,4/26/18,5/21/20
 amamanual,AMA Manual of Style,11/22/19,11/22/19
 adv,Ambrose Digital Video,4/17/18,4/17/18
-acs,American Chemical Society,-,-
+acs,American Chemical Society,-,5/21/20
 acp,American College of Physicians,-,10/25/19
 aea,American Economic Association,9/3/19,10/25/19
 aip,American Institute of Physics,-,-
@@ -62,7 +63,7 @@ cso,chicago scholarship online,-,-
 chinamaxx,China Maxx,2/4/20,2/4/20
 wanfang,China Online Journals / Wanfang Data,3/3/20,3/3/20
 ck,ClinicalKey,-,-
-cnki,CNKI,6/21/18,10/25/19
+cnki,CNKI,6/21/18,5/21/20
 ciao,Columbia International Affairs Online,-,-
 cqp,CQ Press Library,2/23/18,10/25/19
 cyberlibris,Cyberlibris,-,-
@@ -73,7 +74,7 @@ dalloz-revues,Dalloz Revues,-,-
 mandumah,DarAlMandumah,-,-
 dp,Data-Planet,6/6/18,6/6/18
 dawsonera,Dawsonera,-,-
-degruyter,De Gruyter,-,-
+degruyter,De Gruyter,-,5/19/20
 deepdyve,DeepDyve,-,-
 di,Delphes Indexpresse,-,-
 loeb,Digital Loeb Classical Library,6/29/18,6/29/18
@@ -89,7 +90,7 @@ dynamed,Dynamed,3/15/19,3/15/19
 imaios,e-Anatomy,3/20/18,3/20/18
 eebo,Early English Books Online,-,-
 eastview,East View,-,10/25/19
-ebscohost,EbscoHost,-,6/23/18
+ebscohost,EbscoHost,-,5/21/20
 esa,Ecological Society of America,-,-
 eiu,Economist Intelligence Unit,6/3/19,6/3/19
 eup,Edinburgh University Press,9/3/19,10/25/19
@@ -99,7 +100,7 @@ edp,EDP Sciences,-,-
 hraf,eHRAF,8/9/19,8/9/19
 eightcenturies,Eight Centuries (formerly Nineteenth Century Masterfile),2/4/20,2/4/20
 elgar,Elgaronline,6/3/19,6/14/19
-elsevier,Elsevier Journals (Elsevier Domain),8/13/19,10/25/19
+elsevier,Elsevier Journals (Elsevier Domain),8/13/19,5/21/20
 emc,EM Premium EMC,-,-
 emb,Embase,-,10/25/19
 emerald,Emerald management ejournals archives et Business,-,-
@@ -110,6 +111,7 @@ erudit,Erudit,-,-
 ethndis,Ethnicity & Disease,11/22/19,11/22/19
 ethnologue,Ethnologue,4/6/20,4/6/20
 euromonitor,Euromonitor International,6/4/19,10/25/19
+europaworld,Europa World Online,9/18/20,9/18/20
 ems,European Mathematical Society,-,-
 europresse,Europresse,-,-
 nep,Europresse nouvelle plateforme,-,-
@@ -117,6 +119,7 @@ evidal,Evidal,-,-
 factiva,Factiva,10/29/18,3/2/20
 f1000,Faculty 1000,6/5/19,6/28/19
 fio,Film Indexes Online,-,-
+films,Films on Demand,9/18/20,9/18/20
 ft,Financial Times,-,-
 foreignpolicy,Foreign Policy,11/26/19,11/26/19
 futuremedicine,Future Medicine,-,-
@@ -133,6 +136,7 @@ heinonline,HeinOnline,-,10/25/19
 heterocycles,Hheterocycles,4/6/20,4/6/20
 hw,HighWire,-,6/6/19
 heb,Humanities E-Books,4/12/19,4/12/19
+icpsr,ICPSR,9/18/20,9/18/20
 istex,Identifie les consultations de la plateforme Istex,-,-
 iet-dl,IET Digital Library,-,-
 iet-is,IET InspectDirect,-,-
@@ -145,7 +149,7 @@ ic,Ingenta Connect,-,6/4/19
 ieee,Institute of Electrical and Electronics Engineers,9/3/19,10/25/19
 ipm,Intelex Past Masters,6/14/19,6/14/19
 imf,International Monetary Fund,10/2/19,10/25/19
-iopscience,IOP Science,-,-
+iopscience,IOP Science,-,5/21/20
 ios,IOS press,-,-
 dspace,Irevues - Dspace,-,-
 irishnewsarchive,Irish News Archives,4/6/20,4/6/20
@@ -165,6 +169,7 @@ jove,Jove,-,6/13/18
 jstor,JSTOR,-,10/1/19
 kanopy,KanopyStreaming,-,10/25/19
 karger,Karger,-,-
+keesings,Keesing's,9/18/20,9/18/20
 kiss,KISS,8/1/19,8/1/19
 klapp,Klapp Online Bibliography of French Literature,1/9/20,1/9/20
 karb,Kluwer Arbitration,-,-
@@ -175,9 +180,11 @@ lerobert,Le Robert,-,-
 lexis360,Lexis 360,-,-
 lexisnexis,Lexisnexis Jurisclasseur,-,10/25/19
 lextenso,Lextenso,-,-
+pressdisplay,Library PressDisplay by PressReader,9/18/20,9/18/20
 lodel,LODEL : pour Irevues,-,-
 maitron,Maitron,-,-
 mal,Mary Ann Liebert,-,-
+msp,Mathematical Sciences Publishers,9/18/20,9/18/20
 mhm,McGraw-Hill Medical,-,-
 media,Media Cite de la Musique,-,-
 mediapart,Mediapart,-,-
@@ -190,10 +197,10 @@ numir,Monographies Numérisées des bibliothèques Mathématiques Informatique Reche
 morganclaypool,Morgan & Claypool Publishers,4/6/20,4/6/20
 mycow,My Cow,-,-
 ncbi,National Center for Biotechnology Information,-,-
-npg,Nature Publishing Group,-,6/4/18
+npg,Nature Publishing Group,-,5/21/20
 naxos,Naxos,9/3/19,10/25/19
 nber,NBER,-,9/3/19
-nejm,NEJM - New England Journal of Medicine,-,-
+nejm,NEJM - New England Journal of Medicine,-,5/21/20
 jwatch,NEJM Journal Watch,8/13/19,10/25/19
 nrc,New Research Press,-,-
 npa,Newspaper Archive,2/23/19,2/23/19
@@ -225,7 +232,7 @@ pm,PolicyMap,-,-
 pr,PressReader,6/26/18,6/26/18
 pe,Project Euclid,-,-
 muse,Project MUSE,6/20/18,6/20/18
-proquest,Proquest,6/14/19,6/14/19
+proquest,Proquest,6/14/19,9/18/20
 PO,PsychiatryOnline,-,-
 publienet,Publie.net,-,-
 reaxys,Reaxys,-,4/11/19
@@ -254,7 +261,7 @@ scf,Societe Chimique de France,-,-
 smf,Société Mathématique de France,-,-
 seg,Society of Exploration Geophysicists,-,-
 socio,Sociometrics,9/3/19,9/3/19
-springer,Springer,-,1/8/20
+springer,Springer,-,5/21/20
 springer-materials,SpringerMaterials,-,-
 springer-protocols,SpringerProtocols,-,1/8/20
 capitaliq,Standard and Poor’s Net Advantage (Capital IQ),12/11/19,12/11/19
@@ -267,11 +274,13 @@ tfe,Taylor & Francis eBooks,-,-
 ti,Techniques de l'Ingénieur,-,-
 tair,The Arabidopsis Information Resource,-,-
 eco,The Economist Group,-,10/25/19
+thehistorymakers,The History Makers,9/18/20,9/18/20
 lancet,The Lancet,4/26/18,4/26/18
 medicalletter,The Medical Letter Home Page,2/4/20,2/4/20
 tlg,Thesaurus Linguae Graecae,6/29/18,6/29/18
 thieme,Thieme,4/12/18,10/25/19
 westlaw,Thomson Reuters Westlaw,9/4/19,9/4/19
+tbrc,Tibetan Buddhist Resource Center,9/18/20,9/18/20
 tp,Transplantation Proceedings,5/23/18,5/23/18
 unbound,Unbound Medicine,5/20/18,5/20/18
 uic,Underground and Independant Comics,-,-
@@ -285,6 +294,6 @@ wf,Wetfeet,2/5/18,2/5/18
 wiley,Wiley,-,10/25/19
 worldbank,World Bank,6/4/19,10/25/19
 wspc,World Scientific Publishing Company,-,-
-worldcat,Worldcat,6/4/19,10/25/19
+worldcat,Worldcat,6/4/19,5/21/20
 xerfi,Xerfi,-,-
 zbmath,ZentralBlatt,-,-
