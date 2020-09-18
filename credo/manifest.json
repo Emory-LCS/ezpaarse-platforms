@@ -1,0 +1,20 @@
+{
+  "longname": "Credo Reference",
+  "name": "credo",
+  "describe": "Recognizes the accesses to the platform Credo Reference",
+  "contact": "acoope5@emory.edu",
+  "pkb": false,
+  "docurl": "http://ang.couperin.org/platforms/555085b9fd48c0b9e0456e33",
+  "domains": [
+    "credocourseware.com",
+    "frame.credocourseware.com",
+    "constructor.credocourseware.com",
+    "infolit.credocourseware.com",
+    "studio.credocourseware.com",
+    "credoreference.com",
+    "corp.credoreference.com",
+    "toolbox.credoreference.com"
+  ],
+  "version": "2020-09-18",
+  "status": "beta"
+}
