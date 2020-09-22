@@ -1,0 +1,13 @@
+out-title_id;out-unitid;out-rtype;out-mime;in-url
+;;SEARCH;HTML;https://search.credoreference.com:443/search/all
+;;SEARCH;HTML;https://search.credoreference.com:443/content/browse/title
+;;SEARCH;HTML;https://search.credoreference.com:443/content/browse/topic
+quick_tips;quick_tips;TOC;HTML;https://search.credoreference.com:443/quick_tips
+persgreatest;persgreatest;TOC;HTML;https://search.credoreference.com:443/content/title/persgreatest
+quick_tips;creating_research_plan;ENCYCLOPAEDIA_ENTRY;HTML;https://search.credoreference.com:443/quick_tips/creating_research_plan
+columency;archimedes;ENCYCLOPAEDIA_ENTRY;HTML;https://search.credoreference.com:443/content/entry/columency/archimedes/0
+ashgtpag;part_v_the_hellenistic_philosophers;ENCYCLOPAEDIA_ENTRY;HTML;https://search.credoreference.com:443/content/entry/ashgtpag/part_v_the_hellenistic_philosophers
+fofinside;3d_wall_of_virtual_reality;ENCYCLOPAEDIA_ENTRY;HTML;https://search.credoreference.com:443/content/entry/fofinside/3d_wall_of_virtual_reality/0
+dashboard;dashboard;TOC;HTML;https://frame.credocourseware.com:443/dashboard
+v1:Emory-University+Core+Core;v1:Emory-University+Core+Core;TOC;HTML;https://frame.credocourseware.com:443/courses/course-v1:Emory-University+Core+Core/course/
+v1:Emory-University+Core+Core;94b74c7c70f14e7a8d4045b68f9e1e5a/9f8f849d5fdf486e9088aded125e9b9f/1;ENCYCLOPAEDIA_ENTRY;HTML;https://frame.credocourseware.com:443/courses/course-v1:Emory-University+Core+Core/courseware/94b74c7c70f14e7a8d4045b68f9e1e5a/9f8f849d5fdf486e9088aded125e9b9f/1?activate_block_id=block-v1%3AEmory-University%2BCore%2BCore%2Btype%40vertical%2Bblock%40231d0f6b465b433aa115db4191ce7490
