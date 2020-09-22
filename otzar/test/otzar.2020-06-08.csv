@@ -1,0 +1,6 @@
+out-unitid;out-rtype;out-mime;in-url
+;SEARCH;HTML;https://tablet.otzar.org:443/pages/search.php?type=nosim&data=%7B%22noseid%22%3A%228%22%2C%22nosedesc%22%3A%22Receipt%22%2C%22sefer%22%3A%22nosim%22%7D
+booklists/shlomo;TOC;PDF;http://www.otzar.org:80/booklists/shlomo.PDF
+18/booklist;TOC;PDF;http://www.otzar.org:80/internetsite/18/booklist.pdf
+booklists/shlomo;TOC;MISC;http://www.otzar.org:80/booklists/shlomo.xlsx
+62722-page2;BOOK_SECTION;HTML;https://tablet.otzar.org:443/book/getimg.php?width=824&book=62722&page=2
