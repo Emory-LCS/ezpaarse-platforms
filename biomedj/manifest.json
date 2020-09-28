@@ -1,0 +1,13 @@
+{
+  "longname": "Biomedical Journal Table of Contents",
+  "name": "biomedj",
+  "describe": "Recognizes the accesses to the platform Biomedical Journal Table of Contents",
+  "contact": "acoope5@emory.edu",
+  "pkb": false,
+  "docurl": "http://ang.couperin.org/platforms/to_be_completed/",
+  "domains": [
+    "biomedj.cgu.edu.tw"
+  ],
+  "version": "2020-08-04",
+  "status": "beta"
+}
