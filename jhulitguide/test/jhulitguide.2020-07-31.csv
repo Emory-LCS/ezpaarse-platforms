@@ -1,0 +1,14 @@
+out-unitid;out-rtype;out-mime;in-url
+;SEARCH;HTML;https://litguide.press.jhu.edu:443/cgi-bin/search.cgi?flag=basic
+8;BOOK_SECTION;HTML;https://litguide.press.jhu.edu:443/cgi-bin/view.cgi?eid=8
+2107;BOOK_SECTION;HTML;https://litguide.press.jhu.edu:443/cgi-bin/view.cgi?section_id=2107
+;SEARCH;HTML;https://litguide.press.jhu.edu:443/cgi-bin/search.cgi?flag=basic
+8;BOOK_SECTION;HTML;https://litguide.press.jhu.edu:443/cgi-bin/view.cgi?eid=8
+2107;BOOK_SECTION;HTML;https://litguide.press.jhu.edu:443/cgi-bin/view.cgi?section_id=2107
+table_of_contents;TOC;HTML;https://litguide.press.jhu.edu:443/table_of_contents.html
+entries/index;TOC;HTML;https://litguide.press.jhu.edu:443/entries/index.html
+contributors;TOC;HTML;https://litguide.press.jhu.edu:443/contributors.html
+topical_index;TOC;HTML;https://litguide.press.jhu.edu:443/topical_index.html
+foreword;BOOK_SECTION;HTML;https://litguide.press.jhu.edu:443/foreword.html
+preface;BOOK_SECTION;HTML;https://litguide.press.jhu.edu:443/preface.html
+acknowledgements;BOOK_SECTION;HTML;https://litguide.press.jhu.edu:443/acknowledgements.html
