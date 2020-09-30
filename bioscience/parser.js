@@ -17,6 +17,8 @@ module.exports = new Parser(function analyseEC(parsedUrl, ec) {
 
   let match;
 
+  // UGH
+
   if (/^\/search-article\/index.php$/i.test(path)) {
     // https://www.bioscience.org:443/search-article/index.php
     result.rtype    = 'SEARCH';
