@@ -29,16 +29,11 @@ module.exports = new Parser(function analyseEC(parsedUrl, ec) {
       result.unitid = param.eid || param.section_id;
     }
 
-  }
-
-  else if ((match = /^\/([a-zA-Z0-9_/-]+).html$/i.exec(path)) !== null) {
+  } else if ((match = /^\/([a-zA-Z0-9_-]+).html$/i.exec(path)) !== null) {
     result.mime     = 'HTML';
     result.unitid   = match[1];
     if (match[1] == 'table_of_contents') {
       // https://litguide.press.jhu.edu:443/table_of_contents.html
-      result.rtype  = 'TOC';
-    } else if (match[1] == 'entries/index') {
-      // https://litguide.press.jhu.edu:443/entries/index.html
       result.rtype  = 'TOC';
     } else if (match[1] == 'contributors') {
       // https://litguide.press.jhu.edu:443/contributors.html
@@ -57,7 +52,14 @@ module.exports = new Parser(function analyseEC(parsedUrl, ec) {
       result.rtype  = 'BOOK_SECTION';
     }
 
+  } else if ((match = /^\/entries\/([a-zA-Z0-9_-]+).html$/i.exec(path)) !== null) {
+    // https://litguide.press.jhu.edu:443/entries/index.html
+    result.mime     = 'HTML';
+    result.rtype    = 'TOC';
+    result.unitid   = match[1];
+
   }
 
   return result;
+
 });
