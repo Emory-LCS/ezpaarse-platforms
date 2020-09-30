@@ -56,7 +56,7 @@ module.exports = new Parser(function analyseEC(parsedUrl, ec) {
     // https://litguide.press.jhu.edu:443/entries/index.html
     result.mime     = 'HTML';
     result.rtype    = 'TOC';
-    result.unitid   = match[1];
+    result.unitid   = 'entries/' + match[1];
 
   }
 
