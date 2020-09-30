@@ -28,11 +28,16 @@ module.exports = new Parser(function analyseEC(parsedUrl, ec) {
     // https://www.nowpublishers.com:443/BookSeries/Details/CBSB
     result.rtype     = 'TOC';
     result.mime      = 'HTML';
-    result.unitid   = match[1];
+    result.unitid    = match[1];
 
-  } else if ((match = /^\/article\/(Details|Download|DownloadSummary|BookDetails|DownloadEBook)\/([a-zA-Z0-9_-]+)$/i.exec(path)) !== null) {
+  } else if ((match = /^\/article\/(Chapter|Details|Download|DownloadSummary|BookDetails|DownloadEBook)\/([a-zA-Z0-9_-]+)$/i.exec(path)) !== null) {
     result.unitid  = match[2];
-    if (match[1] == 'Details') {
+    if (match[1] == 'Chapter') {
+      // https://www.nowpublishers.com:443/article/Chapter/9781680837247?cId=978-1-68083-725-4.ch8
+      result.rtype      = 'ABS';
+      result.mime       = 'HTML';
+      result.print_identifier = match[2];
+    } else if (match[1] == 'Details') {
       // https://www.nowpublishers.com:443/article/Details/MAL-071
       result.rtype      = 'ABS';
       result.mime       = 'HTML';
@@ -62,6 +67,14 @@ module.exports = new Parser(function analyseEC(parsedUrl, ec) {
         result.print_identifier = match[2];
       }
     }
+
+  } else if ((match = /^\/article\/DownloadChapters$/i.exec(path)) !== null) {
+    // https://www.nowpublishers.com:443/article/DownloadChapters?bookId=9781680837247&chapters=978-1-68083-725-4.ch8
+    result.rtype     = 'BOOK_SECTION';
+    result.mime      = 'PDF';
+    result.print_identifier = param.bookId;
+    result.unitid    = param.chapters || param.bookId;
+
   }
 
   return result;
