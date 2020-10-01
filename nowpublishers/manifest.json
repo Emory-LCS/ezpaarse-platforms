@@ -1,0 +1,14 @@
+{
+  "longname": "Now Publishers",
+  "name": "nowpublishers",
+  "describe": "Recognizes the accesses to the platform Now Publishers",
+  "contact": "acoope5@emory.edu",
+  "pkb": false,
+  "docurl": "http://ang.couperin.org/platforms/to_be_completed/",
+  "domains": [
+    "www.nowpublishers.com",
+    "nowpublishers.com"
+  ],
+  "version": "2020-08-04",
+  "status": "beta"
+}

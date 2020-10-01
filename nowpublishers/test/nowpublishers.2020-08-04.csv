@@ -1,0 +1,15 @@
+out-print_identifier;out-unitid;out-rtype;out-mime;in-url
+;;SEARCH;HTML;https://www.nowpublishers.com:443/Search?q=brain&s2=Artificial%20Intelligence%20in%20Robotics
+;Journal;TOC;HTML;https://www.nowpublishers.com:443/Journal
+;ASTP;TOC;HTML;https://www.nowpublishers.com:443/ASTP
+;ASTP;TOC;HTML;https://www.nowpublishers.com:443/ASTP?vol=2
+;FnTs;TOC;HTML;https://www.nowpublishers.com:443/FnTs
+;DBS;TOC;HTML;https://www.nowpublishers.com:443/DBS
+;DBS;TOC;HTML;https://www.nowpublishers.com:443/DBS?vol=8
+;CBSB;TOC;HTML;https://www.nowpublishers.com:443/BookSeries/Details/CBSB
+;MAL-071;ABS;HTML;https://www.nowpublishers.com:443/article/Details/MAL-071
+;MAL-071;ARTICLE;PDF;https://www.nowpublishers.com:443/article/Download/MAL-071
+;MAL-071;ARTICLE;PDF;https://www.nowpublishers.com:443/article/DownloadSummary/MAL-071
+9781680834864;9781680834864;ABS;HTML;https://www.nowpublishers.com:443/article/BookDetails/9781680834864
+9781680834864;9781680834864;BOOK;PDF;https://www.nowpublishers.com:443/article/DownloadEBook/9781680834864?format=pdf
+9781680834864;9781680834864;BOOK;MISC;https://www.nowpublishers.com:443/article/DownloadEBook/9781680834864?format=epub
