@@ -1,5 +1,6 @@
 out-unitid;out-rtype;out-mime;in-url
 ;SEARCH;HTML;https://www.bioscience.org:443/search-article/index.php?keywords=spine&author_names=&year=&volume=&pages=&pubmed_no=&abstract=&submit=1
+;SEARCH;HTML;https://bioscience.org:443/?s=chemical
 open-access;TOC;HTML;https://www.bioscience.org:443/open-access
 fast-track;TOC;HTML;https://www.bioscience.org:443/fast-track
 express-open-access;TOC;HTML;https://www-bioscience-org:443/express-open-access
@@ -13,3 +14,6 @@ year-metrics/fasttrack;DATASET;MISC;https://www.bioscience.org:443/year-metrics?
 2009/v14/af/3585;ARTICLE;HTML;http://www.bioscience.org:80/2009/v14/af/3585/fulltext.htm
 1998/v3/d/palmada;BIO;HTML;https://www.bioscience.org:443/1998/v3/d/palmada/address.htm
 1998/v3/a/xiao;BIO;HTML;https://www.bioscience.org:443/1998/v3/a/xiao/address.htm
+2020/v25/af/4820;DATASET;HTML;http://bioscience.org:80/2020/v25/af/4820/tables.htm
+2020-2/landmark-edition-volume-25-2020;TOC;HTML;https://bioscience.org:443/2020-2/landmark-edition-volume-25-2020/
+2011/v3s/af/127/2;TOC;HTML;https://bioscience.org:443//2011/v3s/af/127/2.htm
