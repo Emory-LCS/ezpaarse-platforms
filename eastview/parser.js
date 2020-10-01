@@ -32,7 +32,7 @@ module.exports = new Parser(function analyseEC(parsedUrl, ec) {
     result.title_id = match[1];
     result.unitid   = match[2];
 
-  } else if (/^\/wnc\/news$/i.test(path)) {
+  } else if (/^\/wnc\/(news|advanced)$/i.test(path)) {
     // https://wnc.eastview.com:443/wnc/news
     result.rtype    = 'SEARCH';
     result.mime     = 'HTML';
