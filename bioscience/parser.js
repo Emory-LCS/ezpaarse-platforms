@@ -24,6 +24,11 @@ module.exports = new Parser(function analyseEC(parsedUrl, ec) {
     result.rtype    = 'SEARCH';
     result.mime     = 'HTML';
 
+  } else if ((/^\/$/i.test(path)) && (param.s !== null)) {
+    // https:/bioscience.org:443/?s=chemical
+    result.rtype    = 'SEARCH';
+    result.mime    = 'HTML';
+
   } else if ((match = /^\/(open-access|fast-track|express-open-access)$/i.exec(path)) !== null) {
     // https://www.bioscience.org:443/open-access
     // https://www.bioscience.org:443/fast-track
@@ -31,6 +36,18 @@ module.exports = new Parser(function analyseEC(parsedUrl, ec) {
     result.rtype    = 'TOC';
     result.mime     = 'HTML';
     result.unitid   = match[1];
+
+  } else if ((match = /^\/archives\/([a-zA-Z0-9_/-]+)\/$/i.exec(path)) !== null) {
+    // https://bioscience.org:443/archives/scholar/
+    result.rtype    = 'TOC';
+    result.mime     = 'HTML';
+    result.unitid   = match[1];
+
+  } else if ((match  = /^\/([0-9]+)-([0-9]+)\/([a-zA-Z0-9_/-]+)\/$/i.exec(path)) !== null) {
+    // https://bioscience.org:443/2020-2/landmark-edition-volume-25-2020/
+    result.rtype    = 'TOC';
+    result.mime     = 'HTML';
+    result.unitid   = match[1] + '-' + match[2] + '/' + match[3];
 
   } else if ((match = /^\/(metrics|year-metrics)$/i.exec(path)) !== null) {
     // https://www.bioscience.org:443/metrics?id=3616
@@ -50,22 +67,31 @@ module.exports = new Parser(function analyseEC(parsedUrl, ec) {
     result.mime     = 'PDF';
     result.unitid   = param.FileName;
 
-  } else if ((match = /^\/([a-zA-Z0-9_/-]+)\/(list|fulltext|address).htm$/i.exec(path)) !== null) {
+  } else if ((match = /^\/([a-zA-Z0-9_/-]+)\/(list|fulltext|address|tables).htm$/i.exec(path)) !== null) {
     result.mime     = 'HTML';
     result.unitid   = match[1];
     if (match[2] == 'list') {
       // https://www.bioscience.org:443/2002/v7/d/storz/list.htm
       // http://www.bioscience.org:80/2009/v14/af/3585/list.htm
-      result.rtype = 'ABS';
+      result.rtype  = 'ABS';
     } else if (match[2] == 'fulltext') {
       // https://www.bioscience.org:443/2002/v7/d/storz/fulltext.htm
       // http://www.bioscience.org:80/2009/v14/af/3585/fulltext.htm
-      result.rtype = 'ARTICLE';
+      result.rtype  = 'ARTICLE';
     } else if (match[2] == 'address') {
       // https://www.bioscience.org:443/1998/v3/d/palmada/address.htm
       // https://www.bioscience.org:443/1998/v3/a/xiao/address.htm
-      result.rtype = 'BIO';
+      result.rtype  = 'BIO';
+    } else if (match[2] == 'tables') {
+      // http://bioscience.org:80/2020/v25/af/4820/tables.htm
+      result.rtype  = 'DATASET';
     }
+
+  } else if ((match = /^\/\/([a-zA-Z0-9_/-]+)\/([0-9]).htm$/i.exec(path)) !== null) {
+    // https://bioscience.org:443//2011/v3s/af/127/2.htm
+    result.rtype    = 'TOC';
+    result.mime     = 'HTML';
+    result.unitid   = match[1] + '/' + match[2];
 
   }
 
