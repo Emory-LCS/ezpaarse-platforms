@@ -1,859 +1,381 @@
-Domain
-aacrjournals.org
-www.aaidd.org
-www.aaojournal.org
-www.aap.org
-services.aap.org
-go.aap.org
-musicid.academicrightspress.com
-journals.academicstudiespress.com
-www.accessible-archives.com
-classic.accountingresearchmanager.com
-www.accountingresearchmanager.com
-ui-login.accountingresearchmanager.com
-accounts.acm.org
-dlnext.acm.org
-webapi.acponline.org
-chemistryjobs.acs.org
-cherwellcs.acs.org
-assets.aeaweb.org
-www.ala.org
-journals.ala.org
-authorize.alexanderstreet.com
-www.almanhal.com
-www.aluka.org
-journalofethics.ama-assn.org
-www.ama-assn.org
-login.ama-assn.org
-userprofile.ama-assn.org
-amc.ama-assn.org
-videos.ambrosedigital.com
-www.sexandsexuality.amdigital.co.uk
-www.tradecatalogues.amdigital.co.uk
-www.americainworldwartwo.amdigital.co.uk
-www.ethnomusicology.amdigital.co.uk
-www.foodanddrink.amdigital.co.uk
-ed.resources.amdigital.co.uk
-www.aac.amdigital.co.uk
-www.anatomy.tv
-aom.org
-sso.apa.org
-mystatic.apa.org
-psyctherapy.apa.org
-supp.apa.org
-ccdm.aphapublications.org
-www.apimages.com
-referees.aps.org
-meetings.aps.org
-authors.aps.org
-my.aps.org
-www.arcadianlibraryonline.com
-journals.uair.arizona.edu
-support.artstor.org
-mdxdv.artstor.org
-tvst.arvojournals.org
-jov.arvojournals.org
-iovs.arvojournals.org
-database.asahi.com
-signin.asco.org
-careercenter.asco.org
-login.asco.org
-coi.asco.org
-asm.org
-login.asm.org
-ebooks.aspenlaw.com
-marketing.atozdatabases.com
-avmajournals.avma.org
-store.barrons.com
-www.barrons.com
-images.barrons.com
-stream.barrons.com
-www.baslibrary.org
-bccresearch.co
-academic.bccresearch.com
-www.beckettarchive.org
-law.bepress.com
-assets.bepress.com
-resources.bepress.com
-www.berghahnjournals.com
-www.berliner-philharmoniker-recordings.com
-submit-jcs.biologists.org
-threedmedprint.biomedcentral.com
-bmccomplementmedtherapies.biomedcentral.com
-surgexppathol.biomedcentral.com
-intjem.biomedcentral.com
-jps.biomedcentral.com
-environhealthprevmed.biomedcentral.com
-jme.bioscientifica.com
-erp.bioscientifica.com
-birdsoftheworld.org
-assets.bizjournals.com
-api17.bizminer.com
-report.bizminer.com
-blakequarterly.org
-news.bloomberglaw.com
-hosted.bmj.com
-jitc.bmj.com
-learning.bmj.com
-militaryhealth.bmj.com
-ijgc.bmj.com
-sandpit.bmj.com
-srh.bmj.com
-authors.bmj.com
-bmjopenquality.bmj.com
-essential.bna.com
-profile.bna.com
-about.brepolis.net
-primarysources.brillonline.com
-dictionaries.brillonline.com
-buyaccess.brillonline.com
-bibliographies.brillonline.com
-cdn.britannica.com
-www.buildinggreen.com
-subscribers.c2er.org
-www.caareviews.org
-aide.cairn.info
-authenticate.cambridge.org
-assets.cambridge.org
-event-aggregation-api-prod-platform.prod.aop.cambridge.org
-api-platform.prod.aop.cambridge.org
-static.capitaliq.com
-content2.cas.org
-perkinelmer.cas.org
-scifinder-n.cas.org
-accounts.cas.org
-intelliconnect.cch.com
-support.cch.com
-selfreg.intelliconnect.cch.com
-covid19healthbot.cdc.gov
-gis.cdc.gov
-search.cdc.gov
-wwwn.cdc.gov
-stacks.cdc.gov
-wonder.cdc.gov
-webappa.cdc.gov
-blogs.cdc.gov
-chronicdata.cdc.gov
-covid.cdc.gov
-phgkb.cdc.gov
-www.atsdr.cdc.gov
-kotar.cet.ac.il
-biomedj.cgu.edu.tw
-pld.chadwyck.com
-archives.chadwyck.com
-schiller.chadwyck.com
-ssbe.chadwyck.com
-bap.chadwyck.com
-collections.chadwyck.co.uk
-chemeducator.org
-www.chemistryworld.com
-account.chemistryworld.com
-china-data-online.com
-www.choicereviews.org
-sh.chronicle.com
-login.chronicle.com
-w0.val.ciqimg.com
-w5.val.ciqimg.com
-w1.val.ciqimg.com
-w2.val.ciqimg.com
-w3.val.ciqimg.com
-w4.val.ciqimg.com
-info.clarivate.com
-discover.clarivate.com
-incites.help.clarivate.com
-jcr.help.clarivate.com
-myaccount.incites.clarivate.com
-login.incites.clarivate.com
-esi.help.clarivate.com
-pom.cnki.net
-a.cnki.net
-kreader.cnki.net
-fsso.cnki.net
-cadt.cnki.net
-jtp.cnki.net
-cstm.cnki.net
-ar.cnki.net
-my.cnki.net
-chn.oversea.cnki.net
-tra.oversea.cnki.net
-gongjushu.oversea.cnki.net
-book.oversea.cnki.net
-enbeta.oversea.cnki.net
-pdf.tmp.oversea.d.cnki.net
-www.cochrane.org
-www.commentarymagazine.com
-www.comprehensivephysiology.com
-www.computer.org
-conference-board.org
-www.conference-board.org
-www.consumerbrandanalytics.com
-ecommons.cornell.edu
-collections.library.cornell.edu
-www.law.cornell.edu
-people.ece.cornell.edu
-usda.library.cornell.edu
-downloads.usda.library.cornell.edu
-cdn.download.ams.birds.cornell.edu
-test.cdn.download.ams.birds.cornell.edu
-resources.corwin.com
-us.corwin.com
-frame.credocourseware.com
-constructor.credocourseware.com
-infolit.credocourseware.com
-studio.credocourseware.com
-corp.credoreference.com
-toolbox.credoreference.com
-media3.criterionpic.com
-catalog.crl.edu
-doi.crossref.org
-www.crossref.org
-api.crossref.org
-search.crossref.org
-m.rnajournal.cshlp.org
-m.genome.cshlp.org
-gate.dbmedia.co.kr
-download.dbpia.co.kr
-wbis.degruyter.com
-princetonup.degruyter.com
-hup.degruyter.com
-toronto.degruyter.com
-chicago.degruyter.com
-columbia.degruyter.com
-penn.degruyter.com
-california.degruyter.com
-transcript.degruyter.com
-rutgers.degruyter.com
-cornellup.degruyter.com
-yaleup.degruyter.com
-www.diabetesjournals.org
-www.digitalconcerthall.com
-apps.digitalconcerthall.com
-trailers.digitalconcerthall.com
-www.digitaltheatreplus.com
-education.digitaltheatreplus.com
-scholar.dkyobobook.co.kr
-doi.org
-customer.dowjones.com
-djlogin.dowjones.com
-professional.dowjones.com
-images.dowjones.com
-sso.accounts.dowjones.com
-www.dustri.com
-www.db.dyabola.de
-www.earticle.net
-file1.earticle.net
-wnc.eastview.com
-gpa.eastview.com
-webstats.eb.com
-school.eb.com
-escolar.eb.com
-connect.ebsco.com
-health.ebsco.com
-status.ebsco.com
-global.ac.ebsco-content.com
-www.ecoamericas.com
-films.economist.com
-my.economist.com
-groupsubscriptions.economist.com
-gmat.economist.com
-er.educause.edu
-events.educause.edu
-egyptianexpedition.org
-www.els.net
-api.elsevier.com
-abdn.pure.elsevier.com
-content.id.elsevier.com
-cn.service.elsevier.com
-dul.usage.elsevier.com
-secure.jbs.elsevierhealth.com
-els-jbs-prod-cdn.jbs.elsevierhealth.com
-www.emarketer.com
-contentstorage-nax1.emarketer.com
-branding.emarketer.com
-relatedcontentstorage-nax1.emarketer.com
-contentpersonalizationstorage-na1.emarketer.com
-analysts-api-nax1.emarketer.com
-smf.emath.fr
-vaccines.emory.edu
-opus.emory.edu
-saprod.emory.edu
-scholarblogs.emory.edu
-history.emory.edu
-arthistory.emory.edu
-canvas.emory.edu
-med.emory.edu
-search.emory.edu
-it.emory.edu
-womenwriters.digitalscholarship.emory.edu
-sco.library.emory.edu
-library.law.emory.edu
-etd.library.emory.edu
-reserves.library.emory.edu
-www.sph.emory.edu
-rsphcitrix.sph.emory.edu
-www.campserv.emory.edu
-webfm.fmd.emory.edu
-ams.endocrine.org
-healthlibrary.epnet.com
-services.epnet.com
-online.epocrates.com
-journals.equinoxpub.com
-journal.equinoxpub.com
-www.equinoxpub.com
-store.ethnologue.com
-countryreportui.euromonitor.com
-download-portal.euromonitor.com
-analytics-dashboards.euromonitor.com
-cdn.media.euromonitor.com
-europepmc.org
-www.excavation.co.kr
-haifa-primo.hosted.exlibrisgroup.com
-primestatic.blog.f1000.com
-customer.factiva.com
-launch.factset.com
-rtgateway.factset.com
-www.factset.com
-learn.factset.com
-connect-sf.hosting.factset.com
-my.apps.factset.com
-economic-calendar.apps.factset.com
-facultyopinions.com
-primestatic.facultyopinions.com
-app.fdimarkets.com
-cdn-new.filmplatform.net
-www.foodsystemsjournal.org
-globalresponseindex.foreignpolicy.com
-embeds.foreignpolicy.com
-subscribe.foundationcenter.org
-eyeonfdo.foundationcenter.org
-maps.foundationcenter.org
-fdo.foundationcenter.org
-ads-api.ft.com
-consent.ft.com
-o-tracking-builder.ft.com
-errors-next.ft.com
-markets.ft.com
-link.gale.com
-news.gallup.com
-analyticscampus.gallup.com
-ssl.geoplugin.net
-geopoliticalfutures.com
-pubs.geoscienceworld.org
-login.globaldata.com
-technology.globaldata.com
-icassets.globaldata.com
-pharma.globaldata.com
-medical.globaldata.com
-analytics.globaldata.com
-sectorinfluencer.globaldata.com
-oa.globaldata.com
-companyinfluencer.globaldata.com
-iotinfluencer.globaldata.com
-developers.google.com
-calendar.google.com
-dbs.g-search.or.jp
-scholarworks.gsu.edu
-digitalcollections.library.gsu.edu
-learn.guidestar.org
-help.guidestar.org
-harpers.org
-archive.harpers.org
-app.harpweek.com
-www.hup.harvard.edu
-fulfillment.healthaffairs.org
-libguides.heinonline.org
-chat.heinonline.org
-www.hematology.org
-imagebank.hematology.org
-cms.herbalgram.org
-genome.mobile.highwire.org
-downloads.hindawi.com
-preprod-admin.w2o.hindawi.com
-www.hisculture.co.kr
-journals.humankinetics.com
-hunteq.com
-hymnology.hymnsam.co.uk
-login.hymnsam.co.uk
-www.iclr.co.uk
-www.ideasroadshow.com
-readers.ideasroadshow.com
-innovate.ieee.org
-xplorestaging.ieee.org
-www.iiss.org
-support.imaios.com
-worldcompetitiveness.imd.org
-www.impan.pl
-www.inderscienceonline.com
-fod.infobase.com
-ffusa.infobase.com
-www.infobase.com
-services.informs.org
-myaccount.informs.org
-careercenter.informs.org
-meetings2.informs.org
-connect.informs.org
-api.ingentaconnect.com
-charleston.publisher.ingentaconnect.com
-www.intlpress.com
-ebooks.iospress.nl
-www.iospress.nl
-www.ipasource.com
-www.isabelhealthcare.com
-search.itergateway.org
-scholarworks.iupui.edu
-ipm-archives.japantimes.co.jp
-m.jbc.org
-auth.jbisumari.org
-static.jbisumari.org
-app.jbisumari.org
-www.jbisumari.org
-insight.jci.org
-jobs.jhu.edu
-litguide.press.jhu.edu
-jhupbooks.press.jhu.edu
-admincenter.jimmunol.org
-cloudfront.jove.com
-support.jstor.org
-plants.jstor.org
-labs.jstor.org
-daily.jstor.org
-www.jucs.org
-www.judicial.gov.tw
-law.judicial.gov.tw
-api-production.jwatch.org
-secure.jwatch.org
-www.koreaa2z.com
-en.ksdcdb.kr
-www.latinobarometro.org
-images.law.com
-store.law.com
-emory.lawnb.com
-academynext.lawnb.com
-www.lawnbedu.com
-www.lerobert.com
-dictionnaire.lerobert.com
-w3.lexis.com
-plus.lexis.com
-pdc1c-plus-advance.route53.lexis.com
-sn.lexisnexis.com
-www.lexology.com
-connect.liblynx.com
-lieberman-index.org
-www.lieberman-institute.com
-maint.online.liebertpub.com
-aip-prod-cdn.literatumonline.com
-rsna-prod-cdn.literatumonline.com
-acm-prod-streaming.literatumonline.com
-hope-prod-cdn.literatumonline.com
-thoracic-prod-cdn.literatumonline.com
-www.liverpooluniversitypress.co.uk
-online.liverpooluniversitypress.co.uk
-llmc.com
-www.llmc.com
-lockwoodonlinejournals.com
-www.lrb.co.uk
-www.manchesterhive.com
-www.marketwatch.com
-www.mdconsult.com
-legacy.medici.tv
-login.medscape.com
-emedicine.medscape.com
-profreg.medscape.com
-unabridged.merriam-webster.com
-media.merriam-webster.com
-www.merriam-webster.com
-metapress.com
-www.mgg-online.com
-medicalflashcards.mhmedical.com
-showdown.mhmedical.com
-accessmedicina.mhmedical.com
-store.mhmedical.com
-dermatology.mhmedical.com
-www.minsocam.org
-web.mit.edu
-sloanreview.mit.edu
-dspace.mit.edu
-mitpressjournals.mit.edu
-ctl.mit.edu
-db.mkstudy.com
-www.mohrsiebeck.com
-www.atlas.mouton-content.com
-www.varieties.mouton-content.com
-www.msapubs.org
-msp.org
-celt.muohio.edu
-www.myendnoteweb.com
-www.nationaljournal.com
-mts-nnano.nature.com
-mts-natbiomedeng.nature.com
-mts-mpa.nature.com
-mts-nmeth.nature.com
-mts-bmt.nature.com
-mts-natmetab.nature.com
-mts-isme.nature.com
-www.natureasia.com
-search.nml3.naxosmusiclibrary.com
-videostream-api.naxosvideolibrary.com
-papers.nber.org
-admin.nber.org
-projects.nber.org
-data.nber.org
-library.nclc.org
-cssjs.nejm.org
-netterreference.com
-brs.newsbank.com
-survey.newsbank.com
-phw05.newsbank.com
-phw04.newsbank.com
-verify1.newsbank.com
-docs.newsbank.com
-public.maximus.newsbank.com
-media.newyorker.com
-auth.nih.gov
-grants.nih.gov
-aidsinfo.nih.gov
-researchtraining.nih.gov
-www.nih.gov
-search.nih.gov
-era.nih.gov
-commonfund.nih.gov
-report.nih.gov
-ghr.nlm.nih.gov
-sprs.od.nih.gov
-www.nimh.nih.gov
-www.nihms.nih.gov
-vsearch.nlm.nih.gov
-pubs.niaaa.nih.gov
-cfmedicine.nlm.nih.gov
-public.era.nih.gov
-www.niams.nih.gov
-www.nccih.nih.gov
-www.covid19treatmentguidelines.nih.gov
-meshb.nlm.nih.gov
-www.niehs.nih.gov
-www.nei.nih.gov
-cervixca.nlm.nih.gov
-www.niaid.nih.gov
-rarediseases.info.nih.gov
-genecollections.nci.nih.gov
-www.ninds.nih.gov
-ftp.ncbi.nlm.nih.gov
-blast.ncbi.nlm.nih.gov
-api.ncbi.nlm.nih.gov
-pubchem.ncbi.nlm.nih.gov
-trace.ncbi.nlm.nih.gov
-ftp-trace.ncbi.nlm.nih.gov
-dbgap.ncbi.nlm.nih.gov
-www.arcr.niaaa.nih.gov
-ncbiinsights.ncbi.nlm.nih.gov
-www.nilesregister.com
-wwo.wwp.northeastern.edu
-nowpublishers.com
-npmhost.npm.gov.tw
-tclin.mis.nsysu.edu.tw
-subscribe.nybooks.info
-firstsearch.oclc.org
-social.oclc.org
-cdm16118.contentdm.oclc.org
-cdm16250.contentdm.oclc.org
-read.oecd-ilibrary.org
-www.oldcitypublishing.com
-www.ons.org
-cjon.ons.org
-search.opinionarchives.com
-search.oreilly.com
-internal.platform.gcp.oreilly.com
-www.oriprobe.com
-poll.orspub.com
-www.otzar.org
-tablet.otzar.org
-languages.oup.com
-blog.oup.com
-subscriberservices.sams2.oup.com
-subscriberservices.sams.oup.com
-oxcon.ouplaw.com
-olrl.ouplaw.com
-citator.ouplaw.com
-emory.overdrive.com
-auth.overdrive.com
-tools.ovid.com
-static.palgrave.com
-data.people.com.cn
-support.pep-web.org
-ebus.physiology.org
-help.pitchbook.com
-blog.pnas.org
-info.policymap.com
-tracking.policymap.com
-covid19.policymap.com
-access.portico.org
-www.portico.org
-images2.pressdisplay.com
-scholar.princeton.edu
-dataspace.princeton.edu
-spia.princeton.edu
-pathwaynet.princeton.edu
-press.princeton.edu
-fed.princeton.edu
-phcmprod.princeton.edu
-pcsprod.princeton.edu
-phubprod.princeton.edu
-idp.princeton.edu
-annals.math.princeton.edu
-introcs.cs.princeton.edu
-lift.cs.princeton.edu
-about.proquest.com
-digitalsanbornmaps.proquest.com
-ancestrylibrary.proquest.com
-status.proquest.com
-pqdtopen.proquest.com
-public.ebookcentral.proquest.com
-ecommerce.psychiatrist.com
-prcp.psychiatryonline.org
-qwest.tv
-videos.qwest.tv
-www.r2library.com
-search.rdsinc.com
-www.readcube.com
-www.responsa.co.il
-scholarship.rice.edu
-cte.rice.edu
-edu.rsc.org
-www2.rsna.org
-www.rsna.org
-images.rsna.org
-education.rsna.org
-sso.rsna.org
-media.rsna.org
-proquestcombo.safaribooksonline.com
-my.safaribooksonline.com
-helptools.safaribooksonline.com
-us.sagepub.com
-campus.sagepub.com
-freetrials.sagepub.com
-journalssolutions.sagepub.com
-wayf.sagepub.com
-icat.sagepub.com
-data.sagepub.com
-uk.sagepub.com
-www.sbrnetportal.com
-www.scconline.com
-nav.sciencedirect.com
-cts.sciencemag.org
-robotics.sciencemag.org
-blogs.sciencemag.org
-spj.sciencemag.org
-static.scientificamerican.com
-blogs.scientificamerican.com
-sor.scitation.org
-asa.scitation.org
-physicstoday.scitation.org
-avs.scitation.org
-cps.scitation.org
-sciwheel.com
-messaging.sciwheel.com
-components.scopus.com
-tutorials.scopus.com
-lc1.shztrk.com
-collections.si.edu
-ids.si.edu
-nmaahc.si.edu
-my.siam.org
-assets.simplyanalytics.com
-www.ihp.sinica.edu.tw
-archive.ihp.sinica.edu.tw
-char.iis.sinica.edu.tw
-chardb.iis.sinica.edu.tw
-hanchi.ihp.sinica.edu.tw
-archivent.ihp.sinica.edu.tw
-applyonline.ihp.sinica.edu.tw
-www2.ihp.sinica.edu.tw
-mail.ihp.sinica.edu.tw
-accounts.socialexplorer.com
-www.spglobal.com
-platform.spgi.spglobal.com
-www.marketplace.spglobal.com
-spie.org
-login.spie.org
-www.springernature.com
-resource-cms.springernature.com
-wayf.springernature.com
-support.springernature.com
-connect.springerpub.com
-www.springerpub.com
-hq.ssrn.com
-poseidon01.ssrn.com
-statweb.stanford.edu
-med.stanford.edu
-searchworks.stanford.edu
-site.stanford.edu
-web.stanford.edu
-ccrma.stanford.edu
-laitinresearch.stanford.edu
-healthalerts.stanford.edu
-siepr.stanford.edu
-nbloom.people.stanford.edu
-www.stat.gov.tw
-www.stata-journal.com
-highcharts.statista.com
-images.taboola.com
-journalsonline.tandf.co.uk
-rp.tandfonline.com
-iiss.tandfonline.com
-naspa.tandfonline.com
-taylorandfrancis.com
-think.taylorandfrancis.com
-accounts.taylorfrancis.com
-api.taylorfrancis.com
-www.tbrc.org
-thediplomat.com
-magazine.thediplomat.com
-emory.thehistorymakers.org
-www.thehistorymakers.org
-thmdigital.thehistorymakers.org
-science-of-synthesis.thieme.com
-medone.thieme.com
-www.thieme.de
-kundenservice.thieme.de
-thirdiron.com
-www.tradelawguide.com
-www.transnational-dispute-management.com
-foundationcenter.typepad.com
-journalhosting.ucalgary.ca
-subfill.uchicago.edu
-artfl-project.uchicago.edu
-artflsrv03.uchicago.edu
-home.uchicago.edu
-harris.uchicago.edu
-catalog.lib.uchicago.edu
-www.ucpress.edu
-assets.ucpress.edu
-dbs.galib.uga.edu
-www.hh.um.es
-umich.edu
-odei.umich.edu
-pharmacy.umich.edu
-crlt.umich.edu
-www.lib.umich.edu
-search.icpsr.umich.edu
-bibliography.icpsr.umich.edu
-deepblue.lib.umich.edu
-search.lib.umich.edu
-pcms.icpsr.umich.edu
-apps.lib.umich.edu
-positiveorgs.bus.umich.edu
-www.sca.isr.umich.edu
-comtrade.un.org
-unstats.un.org
-mdgs.un.org
-news.un.org
-www.un.org
-daccess-ods.un.org
-sustainabledevelopment.un.org
-oxford.universitypressscholarship.com
-vha.usc.edu
-sfi.usc.edu
-lusk.usc.edu
-shibboleth.usc.edu
-login.usc.edu
-adni.loni.usc.edu
-faculty.marshall.usc.edu
-about.galileo.usg.edu
-ailla.utexas.org
-content.library.utoronto.ca
-jps.library.utoronto.ca
-tapor.library.utoronto.ca
-tspace.library.utoronto.ca
-leme.library.utoronto.ca
-www3.valueline.com
-tvnews.vanderbilt.edu
-news.vanderbilt.edu
-vurj.vanderbilt.edu
-ir.vanderbilt.edu
-catalog.library.vanderbilt.edu
-apps.library.vanderbilt.edu
-ejournals.library.vanderbilt.edu
-media2.vault.com
-www.videolibrarian.com
-www.visualdx.com
-ar.vlex.com
-news-business.vlex.com
-vcite.elb.vlex.com
-www.voxgov.com
-www.vr-elibrary.de
-cdn.login.wanfangdata.com.cn
-account.webofknowledge.com
-cel.webofknowledge.com
-gateway.webofknowledge.com
-server.wenzibase.com
-subscription.westacademic.com
-signin.westacademic.com
-www.westacademic.com
-m.next.westlaw.com
-olabout.wiley.com
-authorservices.wiley.com
-media.wiley.com
-wolbookstore.wiley.com
-wolsupport.wiley.com
-iubmb.onlinelibrary.wiley.com
-srcd.onlinelibrary.wiley.com
-aornjournal.onlinelibrary.wiley.com
-novel-coronavirus.onlinelibrary.wiley.com
-rgs-ibg.onlinelibrary.wiley.com
-ceramics.onlinelibrary.wiley.com
-acamh.onlinelibrary.wiley.com
-bsapubs.onlinelibrary.wiley.com
-dom-pubs.onlinelibrary.wiley.com
-setac.onlinelibrary.wiley.com
-aps.onlinelibrary.wiley.com
-ifst.onlinelibrary.wiley.com
-rss.onlinelibrary.wiley.com
-theoncologist.onlinelibrary.wiley.com
-aocs.onlinelibrary.wiley.com
-beva.onlinelibrary.wiley.com
-conbio.onlinelibrary.wiley.com
-rmets.onlinelibrary.wiley.com
-wildlife.onlinelibrary.wiley.com
-acsess.onlinelibrary.wiley.com
-iaap-journals.onlinelibrary.wiley.com
-nph.onlinelibrary.wiley.com
-afspubs.onlinelibrary.wiley.com
-asistdl.onlinelibrary.wiley.com
-aiche.onlinelibrary.wiley.com
-movementdisorders.onlinelibrary.wiley.com
-ordering.onlinelibrary.wiley.com
-bsppjournals.onlinelibrary.wiley.com
-ila.onlinelibrary.wiley.com
-bera-journals.onlinelibrary.wiley.com
-www3.interscience.wiley.com
-rsaiconnect.onlinelibrary.wiley.com
-ngwa.onlinelibrary.wiley.com
-associationofanaesthetists-publications.onlinelibrary.wiley.com
-login.wisers.net
-www.wisersone.com
-search.wisersone.com
-lrus.wolterskluwer.com
-www.wolterskluwer.com
-documents.worldbank.org
-acc.worldcat.org
-bac-lac.on.worldcat.org
-kb.on.worldcat.org
-virginiatech.on.worldcat.org
-depauw.on.worldcat.org
-butler.on.worldcat.org
-agnesscott.on.worldcat.org
-morningside.on.worldcat.org
-editorial.worldscinet.com
-www.worldshakesbib.org
-store.wsj.com
-video-api.wsj.com
-vir.wsj.net
-sts3.wsj.net
-mwstream.wsj.net
-publichealth.yale.edu
-yalebooks.yale.edu
-ehrafarchaeology.yale.edu
-turnerlab.yale.edu
-elischolar.library.yale.edu
-orbis.library.yale.edu
-database.yomiuri.co.jp
+URL,Notes
+journals.aace.com,Evaluate for parser addition
+www.aaojournal.org,Evaluate for parser addition
+musicid.academicrightspress.com,Evaluate for parser addition
+adage.com,Evaluate for parser addition
+gaia.adage.com,Evaluate for parser addition
+www.ala.org,Evaluate for parser addition
+legalcompass.intelligence.alm.com,Evaluate for parser addition
+platform.almanhal.com,Evaluate for parser addition
+static.almanhal.com,Evaluate for parser addition
+www.almanhal.com,Evaluate for parser addition
+assets.ama-assn.org,Evaluate for parser addition
+cdn.edhub.ama-assn.org,Evaluate for parser addition
+edhub.ama-assn.org,Evaluate for parser addition
+fsso.ama-assn.org,Evaluate for parser addition
+journalofethics.ama-assn.org,Evaluate for parser addition
+datasets.americasbarometer.org,Evaluate for parser addition
+www.annals.edu.sg,Evaluate for parser addition
+ccdm.aphapublications.org,Evaluate for parser addition
+cdn.journals.aps.org,Evaluate for parser addition
+librarians.aps.org,Evaluate for parser addition
+link.aps.org,Evaluate for parser addition
+my.aps.org,Evaluate for parser addition
+www.aps.org,Evaluate for parser addition
+artfl-project.uchicago.edu,Evaluate for parser addition
+database.asahi.com,Evaluate for parser addition
+www.atsjournals.org,Evaluate for parser addition
+avmajournals.avma.org,Evaluate for parser addition
+asset.barrons.com,Evaluate for parser addition
+images.barrons.com,Evaluate for parser addition
+www.barrons.com,Evaluate for parser addition
+www.dl.begellhouse.com,Evaluate for parser addition
+www.berghahnjournals.com,Evaluate for parser addition
+bmcmolcellbiol.biomedcentral.com,Evaluate for parser addition
+jps.biomedcentral.com,Evaluate for parser addition
+thejournalofheadacheandpain.biomedcentral.com,Evaluate for parser addition
+eje.bioscientifica.com,Evaluate for parser addition
+erc.bioscientifica.com,Evaluate for parser addition
+joe.bioscientifica.com,Evaluate for parser addition
+rep.bioscientifica.com,Evaluate for parser addition
+birdsoftheworld.org,Evaluate for parser addition
+assets.bizjournals.com,Evaluate for parser addition
+track.bizjournals.com,Evaluate for parser addition
+www.bizjournals.com,Evaluate for parser addition
+www.bloomsburycollections.com,Evaluate for parser addition
+www.bloomsburypopularmusic.com,Evaluate for parser addition
+subscribers.c2er.org,Evaluate for parser addition
+www.caareviews.org,Evaluate for parser addition
+eyeonfdo.foundationcenter.org,Evaluate for parser addition
+fconline.foundationcenter.org,Evaluate for parser addition
+maps.foundationcenter.org,Evaluate for parser addition
+covid.cdc.gov,Parking Lot
+data.cdc.gov,Parking Lot
+gis.cdc.gov,Parking Lot
+ndmsia.cdc.gov,Parking Lot
+search.cdc.gov,Parking Lot
+stacks.cdc.gov,Parking Lot
+www.cdc.gov,Parking Lot
+wwwnc.cdc.gov,Parking Lot
+www.ceeol.com,Evaluate for parser addition
+www.china-data-online.com,Evaluate for parser addition
+www.choicereviews.org,Evaluate for parser addition
+www.chronicle.com,Evaluate for parser addition
+epoc.cochrane.org,Evaluate for parser addition
+oralhealth.cochrane.org,Evaluate for parser addition
+static-test.cochrane.org,Evaluate for parser addition
+www.cochrane.org,Evaluate for parser addition
+www.cochranelibrary.com,Evaluate for parser addition
+www.commentarymagazine.com,Evaluate for parser addition
+www.comprehensivephysiology.com,Evaluate for parser addition
+www.conference-board.org,Evaluate for parser addition
+www.consumerbrandanalytics.com,Evaluate for parser addition
+ebooks.library.cornell.edu,Evaluate for parser addition
+media3.criterionpic.com,Evaluate for parser addition
+api.crossref.org,Evaluate for parser addition
+apps.crossref.org,Evaluate for parser addition
+assets.crossref.org,Evaluate for parser addition
+crossmark.crossref.org,Evaluate for parser addition
+crossmark-cdn.crossref.org,Evaluate for parser addition
+data.crossref.org,Evaluate for parser addition
+mr.crossref.org,Evaluate for parser addition
+search.crossref.org,Evaluate for parser addition
+www.crossref.org,Evaluate for parser addition
+www.journal.csj.jp,Evaluate for parser addition
+www.daredictionary.com,Evaluate for parser addition
+trailers.digitalconcerthall.com,Evaluate for parser addition
+www.digitalconcerthall.com,Evaluate for parser addition
+www.digitaltheatreplus.com,Evaluate for parser addition
+auth.accounts.dowjones.com,Evaluate for parser addition
+images.dowjones.com,Evaluate for parser addition
+professional.dowjones.com,Evaluate for parser addition
+signin.dowjones.com,Evaluate for parser addition
+sso.accounts.dowjones.com,Evaluate for parser addition
+www.dowjones.com,Evaluate for parser addition
+www.dustri.com,Evaluate for parser addition
+dvlf.uchicago.edu,Evaluate for parser addition
+auth.emis.com,Evaluate for parser addition
+www.emis.com,Evaluate for parser addition
+journals.equinoxpub.com,Evaluate for parser addition
+esv-campus.de,Evaluate for parser addition
+ec.europa.eu,Evaluate for parser addition
+europepmc.org,Evaluate for parser addition
+www.excavation.co.kr,Evaluate for parser addition
+advantage.factset.com,Evaluate for parser addition
+login.factset.com,Evaluate for parser addition
+facultyopinions.com,Evaluate for parser addition
+primestatic.facultyopinions.com,Evaluate for parser addition
+www.filmplatform.net,Evaluate for parser addition
+www.foodsystemsjournal.org,Evaluate for parser addition
+www.foreignaffairs.com,Evaluate for parser addition
+www.getabstract.com,Evaluate for parser addition
+web.gideononline.com,Evaluate for parser addition
+analytics.globaldata.com,Evaluate for parser addition
+icassets.globaldata.com,Evaluate for parser addition
+login.globaldata.com,Evaluate for parser addition
+medical.globaldata.com,Evaluate for parser addition
+oa.globaldata.com,Evaluate for parser addition
+pharma.globaldata.com,Evaluate for parser addition
+store.globaldata.com,Evaluate for parser addition
+technology.globaldata.com,Evaluate for parser addition
+www.globaldata.com,Evaluate for parser addition
+www.globalroadwarrior.com,Evaluate for parser addition
+www.grantforward.com,Evaluate for parser addition
+gold.greyhouse.com,Evaluate for parser addition
+digitalcollections.library.gsu.edu,Evaluate for parser addition
+guilfordjournals.com,Evaluate for parser addition
+stat.haaretz.co.il,Evaluate for parser addition
+www.haaretz.com,Evaluate for parser addition
+archive.harpers.org,Evaluate for parser addition
+harpers.org,Evaluate for parser addition
+app.harpweek.com,Evaluate for parser addition
+www.hup.harvard.edu,Evaluate for parser addition
+sso.hematology.org,Evaluate for parser addition
+www.hematology.org,Evaluate for parser addition
+cms.herbalgram.org,Evaluate for parser addition
+www.hh.um.es,Evaluate for parser addition
+www.hisculture.co.kr,Evaluate for parser addition
+subscriber.hoovers.com,Evaluate for parser addition
+journals.humankinetics.com,Evaluate for parser addition
+us.humankinetics.com,Evaluate for parser addition
+www.humankinetics.com,Evaluate for parser addition
+www.iclr.co.uk,Evaluate for parser addition
+www.ijmed.org,Evaluate for parser addition
+worldcompetitiveness.imd.org,Evaluate for parser addition
+www.impan.pl,Evaluate for parser addition
+www.inderscienceonline.com,Evaluate for parser addition
+www.intlpress.com,Evaluate for parser addition
+www.ipasource.com,Evaluate for parser addition
+www.isabelhealthcare.com,Evaluate for parser addition
+journals.iucr.org,Evaluate for parser addition
+scripts.iucr.org,Evaluate for parser addition
+insight.jci.org,Evaluate for parser addition
+www.jci.org,Evaluate for parser addition
+www.jospt.org,Evaluate for parser addition
+www.jstage.jst.go.jp,Evaluate for parser addition
+www.ksdcdb.kr,Evaluate for parser addition
+www.latinnews.com,Evaluate for parser addition
+images.law.com,Evaluate for parser addition
+store.law.com,Evaluate for parser addition
+www.law.com,Evaluate for parser addition
+academynext.lawnb.com,Evaluate for parser addition
+emory.lawnb.com,Evaluate for parser addition
+grandrobert.lerobert.com,Evaluate for parser addition
+www.lerobert.com,Evaluate for parser addition
+www.lexology.com,Evaluate for parser addition
+lieberman-index.org,Evaluate for parser addition
+www.lieberman-institute.com,Evaluate for parser addition
+acm-prod-streaming.literatumonline.com,Evaluate for parser addition
+aha-prod-cdn.literatumonline.com,Evaluate for parser addition
+aip-prod-cdn.literatumonline.com,Evaluate for parser addition
+hope-prod-cdn.literatumonline.com,Evaluate for parser addition
+marlin-prod.literatumonline.com,Evaluate for parser addition
+rsna-prod-cdn.literatumonline.com,Evaluate for parser addition
+tandf-prod-cdn.literatumonline.com,Evaluate for parser addition
+thoracic-prod-cdn.literatumonline.com,Evaluate for parser addition
+wol-prod-cdn.literatumonline.com,Evaluate for parser addition
+www.liverpooluniversitypress.co.uk,Evaluate for parser addition
+llmc.com,Evaluate for parser addition
+www.llmc.com,Evaluate for parser addition
+lockwoodonlinejournals.com,Evaluate for parser addition
+sync.lrb.co.uk,Evaluate for parser addition
+www.lrb.co.uk,Evaluate for parser addition
+journals.lww.com,Evaluate for parser addition
+www.manchesterhive.com,Evaluate for parser addition
+www.manchesteropenhive.com,Evaluate for parser addition
+advantage.marketline.com,Evaluate for parser addition
+academic.marketresearch.com,Evaluate for parser addition
+www.marketresearch.com,Evaluate for parser addition
+www.mathjournals.org,Evaluate for parser addition
+www.mdpi.com,Evaluate for parser addition
+www.medscape.com,Evaluate for parser addition
+www.mergentonline.com,Evaluate for parser addition
+www.mgg-online.com,Evaluate for parser addition
+sloanreview.mit.edu,Evaluate for parser addition
+db.mkstudy.com,Evaluate for parser addition
+www.mlajournals.org,Evaluate for parser addition
+www.mohrsiebeck.com,Evaluate for parser addition
+library.morningstar.com,Evaluate for parser addition
+gebrc.nccu.edu.tw,Evaluate for parser addition
+netterreference.com,Evaluate for parser addition
+newleftreview.org,Evaluate for parser addition
+archives.newyorker.com,Evaluate for parser addition
+media.newyorker.com,Evaluate for parser addition
+www.newyorker.com,Evaluate for parser addition
+aidsinfo.nih.gov,Parking Lot
+auth.nih.gov,Parking Lot
+blast.ncbi.nlm.nih.gov,Parking Lot
+cdn.ncbi.nlm.nih.gov,Parking Lot
+consensus.nih.gov,Parking Lot
+ehp.niehs.nih.gov,Parking Lot
+era.nih.gov,Parking Lot
+eutils.ncbi.nlm.nih.gov,Parking Lot
+ghr.nlm.nih.gov,Parking Lot
+grants.nih.gov,Parking Lot
+hivinfo.nih.gov,Parking Lot
+preview.ncbi.nlm.nih.gov,Parking Lot
+projectreporter.nih.gov,Parking Lot
+pubchem.ncbi.nlm.nih.gov,Parking Lot
+public.csr.nih.gov,Parking Lot
+public.era.nih.gov,Parking Lot
+pubmed.ncbi.nlm.nih.gov,Parking Lot
+rarediseases.info.nih.gov,Parking Lot
+report.nih.gov,Parking Lot
+www.nhlbi.nih.gov,Parking Lot
+www.niaid.nih.gov,Parking Lot
+www.niams.nih.gov,Parking Lot
+www.nih.gov,Parking Lot
+www.nihms.nih.gov,Parking Lot
+www.nlm.nih.gov,Parking Lot
+www.ors.od.nih.gov,Parking Lot
+www.nybooks.com,Evaluate for parser addition
+cdm16921.contentdm.oclc.org,Evaluate for parser addition
+cgsc.contentdm.oclc.org,Evaluate for parser addition
+cart.ons.org,Evaluate for parser addition
+cjon.ons.org,Evaluate for parser addition
+onf.ons.org,Evaluate for parser addition
+www.ons.org,Evaluate for parser addition
+metasearch.opinionarchives.com,Evaluate for parser addition
+search.opinionarchives.com,Evaluate for parser addition
+support.pep-web.org,Evaluate for parser addition
+www.pep-web.org,Evaluate for parser addition
+emory.pitchbook.com,Evaluate for parser addition
+files.pitchbook.com,Evaluate for parser addition
+help.pitchbook.com,Evaluate for parser addition
+image.pitchbook.com,Evaluate for parser addition
+my.pitchbook.com,Evaluate for parser addition
+pitchbook.com,Evaluate for parser addition
+access.portico.org,Evaluate for parser addition
+portlandpress.com,Evaluate for parser addition
+phoenix.reltech.org,Evaluate for parser addition
+www.responsa.co.il,Evaluate for parser addition
+www.rkma.com,Evaluate for parser addition
+royalsocietypublishing.org,Evaluate for parser addition
+rrimo.com,Evaluate for parser addition
+pubs.rsna.org,Evaluate for parser addition
+www.rsna.org,Evaluate for parser addition
+m.proquest.safaribooksonline.com,Evaluate for parser addition
+proquest.safaribooksonline.com,Evaluate for parser addition
+www.scconline.com,Evaluate for parser addition
+www.scielo.br,Evaluate for parser addition
+blogs.sciencemag.org,Evaluate for parser addition
+immunology.sciencemag.org,Evaluate for parser addition
+robotics.sciencemag.org,Evaluate for parser addition
+search.sciencemag.org,Evaluate for parser addition
+spj.sciencemag.org,Evaluate for parser addition
+aapt.scitation.org,Evaluate for parser addition
+aca.scitation.org,Evaluate for parser addition
+asa.scitation.org,Evaluate for parser addition
+avs.scitation.org,Evaluate for parser addition
+physicstoday.scitation.org,Evaluate for parser addition
+sor.scitation.org,Evaluate for parser addition
+www.scitation.org,Evaluate for parser addition
+collections.si.edu,Evaluate for parser addition
+ids.si.edu,Evaluate for parser addition
+hanchi.ihp.sinica.edu.tw,Evaluate for parser addition
+pages.marketintelligence.spglobal.com,Evaluate for parser addition
+sso.spglobal.com,Evaluate for parser addition
+www.spglobal.com,Evaluate for parser addition
+www.sportsmarketanalytics.com,Evaluate for parser addition
+hq.ssrn.com,Evaluate for parser addition
+papers.ssrn.com,Evaluate for parser addition
+poseidon01.ssrn.com,Evaluate for parser addition
+static.ssrn.com,Evaluate for parser addition
+www.ssrn.com,Evaluate for parser addition
+www.stata-journal.com,Evaluate for parser addition
+thediplomat.com,Evaluate for parser addition
+thejns.org,Evaluate for parser addition
+hunteq.com,Evaluate for parser addition
+foundationcenter.typepad.com,Evaluate for parser addition
+uclajournals.org,Evaluate for parser addition
+assets.ucpress.edu,Evaluate for parser addition
+online.ucpress.edu,Evaluate for parser addition
+www.ucpress.edu,Evaluate for parser addition
+deepblue.lib.umich.edu,Evaluate for parser addition
+umich.edu,Evaluate for parser addition
+comtrade.un.org,Evaluate for parser addition
+unstats.un.org,Evaluate for parser addition
+adni.loni.usc.edu,Evaluate for parser addition
+vha.usc.edu,Evaluate for parser addition
+ailla.utexas.org,Evaluate for parser addition
+jps.library.utoronto.ca,Evaluate for parser addition
+tapor.library.utoronto.ca,Evaluate for parser addition
+tspace.library.utoronto.ca,Evaluate for parser addition
+investors.valueline.com,Evaluate for parser addition
+research.valueline.com,Evaluate for parser addition
+www.valueline.com,Evaluate for parser addition
+app.vlex.com,Evaluate for parser addition
+vcite.elb.vlex.com,Evaluate for parser addition
+www.vr-elibrary.de,Evaluate for parser addition
+server.wenzibase.com,Evaluate for parser addition
+aap.onlinelibrary.wiley.com,Parking Lot
+acamh.onlinelibrary.wiley.com,Parking Lot
+account.wiley.com,Parking Lot
+accpjournals.onlinelibrary.wiley.com,Parking Lot
+acsess.onlinelibrary.wiley.com,Parking Lot
+acsjournals.onlinelibrary.wiley.com,Parking Lot
+afspubs.onlinelibrary.wiley.com,Parking Lot
+aiche.onlinelibrary.wiley.com,Parking Lot
+alz-journals.onlinelibrary.wiley.com,Parking Lot
+anatomypubs.onlinelibrary.wiley.com,Parking Lot
+aocs.onlinelibrary.wiley.com,Parking Lot
+aornjournal.onlinelibrary.wiley.com,Parking Lot
+aps.onlinelibrary.wiley.com,Parking Lot
+asbmr.onlinelibrary.wiley.com,Parking Lot
+asi.onlinelibrary.wiley.com,Parking Lot
+associationofanaesthetists-publications.onlinelibrary.wiley.com,Parking Lot
+authorservices.wiley.com,Parking Lot
+bera-journals.onlinelibrary.wiley.com,Parking Lot
+besjournals.onlinelibrary.wiley.com,Parking Lot
+bjssjournals.onlinelibrary.wiley.com,Parking Lot
+bjui-journals.onlinelibrary.wiley.com,Parking Lot
+bpspsychub.onlinelibrary.wiley.com,Parking Lot
+bpspubs.onlinelibrary.wiley.com,Parking Lot
+bsapubs.onlinelibrary.wiley.com,Parking Lot
+bsppjournals.onlinelibrary.wiley.com,Parking Lot
+ceramics.onlinelibrary.wiley.com,Parking Lot
+chemistry-europe.onlinelibrary.wiley.com,Parking Lot
+conbio.onlinelibrary.wiley.com,Parking Lot
+currentprotocols.onlinelibrary.wiley.com,Parking Lot
+dom-pubs.onlinelibrary.wiley.com,Parking Lot
+ejpr.onlinelibrary.wiley.com,Parking Lot
+esajournals.onlinelibrary.wiley.com,Parking Lot
+external-sso.wiley.com,Parking Lot
+faseb.onlinelibrary.wiley.com,Parking Lot
+febs.onlinelibrary.wiley.com,Parking Lot
+headachejournal.onlinelibrary.wiley.com,Parking Lot
+iaap-journals.onlinelibrary.wiley.com,Parking Lot
+ifst.onlinelibrary.wiley.com,Parking Lot
+ila.onlinelibrary.wiley.com,Parking Lot
+iubmb.onlinelibrary.wiley.com,Parking Lot
+jlb.onlinelibrary.wiley.com,Parking Lot
+londmathsoc.onlinelibrary.wiley.com,Parking Lot
+nph.onlinelibrary.wiley.com,Parking Lot
+nyaspubs.onlinelibrary.wiley.com,Parking Lot
+obgyn.onlinelibrary.wiley.com,Parking Lot
+ordering.onlinelibrary.wiley.com,Parking Lot
+physoc.onlinelibrary.wiley.com,Parking Lot
+rai.onlinelibrary.wiley.com,Parking Lot
+rmets.onlinelibrary.wiley.com,Parking Lot
+rss.onlinelibrary.wiley.com,Parking Lot
+setac.onlinelibrary.wiley.com,Parking Lot
+sfamjournals.onlinelibrary.wiley.com,Parking Lot
+sigmapubs.onlinelibrary.wiley.com,Parking Lot
+spssi.onlinelibrary.wiley.com,Parking Lot
+srcd.onlinelibrary.wiley.com,Parking Lot
+stemcellsjournals.onlinelibrary.wiley.com,Parking Lot
+wildlife.onlinelibrary.wiley.com,Parking Lot
+wolbookstore.wiley.com,Parking Lot
+wolsupport.wiley.com,Parking Lot
+www.els.net,Parking Lot
+zslpublications.onlinelibrary.wiley.com,Parking Lot
+search.wisersone.com,Evaluate for parser addition
+www.wisersone.com,Evaluate for parser addition
+www.worldscientific.com,Evaluate for parser addition
+asset.wsj.net,Evaluate for parser addition
+graphics.wsj.com,Evaluate for parser addition
+images.wsj.net,Evaluate for parser addition
+s.wsj.net,Evaluate for parser addition
+sts3.wsj.net,Evaluate for parser addition
+vir.wsj.net,Evaluate for parser addition
+wsjstream.wsj.net,Evaluate for parser addition
